@@ -20,12 +20,53 @@ nav {
     font-stretch: extra-expanded;
     color: white;
 }
-:root{
-    background-color:#222222;
+
+:root {
+    background-color: #222222;
 }
+
 .based-data {
     font-family: "Poppins", serif;
 }
-.name-label{
+
+.name-label {
     font-family: "Poppins", serif;
+}
+
+.progress-ring__circle {
+    transition: 0.35s stroke-dashoffset;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+}
+
+@keyframes typing {
+    from {
+        width: 1%  ;
+    }
+    to {
+            width: 100% ;
+    }
+}
+
+@keyframes blink-caret {
+    50% {
+        border-color: orange;
+    }
+
+}
+@keyframes blink-caret-end {
+    0%{
+        border-right:.15em solid rgb(242, 108, 79,0)
+    }
+    100%{
+        border-right:.15em solid rgb(242, 108, 79,1)
+    }
+}
+.name-main-page {
+    animation: typing 3.5s steps(40,end) normal ,
+    blink-caret .75s linear ,
+    blink-caret-end .5s ease-in-out infinite;
+    white-space: nowrap; /* Keeps the content on a single line */
+    border-right: .15em solid orange; /* The typwriter cursor */
+
 }

@@ -1,8 +1,8 @@
 export default function About() {
     return (
         <div id={"about"}
-             className={" relative top-full w-full grid md:grid-cols-2 grid-cols-1 md:grid-rows-1 grid-rows-2 "}>
-            <div className={"w-full p-44 pt-0"}>
+             className={" relative top-full w-full bg-[#1f1f1f] grid md:grid-cols-2 grid-cols-1 md:grid-rows-1 grid-rows-2 "}>
+            <div className={"w-full p-44 pt-10"}>
                 <div className={"w-full mb-2 flex flex-row"}>
                     <h4 className={"text-[#ef6c50] underline"}>About me </h4>
                     <div className={"w-44 flex justify- center align-middle   text-[#ef6c50]"}>
@@ -33,7 +33,7 @@ export default function About() {
                 </div>
             </div>
             <div className={"w-96 h-full"}>
-                <div className={"text-5xl mt-7 font-bold text-white w-[450px] h-24"}>Any Type of Query & Discussion
+                <div className={"text-5xl mt-16 font-bold text-white w-[450px] h-24"}>Any Type of Query & Discussion
                 </div>
                 <div className={"text-lg mt-7 text-[#bdbdbd]"}>{`Let's`} talk with me</div>
                 <div className={" align-bottom h-36 justify-between flex items-end font-bold text-[#ef6f4a] text-2xl"}>
