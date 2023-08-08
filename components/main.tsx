@@ -20,7 +20,7 @@ export default function Main() {
                 </div>
             </div>
             <div
-                className={"xl:w-1/3 w-full md:p-20 mt-20 h-max  bg-[#222222] flex  md:justify-center align-middle flex-row "}>
+                className={"xl:max-w-1/3 w-full pl-20 md:p-20 mt-20 h-max  bg-[#222222] flex  md:justify-center align-middle flex-row "}>
                 <div className={"xl:w-max md:w-1/2 w-full h-max "}>
                     <div
                         className={"text-4xl  h-10 font-bold based-data text-white mb-10 overflow-hidden name-main-page "}>Hi,I
