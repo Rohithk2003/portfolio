@@ -37,7 +37,6 @@ export default function Navbar() {
                                         }}
                                         key={index}>
                                         <Link href={`#${heading.toLowerCase()}`}>{heading}</Link>
-                                        <Link href={`#${heading.toLowerCase()}`}>{heading}</Link>
                                     </li>)
                             })
                         }
@@ -57,7 +56,7 @@ export default function Navbar() {
                 </div>
                 <div
                     className={"w-1/3 flex  max-h-fit  lg:top-0 transition-all duration-300 ease-in-out  mr-0 lg:mr-5 justify-center  mt-auto mb-auto"}>
-                    <button className={"bg-[#f26c4f] text-black w-36 h-10 rounded"} ><a href={"https://drive.google.com/uc?export=download&id=1YIff-gypDnI9kKcILViiUQcLuzwWdg-T"}>Download CV</a></button>
+                    <button className={"bg-[#f26c4f] text-black w-36 h-10 rounded"} ><a href={"https://drive.google.com/uc?export=download&id=1YIff-gypDnI9kKcILViiUQcLuzwWdg-T "}>Download CV</a></button>
                 </div>
             </div>
 

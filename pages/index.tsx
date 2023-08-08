@@ -11,10 +11,10 @@ export default function Home() {
         <>
             <Navbar/>
             <Main/>
-            <About/>
-            <Services/>
-            <Skills/>
-            <ContactDetails/>
+            {/*<About/>*/}
+            {/*<Services/>*/}
+            {/*<Skills/>*/}
+            {/*<ContactDetails/>*/}
             <Script src="https://kit.fontawesome.com/93a493583b.js" crossOrigin="anonymous"></Script>
         </>
     )
