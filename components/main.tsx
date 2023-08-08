@@ -23,10 +23,9 @@ export default function Main() {
                 </div>
                 <div
                     className={"md:w-1/3 w-full  mt-10 md:mt-0  relative bg-[#222222] flex  justify-center align-end flex-row md:flex-col md:justify-center"}>
-                    {/* eslint-disable-next-line react/no-unescaped-entities */}
                     <div className={"w-max h-max "}>
                         <div className={"text-4xl w-80 font-bold based-data text-white  "}>Based in India,</div>
-                        <div className={"text-4xl w-96  font-bold based-data text-white "}> I'm a web-developer.</div>
+                        <div className={"text-4xl w-96  font-bold based-data text-white "}> {`I'm`} a web-developer.</div>
                         <div className={"text-2xl w-96  mt-10 font-bold based-data text-[#8f8f8f] "}>As a web developer,
                             I
                             code pixels into reality, turning dreams into clickable wonders! 💻🚀

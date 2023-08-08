@@ -11,7 +11,7 @@ export default function About() {
                 </div>
                 <div className={"w-full  text-md text-white"}>
                     <div className={" h-full w-[500px]  font-bold text-3xl"}>
-                        You can't use up creativity.
+                        You {`can't`} use up creativity.
                         The more you use, the more
                         you have in your signifant mind.
                     </div>
@@ -28,14 +28,14 @@ export default function About() {
                         motivated by the endless possibilities of
                         programming and the potential to create
                         innovative solutions that positively impact
-                        people's lives.
+                        {`people's`} lives.
                     </div>
                 </div>
             </div>
             <div className={"w-96 h-full"}>
                 <div className={"text-5xl mt-7 font-bold text-white w-[450px] h-24"}>Any Type of Query & Discussion
                 </div>
-                <div className={"text-lg mt-7 text-[#bdbdbd]"}>Let's talk with me</div>
+                <div className={"text-lg mt-7 text-[#bdbdbd]"}>{`Let's`} talk with me</div>
                 <div className={" align-bottom h-36 justify-between flex items-end font-bold text-[#ef6f4a] text-2xl"}>
                     <p className={"underline"}>rohithk652@gmail.com</p> <p className={"!no-underline"}><a
                     href="mailto:rohithk652@gmail.com">→</a></p></div>
