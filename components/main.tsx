@@ -3,10 +3,10 @@ import profile from '../public/profile.jpg'
 
 export default function Main() {
     return (
-
+        <div className={""}>
         <div
-            className={"w-full h-[100vh] grid xl:grid-cols-3 grid-cols-1 xl:grid-rows-1 grid-rows-3 absolute      bg-[#222222] "}>
-            <div className={"xl:w-2/3  w-3/4 bg-[#222222] flex md:justify-start justify-center col-span-2 row-span-2"}>
+            className={"w-full  h-[100vh] grid xl:grid-cols-3 grid-cols-1 xl:grid-rows-1 grid-rows-3 absolute      bg-[#222222] "}>
+            <div className={"xl:w-2/3 max-h-1/2 w-3/4 bg-[#222222] flex md:justify-start justify-center col-span-2 row-span-2"}>
                 <div>
                     <div
                         className={"text-white mt-10 name-label font-bold relative text-9xl top-20 left-[10%] ml-20 z-[0]"}>Rohith
@@ -41,6 +41,7 @@ export default function Main() {
                         rohithk652@gmail.com
                     </div>
                 </div>
+            </div>
             </div>
         </div>
     )

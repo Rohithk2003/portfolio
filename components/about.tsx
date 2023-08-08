@@ -1,21 +1,21 @@
 export default function About() {
     return (
         <div id={"about"}
-             className={" relative top-full w-full bg-[#1f1f1f] grid md:grid-cols-2 grid-cols-1 md:grid-rows-1 grid-rows-2 "}>
-            <div className={"w-full p-44 pt-10"}>
+             className={"h-[100vh] absolute top-[150%] xl:top-full w-full bg-[#1f1f1f] flex flex-wrap justify-center"}>
+            <div className={"w-1/2 max-h-1/2  xl:mt-20 flex flex-col justify-center "}>
                 <div className={"w-full mb-2 flex flex-row"}>
                     <h4 className={"text-[#ef6c50] underline"}>About me </h4>
                     <div className={"w-44 flex justify- center align-middle   text-[#ef6c50]"}>
                         <hr className={"w-full h-[2px] border-0 mt-3 ml-5 bg-[#ef6c50] text-[#ef6c50]"}/>
                     </div>
                 </div>
-                <div className={"w-full  text-md text-white"}>
-                    <div className={" h-full w-[500px]  font-bold text-3xl"}>
+                <div className={"w-full   text-md text-white"}>
+                    <div className={"  w-[500px] mb-4 font-bold text-4xl"}>
                         You {`can't`} use up creativity.
                         The more you use, the more
                         you have in your signifant mind.
                     </div>
-                    <div className={"mt-6 text-sm text-[#bdbdbd] leading-6 min-w-full"}>
+                    <div className={" text-xl text-[#bdbdbd]  min-w-full"}>
                         As a student with passion for programming,
                         I am committed to developing skills and
                         knowledge to build a successful
@@ -31,14 +31,6 @@ export default function About() {
                         {`people's`} lives.
                     </div>
                 </div>
-            </div>
-            <div className={"w-96 h-full"}>
-                <div className={"text-5xl mt-16 font-bold text-white w-[450px] h-24"}>Any Type of Query & Discussion
-                </div>
-                <div className={"text-lg mt-7 text-[#bdbdbd]"}>{`Let's`} talk with me</div>
-                <div className={" align-bottom h-36 justify-between flex items-end font-bold text-[#ef6f4a] text-2xl"}>
-                    <p className={"underline"}>rohithk652@gmail.com</p> <p className={"!no-underline"}><a
-                    href="mailto:rohithk652@gmail.com">→</a></p></div>
             </div>
         </div>
     )
