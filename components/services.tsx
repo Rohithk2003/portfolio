@@ -21,7 +21,7 @@ export class ServiceCard extends Component<{ image_link: any, key: any, text: an
         return (
             <div key={key}>
                 <div
-                    className={" z-[900] bg-[#222222] absolute w-80 p-10 h-80 hover:bg-black transition-all duration-300 rounded-xl  hover:translate-y-[-20px] hover:translate-x-[-20px]"}>
+                    className={"  z-[900] bg-[#222222] absolute w-80 p-10 h-80 hover:bg-black transition-all duration-300 rounded-xl  hover:translate-y-[-20px] hover:translate-x-[-20px]"}>
                     <div className={" w-full h-16 grid place-items-center"}>
                         <Image src={image_link} alt={"service"} width={64} height={64}/>
                     </div>

@@ -5,6 +5,7 @@ import About from "@/components/about";
 import Services from "@/components/services";
 import Skills from "@/components/skills";
 import ContactDetails from "@/components/contact";
+import Footer from "@/components/footer";
 
 export default function Home() {
     return (
@@ -12,9 +13,10 @@ export default function Home() {
             <Navbar/>
             <Main/>
             <About/>
-            {/*<Services/>*/}
-            {/*<Skills/>*/}
-            {/*<ContactDetails/>*/}
+            <Services/>
+            <Skills/>
+            <ContactDetails/>
+            <Footer/>
             <Script src="https://kit.fontawesome.com/93a493583b.js" crossOrigin="anonymous"></Script>
         </>
     )
