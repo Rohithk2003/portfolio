@@ -10,8 +10,8 @@ const touchDetails = [
 ]
 export default function ContactDetails() {
     return (
-        <div
-            className={"grid relative lg:grid-cols-2 w-full h-[100vh] bg-[#1f1f1f] grid-cols-1 grid-rows-2 lg:grid-rows-1"}>
+        <div id={"contact"}
+            className={"grid relative lg:grid-cols-2 w-full h-[100vh] bg-[#222222] grid-cols-1 grid-rows-2 lg:grid-rows-1"}>
             <div className={"w-full h-full flex flex-col justify-center align-middle"}>
                 <div className={"w-full h-10 flex justify-center align-middle flex-row"}>
                     <p className={"text-sm underline  text-[#f16b4b] font-extrabold w-[500px] h-10"}>Get in

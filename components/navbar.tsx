@@ -3,7 +3,7 @@ import React, {useState} from "react";
 
 
 const headings = [
-    "Home", "About", "Services", "Skills", "Portfolio", "Contact",
+    "Home", "About", "Services", "Skills",  "Contact",
 ]
 export default function Navbar() {
     const [HamStatus, setHamButtonStatus] = useState(false)
@@ -20,7 +20,7 @@ export default function Navbar() {
 
     return (
         <nav>
-            <div className={"w-full  h-16 flex  align-middle  "}>
+            <div className={"w-full  h-16 flex  align-middle fixed z-[999] bg-[#222222] "}>
                 <div className={"w-1/3  mt-auto  mb-auto p-5"}>
                     <h4 className={"text-2xl font-bold"}>Portfo<span className={"text-[#f26c4f]"}>lio</span>.</h4>
                 </div>
@@ -36,6 +36,7 @@ export default function Navbar() {
                                             handleNavItemClicking(Event)
                                         }}
                                         key={index}>
+                                        <Link href={`#${heading.toLowerCase()}`}>{heading}</Link>
                                         <Link href={`#${heading.toLowerCase()}`}>{heading}</Link>
                                     </li>)
                             })
@@ -56,7 +57,7 @@ export default function Navbar() {
                 </div>
                 <div
                     className={"w-1/3 flex  max-h-fit  lg:top-0 transition-all duration-300 ease-in-out  mr-0 lg:mr-5 justify-center  mt-auto mb-auto"}>
-                    <button className={"bg-[#f26c4f] text-black w-36 h-10 rounded"}>Download CV</button>
+                    <button className={"bg-[#f26c4f] text-black w-36 h-10 rounded"} ><a href={"https://drive.google.com/uc?export=download&id=1YIff-gypDnI9kKcILViiUQcLuzwWdg-T"}>Download CV</a></button>
                 </div>
             </div>
 

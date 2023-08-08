@@ -21,7 +21,7 @@ export class ServiceCard extends Component<{ image_link: any, key: any, text: an
         return (
             <div key={key}>
                 <div
-                    className={" z-50 bg-[#222222] absolute w-80 p-10 h-80 hover:bg-black transition-all duration-300 rounded-xl  hover:translate-y-[-20px] hover:translate-x-[-20px]"}>
+                    className={" z-[900] bg-[#222222] absolute w-80 p-10 h-80 hover:bg-black transition-all duration-300 rounded-xl  hover:translate-y-[-20px] hover:translate-x-[-20px]"}>
                     <div className={" w-full h-16 grid place-items-center"}>
                         <Image src={image_link} alt={"service"} width={64} height={64}/>
                     </div>
@@ -37,8 +37,8 @@ export class ServiceCard extends Component<{ image_link: any, key: any, text: an
                         </div>
                     </div>
                 </div>
-                <div className={"relative w-80 top-[24%] left-[24%] h-80"}>
-                    <div className={"w-0 h-0 border-t-[120px] border-t-transparent border-b-[120px] border-b-[#e84a28] border-l-[120px] border-l-transparent border-r-[120px] border-r-[#e84a28]"}></div>
+                <div className={"relative z-0 w-80 top-[24%] left-[24%] h-80"}>
+                    <div className={"w-0 h-0 z-0 border-t-[120px] border-t-transparent border-b-[120px] border-b-[#e84a28] border-l-[120px] border-l-transparent border-r-[120px] border-r-[#e84a28]"}></div>
                 </div>
             </div>
         )

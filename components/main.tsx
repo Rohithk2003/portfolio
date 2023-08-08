@@ -16,7 +16,7 @@ export default function Main() {
                         </div>
                         <div
                             className={"w-[300px] h-[300px] overflow-hidden relative left-44 top-[-20px]  float-right rounded-full border-2 border-white object-cover"}>
-                            <Image className={"z-50 object-contain relative top-[-80px] "} src={profile} alt={""}
+                            <Image className={"z-48 object-contain relative top-[-80px] "} src={profile} alt={""}
                                    width={300}
                                    height={300}/></div>
                     </div>
@@ -37,7 +37,7 @@ export default function Main() {
                         </div>
                         <div className={"text-sm w-44  mt-10 font-bold based-data text-orange-300 tracking-wider"}>P:
                             +91
-                            8138924593
+                            1234567890
                         </div>
                         <div className={"text-sm w-64  mt-1 font-bold based-data text-orange-300 tracking-wider"}>E:
                             rohithk652@gmail.com

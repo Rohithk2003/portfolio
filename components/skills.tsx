@@ -57,7 +57,7 @@ export class SkillsCard extends Component<{ key: any, percentage: any, text: any
 
 export default function Skills() {
     return (
-        <div className={" bg-[#1f1f1f]  relative flex-row w-full h-[100vh]"} id={"services"}>
+        <div className={" bg-[#1f1f1f]  relative flex-row w-full h-[100vh]"} id={"skills"}>
             <p className={"text-sm underline text-center pt-16 text-[#f16b4b] font-extrabold w-full h-24"}>Skills</p>
             <p className={"text-4xl  text-center text-white font-extrabold w-full h-24"}>Coolest Ever</p>
             <div className={"flex flex-row flex-wrap justify-center gap-10 align-middle"}>
