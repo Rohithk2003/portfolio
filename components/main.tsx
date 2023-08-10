@@ -3,7 +3,7 @@ import profile from '../public/profile.jpg'
 
 export default function Main() {
     return (
-            <div
+            <div id={"home"}
                 className={"w-full  h-max flex flex-wrap flex-row  bg-[#222222] "}>
                 <div
                     className={"xl:w-1/2 h-96 w-3/4 bg-[#222222] p-10 flex md:justify-start justify-center col-span-2 row-span-2"}>
