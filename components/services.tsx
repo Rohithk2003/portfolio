@@ -47,7 +47,7 @@ export class ServiceCard extends Component<{ image_link: any, key: any, text: an
 
 export default function Services() {
     return (
-        <div className={" relative flex-row w-full h-[100vh] pt-10"} id={"services"}>
+        <div className={" relative flex-row w-full h-[100vh] mt-10 "} id={"services"}>
             <p className={"text-sm underline text-center text-[#f16b4b] font-extrabold w-full h-10"}>Services</p>
             <p className={"text-4xl  text-center text-white font-extrabold w-full h-24"}>What We Do?</p>
             <div className={"flex flex-row justify-center gap-10 align-middle"}>

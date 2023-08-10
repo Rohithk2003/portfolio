@@ -1,7 +1,7 @@
 export default function About() {
     return (
         <div id={"about"}
-             className={"h-[700px] pl-10  overflow-hidden bg-[#1f1f1f] flex flex-wrap justify-start mt-10 md:justify-center"}>
+             className={"h-[700px] pl-10 pt-0 pb-4  overflow-hidden bg-[#1f1f1f] flex flex-wrap justify-start mt-10 md:justify-center"}>
             <div className={"w-1/2 max-h-1/2 mt-10  xl:mt-20 flex flex-col justify-center flex-wrap "}>
                 <div className={"w-full mb-2 flex flex-row"}>
                     <h4 className={"text-[#ef6c50] underline"}>About me </h4>

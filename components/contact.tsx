@@ -49,17 +49,17 @@ export default function ContactDetails() {
                     <div className={"w-[500px] flex flex-col gap-20"}>
                         <div className={"w-[44px] h-[44px] pt-1 mr-5"}>
                             <i className="fa fa-person fa-2xl text-[#f16b4b] p-11 icon absolute"></i>
-                            <input className={"bg-[#363636] w-[500px] rounded h-24 p-10  pl-20 "} type={"text"}
+                            <input className={"bg-[#363636] w-[500px] text-white  rounded h-24 p-10  pl-20 "} type={"text"}
                                    placeholder={"Enter your name here"}/>
                         </div>
                         <div className={"w-[44px] h-[44px] pt-1 mr-5"}>
                             <i className="fa fa-person fa-2xl text-[#f16b4b] p-11 icon absolute"></i>
-                            <input className={"bg-[#363636] w-[500px] rounded h-24 p-10  pl-20 "} type={"text"}
+                            <input className={"bg-[#363636] w-[500px] text-white  rounded h-24 p-10  pl-20 "} type={"text"}
                                    placeholder={"Enter your email"}/>
                         </div>
                         <div className={"w-[44px] h-[44px] pt-1 mr-5"}>
                             <i className="fa fa-person fa-2xl text-[#f16b4b] p-11 icon absolute"></i>
-                            <input className={"bg-[#363636] w-[500px] rounded h-28 p-10  pl-20 "} type={"text"}
+                            <input className={"bg-[#363636] w-[500px] text-white  rounded h-28 p-10  pl-20 "} type={"text"}
                                    placeholder={"Tell me about the idea"}/>
                         </div>
                         <button className={"bg-[#f26c4f] w-32 h-16 mt-2 text-white font-bold"}>Contact Me {`<>`}</button>
