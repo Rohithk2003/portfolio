@@ -35,9 +35,9 @@ export default function Navbar() {
                                 return (
                                     <li
                                         className={`mb-auto mt-auto text-center hover:text-[#f26c4f] transition-colors duration-300 ease-in-out ${activeIdx == index ? ("text-orange-400 border-b-2 border-amber-500") : ""}`}
-                                        onClick={(Event) => {
+                                        onClick={() => {
                                             setActiveIdx(index)
-                                            handleNavItemClicking(Event)
+                                            handleNavItemClicking()
                                         }}
                                         key={index}>
                                         <Link href={`#${heading.toLowerCase()}`}>{heading}</Link>
