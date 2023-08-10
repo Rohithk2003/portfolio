@@ -73,11 +73,11 @@ export default function Navbar() {
                         {
                             headings.map((heading, index) => {
                                 return (
-                                    <Link onClick={() => {
+                                    <Link key={index} onClick={() => {
                                         setTopBarVisibility(!topBarVisible);
                                         setHamButtonStatus(!HamStatus);
                                     }} href={`#${heading.toLowerCase()}`}>
-                                        <li key={index} className={"w-full text-center rounded hover:bg-[#f26c4f] transition-all duration-300 ease-in-out border-gray-500  p-2 h-12 border-2 "}>
+                                        <li  className={"w-full text-center rounded hover:bg-[#f26c4f] transition-all duration-300 ease-in-out border-gray-500  p-2 h-12 border-2 "}>
                                             {heading}
                                         </li>
                                     </Link>)
