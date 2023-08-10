@@ -16,7 +16,7 @@ export default function Navbar() {
         setTopBarVisibility(!topBarVisible)
     }
 
-    function handleNavItemClicking(e: React.MouseEvent<HTMLLIElement>) {
+    function handleNavItemClicking() {
         setNavItemStatus(!NavItemClicked)
     }
 
@@ -67,7 +67,7 @@ export default function Navbar() {
                 <div
                     className={`w-full p-16 pt-6 transition absolute duration-800 ease-in-out translate-y-[15%] z-40 bg-black flex-col flex h-max ${topBarVisible ? ('translate-x-0') : ('-translate-x-[100%]')}`}>
                     <div className={"w-1/3  mt-auto  mb-auto "}>
-                        <h4 className={"text-2xl font-bold"}>Portfo<span className={"text-[#f26c4f]"}>lio</span>.</h4>
+                        <h4 className={"text-2xl font-bold mb-2"}>Portfo<span className={"text-[#f26c4f]"}>lio</span>.</h4>
                     </div>
                     <ul className={"flex w-full gap-2 flex-col"}>
                         {
@@ -77,7 +77,7 @@ export default function Navbar() {
                                         setTopBarVisibility(!topBarVisible);
                                         setHamButtonStatus(!HamStatus);
                                     }} href={`#${heading.toLowerCase()}`}>
-                                        <li  className={"w-full text-center rounded hover:bg-[#f26c4f] transition-all duration-300 ease-in-out border-gray-500  p-2 h-12 border-2 "}>
+                                        <li  className={"w-full  flex justify-center items-center rounded hover:bg-[#f26c4f] transition-all duration-300 ease-in-out border-gray-500   h-16 border-2 "}>
                                             {heading}
                                         </li>
                                     </Link>)

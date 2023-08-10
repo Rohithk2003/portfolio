@@ -9,7 +9,7 @@ export default function Main() {
                     className={"xl:w-1/2 h-96 w-3/4 bg-[#222222] p-10 flex md:justify-start justify-center col-span-2 row-span-2"}>
                     <div>
                         <div
-                            className={"text-white mt-10 name-label font-bold relative text-7xl sm:text-9xl top-20 left-[10%]  z-[0]"}>Rohith
+                            className={"text-white mt-10 name-label font-bold relative text-7xl  sm:text-9xl top-20 left-[10%]  z-[0]"}>Rohith
                             Krishnan
                         </div>
                         <div
@@ -23,7 +23,7 @@ export default function Main() {
                     className={"xl:w-1/2 w-full pl-10 md:p-20 mt-40 h-max  bg-[#222222] flex  justify-start md:justify-center align-middle flex-row "}>
                     <div className={"xl:w-max md:w-1/2 w-full h-max "}>
                         <div
-                            className={"text-4xl  h-10 font-bold based-data text-white mb-10 overflow-hidden name-main-page "}>Hi,I
+                            className={"text-4xl w-max  h-10 font-bold based-data text-white mb-10 overflow-hidden name-main-page "}>Hi,I
                             am Rohith Krishnan
                         </div>
                         <div className={"text-3xl w-80 font-bold based-data text-white  "}>Based in India,</div>
