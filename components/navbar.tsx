@@ -24,7 +24,9 @@ export default function Navbar() {
         <nav>
             <div className={"w-full  h-16 flex  align-middle fixed z-[999] bg-[#222222] "}>
                 <div className={"w-1/3  mt-auto  mb-auto p-5"}>
-                    <h4 className={"text-2xl font-bold"}>Portfo<span className={"text-[#f26c4f]"}>lio</span>.</h4>
+                    <Link href={"/"}>
+                        <h4 className={"text-2xl font-bold"}>Portfo<span className={"text-[#f26c4f]"}>lio</span>.</h4>
+                    </Link>
                 </div>
                 <div className={"lg:flex hidden max-w-1/3  justify-start align-middle"}>
                     <ul className={"flex  z-50  h-full text-center justify-start p-5 flex-column  gap-16 "}>
@@ -75,7 +77,7 @@ export default function Navbar() {
                                         setTopBarVisibility(!topBarVisible);
                                         setHamButtonStatus(!HamStatus);
                                     }} href={`#${heading.toLowerCase()}`}>
-                                        <li className={"w-full text-center rounded hover:bg-[#f26c4f] transition-all duration-300 ease-in-out border-gray-500  p-2 h-12 border-2 "}>
+                                        <li key={index} className={"w-full text-center rounded hover:bg-[#f26c4f] transition-all duration-300 ease-in-out border-gray-500  p-2 h-12 border-2 "}>
                                             {heading}
                                         </li>
                                     </Link>)
