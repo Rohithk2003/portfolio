@@ -12,9 +12,9 @@ export default function ContactDetails() {
     return (
         <div id={"contact"}
             className={" flex flex-row flex-wrap justify-between w-full h-max p-20 bg-[#222222] "}>
-            <div className={"max-w-1/2 h-full flex flex-col justify-center align-middle"}>
+            <div className={"max-w-1/2 h-full mt-3 flex flex-col justify-center align-middle"}>
                 <div className={"w-full h-10 flex justify-center align-middle flex-row"}>
-                    <p className={"text-sm underline  text-[#f16b4b] font-extrabold w-[500px] h-10"}>Get in
+                    <p className={"text-sm underline   text-[#f16b4b] font-extrabold w-[500px] h-32"}>Get in
                         Touch</p>
                 </div>
                 <div className={"w-full h-30 flex justify-center align-middle flex-row"}>
