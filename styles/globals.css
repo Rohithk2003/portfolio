@@ -12,7 +12,9 @@
     box-sizing: border-box;
     font-family: "Poppins", serif;
 }
-
+body {
+    min-width:1050px;
+}
 nav {
     font-family: "Poppins", serif;
     background-color: #222222;
