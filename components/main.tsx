@@ -3,8 +3,8 @@ import profile from '../public/profile.jpg'
 
 export default function Main() {
     return (
-            <div id={"home"}
-                className={"w-full  h-max flex flex-wrap flex-row  bg-[#222222] "}>
+            <div id={" home"}
+                className={"h-max flex flex-wrap flex-row  bg-[#222222] "}>
                 <div
                     className={"xl:w-1/2 h-96 w-3/4 bg-[#222222] p-10 flex md:justify-start justify-center col-span-2 row-span-2"}>
                     <div>
@@ -20,10 +20,10 @@ export default function Main() {
                     </div>
                 </div>
                 <div
-                    className={"xl:w-1/2 w-full pl-10 md:p-20 mt-40 h-max  bg-[#222222] flex  justify-start md:justify-center align-middle flex-row "}>
+                    className={"xl:w-1/2 w-full p-2 md:p-20 mt-40 h-max  bg-[#222222] flex  justify-start md:justify-center align-middle flex-row "}>
                     <div className={"xl:w-max md:w-1/2 w-full h-max "}>
                         <div
-                            className={"text-4xl w-max  h-10 font-bold based-data text-white mb-10 overflow-hidden name-main-page "}>Hi,I
+                            className={"md:text-4xl text-2xl  w-max   h-10 font-bold based-data text-white overflow-hidden name-main-page "}>Hi,I
                             am Rohith Krishnan
                         </div>
                         <div className={"text-3xl w-80 font-bold based-data text-white  "}>Based in India,</div>

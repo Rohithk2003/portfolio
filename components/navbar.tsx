@@ -22,13 +22,13 @@ export default function Navbar() {
 
     return (
         <nav>
-            <div className={"w-full  h-16 flex  align-middle fixed z-[999] bg-[#222222] "}>
-                <div className={"w-1/3  mt-auto  mb-auto p-5"}>
+            <div className={"w-full  h-16 flex justify-between align-middle fixed z-[999] bg-[#222222] "}>
+                <div className={"w-1/3 mt-auto order-1 md:order-0 md:text-start text-start mb-auto ml-5 "}>
                     <Link href={"/"}>
                         <h4 className={"text-2xl font-bold"}>Portfo<span className={"text-[#f26c4f]"}>lio</span>.</h4>
                     </Link>
                 </div>
-                <div className={"lg:flex hidden max-w-1/3  justify-start align-middle"}>
+                <div className={"lg:flex hidden w-1/3 order-1  justify-start align-middle"}>
                     <ul className={"flex  z-50  h-full text-center justify-start p-5 flex-column  gap-16 "}>
                         {
                             headings.map((heading, index) => {
@@ -46,8 +46,8 @@ export default function Navbar() {
                         }
                     </ul>
                 </div>
-                <div className={"flex lg:hidden  order-3 align-middle max-w-1/3 justify-end m-auto mr-2"}>
-                    <a className={" grid place-items-center grid-rows-3w"} onClick={handleHamButtonClick}>
+                <div className={"flex lg:hidden  order-0 align-middle w-1/3 justify-start m-auto "}>
+                    <a className={" grid  ml-2 grid-rows-3w"} onClick={handleHamButtonClick}>
                         <span
                             className={`w-7 h-1 mb-1 bg-white transition-all duration-300 ease-in-out ${HamStatus ? (" rotate-45") : ""}`}></span>
 
@@ -59,7 +59,7 @@ export default function Navbar() {
                     </a>
                 </div>
                 <div
-                    className={"w-1/3 flex  max-h-fit  lg:top-0 transition-all duration-300 ease-in-out  mr-0 lg:mr-5 justify-center  mt-auto mb-auto"}>
+                    className={"w-1/3 flex  max-h-fit  order-2 lg:top-0 transition-all duration-300 ease-in-out  mr-0 lg:mr-5 justify-center  mt-auto mb-auto"}>
                     <button className={"bg-[#f26c4f] text-black w-36 h-10 rounded"}><a
                         href={"https://drive.google.com/uc?export=download&id=1MA0dK5KPU8xiwI42MDi0NK4GDF9Ul5qR "}>Download
                         CV</a></button>
