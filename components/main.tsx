@@ -14,7 +14,7 @@ export default function Main() {
                         </div>
                         <div
                             className={"md:w-[300px] h-[200px] w-[200px] md:h-[300px] overflow-hidden relative md:left-44 left-[40%] top-[-10%] md:top-[-40%] xl:top-[-20px]  float-right rounded-full border-2 border-white object-cover"}>
-                            <Image className={"z-48 object-contain relative top-[-80px] "} src={profile} alt={""}
+                            <Image className={"z-48 object-contain relative top-[-80px] "} src={""} alt={""}
                                    width={300}
                                    height={300}/></div>
                     </div>
