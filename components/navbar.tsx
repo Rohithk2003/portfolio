@@ -61,7 +61,7 @@ export default function Navbar() {
                 <div
                     className={"w-1/3 flex  max-h-fit  order-2 lg:top-0 transition-all duration-300 ease-in-out  mr-0 lg:mr-5 justify-center  mt-auto mb-auto"}>
                     <button className={"bg-[#f26c4f] text-black w-36 h-10 rounded"}><a
-                        href={"https://drive.google.com/uc?export=download&id=1MA0dK5KPU8xiwI42MDi0NK4GDF9Ul5qR "}>Download
+                        href={"https://flowcv.com/resume/34p8i21ase"}>Download
                         CV</a></button>
                 </div>
                 <div
