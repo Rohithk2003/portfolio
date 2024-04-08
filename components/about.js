@@ -10,12 +10,12 @@ export default function About() {
                     </div>
                 </div>
                 <div className={"w-full text-md text-white"}>
-                    <div className={"w-full mb-4 font-bold text-xl md:text-4xl"}>
+                    <div className={"w-full mb-4 font-bold text-2xl md:text-4xl"}>
                         You {`can't`} use up creativity.
                         The more you use, the more
                         you have in your significant mind.
                     </div>
-                    <div className={"md:text-xl text-md text-[#bdbdbd]  w-full"}>
+                    <div className={"md:text-xl text-lg text-[#bdbdbd]  w-full"}>
                         As a student with passion for programming,
                         I am committed to developing skills and
                         knowledge to build a successful

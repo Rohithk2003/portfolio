@@ -21,9 +21,9 @@ export default function Main() {
         <div id={"home"}
              className={" flex flex-wrap flex-row  bg-[#222222]   h-[100vh] pb-32 "}>
             <div
-                className={" xl:w-1/2 w-full bg-[#222222] p-10 flex  justify-center"}>
+                className={" xl:w-1/2 w-full bg-[#222222] p-10 flex justify-center"}>
                 <div
-                    className={"text-white text-center animate-bounce  animate-infinite animate-duration-[2000ms] animate-ease-in-out  font-bold  md:text-9xl text-6xl  flex  flex-wrap items-center   z-[0]"}>
+                    className={"text-white text-center animate-bounce justify-center md:pt-0 top-32 relative animate-infinite animate-duration-[2000ms] animate-ease-in-out  font-bold  md:text-9xl text-6xl  flex  flex-wrap items-center   z-[0]"}>
                     Rohith
                     Krishnan
                 </div>
@@ -35,7 +35,7 @@ export default function Main() {
             </div>
             <div
                 className={" xl:w-1/2 w-full overflow-hidden h-full bg-[#222222] flex  justify-center align-middle items-center flex-row "}>
-                <div className={"flex justify-center flex-col h-max  md:pl-32 pl-10     "}>
+                <div className={"flex justify-center flex-col h-max  md:pl-32 pl-6"}>
                     <div
                         className={"md:text-4xl text-2xl animate-fade-left animate-once animate-duration-[2000ms] animate-ease-in-out  min-h-36 font-bold based-data text-white "}>
                         <span ref={el}/>
