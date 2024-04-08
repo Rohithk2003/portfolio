@@ -151,3 +151,13 @@ nav {
 .animate-6 {
     animation-delay: 1.25s;
 }
+.bg-left-to-right{
+    background: linear-gradient(to right, #f26c4f 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    color:black;
+}
+.bg-left-to-right:hover {
+    background-position: left bottom;
+}
