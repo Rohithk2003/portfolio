@@ -22,7 +22,7 @@ export default function Navbar() {
 
     return (
         <nav>
-            <div className={"w-full  h-16 flex justify-between align-middle fixed z-[999] bg-[#222222] "}>
+            <div className={"w-full  h-16 flex justify-between align-middle  z-[999] bg-[#222222] "}>
                 <div className={"w-1/3 mt-auto order-1 md:order-0 md:text-start text-start mb-auto ml-5 "}>
                     <Link href={"/"}>
                         <h4 className={"text-2xl font-bold"}>Portfo<span className={"text-[#f26c4f]"}>lio</span>.</h4>
