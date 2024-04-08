@@ -34,7 +34,7 @@ export default function Navbar() {
                             headings.map((heading, index) => {
                                 return (
                                     <li
-                                        className={`mb-auto mt-auto text-center hover:text-[#f26c4f] transition-colors duration-300 ease-in-out ${activeIdx == index ? ("text-orange-400 border-b-2 border-amber-500") : ""}`}
+                                        className={`mb-auto mt-auto text-center hover:text-[#f26c4f] transition-colors duration-300 ease-in-out ${activeIdx === index ? ("text-orange-400 border-b-2 border-amber-500") : ""}`}
                                         onClick={() => {
                                             setActiveIdx(index)
                                             handleNavItemClicking()
@@ -59,7 +59,7 @@ export default function Navbar() {
                     </a>
                 </div>
                 <div
-                    className={"w-1/3 flex  max-h-fit  order-2 lg:top-0 transition-all duration-300 ease-in-out  mr-0 lg:mr-5 justify-center  mt-auto mb-auto"}>
+                    className={"w-1/3 flex   order-2 lg:top-0 transition-all duration-300 ease-in-out items-center   justify-end mr-10 "}>
                     <button className={"bg-[#f26c4f] text-black w-36 h-10 rounded"}><a
                         href={"https://flowcv.com/resume/34p8i21ase"}>Download
                         CV</a></button>
@@ -88,14 +88,14 @@ export default function Navbar() {
                     {
                         headings.map((heading, index) => {
                             return (
-                                // <Link key={index} onClick={() => {
-                                //     setTopBarVisibility(!topBarVisible);
-                                //     setHamButtonStatus(!HamStatus);
-                                // }} href={`#${heading.toLowerCase()}`}>
-                                <li className={"w-full hover:text-white  flex justify-center bg-left-to-right items-center rounded hover:bg-[#f26c4f] transition-all duration-300 ease-in-out border-gray-500   h-16 border-2 "}>
-                                    {heading}
-                                </li>
-                                // </Link>
+                                <Link key={index} onClick={() => {
+                                    setTopBarVisibility(!topBarVisible);
+                                    setHamButtonStatus(!HamStatus);
+                                }} href={`#${heading.toLowerCase()}`}>
+                                    <li className={"w-full hover:text-white  flex justify-center bg-left-to-right items-center rounded hover:bg-[#f26c4f] transition-all duration-300 ease-in-out border-gray-500   h-16 border-2 "}>
+                                        {heading}
+                                    </li>
+                                </Link>
                             )
                         })
                     }
