@@ -30,14 +30,14 @@ export default function Main() {
 	return (
 		<div
 			id={"home"}
-			className={`home flex flex-wrap flex-row text-white w-full bg-[#000000]   h-[100vh] ${inter.className}`}
+			className={`home flex flex-wrap flex-row text-white w-full text-start bg-[#000000]   h-[100vh] ${inter.className}`}
 		>
 			<div
 				className={
-					"md:w-2/3 w-full flex justify-center gap-4 main-one items-center flex-col"
+					"lg:w-2/3 w-full flex justify-center gap-4 main-one items-center flex-col"
 				}
 			>
-				<div className={"flex md:justify-start justify-center md:w-1/2 w-full"}>
+				<div className={"flex lg:justify-start justify-center lg:w-1/2 w-full"}>
 					<div className="flex justify-center items-center">
 						<img
 							src={"/images/profile.jpg"}
@@ -47,10 +47,10 @@ export default function Main() {
 					</div>
 				</div>
 
-				<div className={"text-xl text-start md:w-1/2 w-2/3 flex justify-start"}>
+				<div className={"text-xl text-start lg:w-1/2 w-3/4 flex justify-start"}>
 					<span ref={el} />
 				</div>
-				<div className={"flex flex-col md:w-1/2 w-2/3 text-[#454545] mt-3"}>
+				<div className={"flex flex-col lg:w-1/2 w-3/4  text-[#454545] mt-3"}>
 					<span>
 						A Software Developer who develops well-architected applications.
 					</span>
@@ -58,7 +58,7 @@ export default function Main() {
 						Passionate to develop them with engineering and design principles.
 					</span>
 				</div>
-				<div className={" md:w-1/2 w-2/3 text-[#454545] "}>
+				<div className={" lg:w-1/2 w-3/4 text-[#454545] "}>
 					Currently working on{" "}
 					<span className={"text-white"}>
 						&nbsp;being a better person and a developer
@@ -66,14 +66,14 @@ export default function Main() {
 				</div>
 				<div
 					className={
-						"text-lg text-white text-start md:w-1/2 w-2/3 flex justify-start"
+						"text-lg text-white text-start lg:w-1/2 w-3/4 flex justify-start"
 					}
 				>
 					Top Skills
 				</div>
 				<ul
 					className={
-						"flex flex-row gap-4 text-[#585858] flex-wrap md:w-1/2 w-2/3 justify-start items-center"
+						"flex flex-row gap-4 text-[#585858] flex-wrap lg:w-1/2 w-3/4 justify-start items-center"
 					}
 				>
 					<li>Next.js</li>
@@ -84,14 +84,14 @@ export default function Main() {
 				</ul>
 				<div
 					className={
-						"text-lg text-white text-start md:w-1/2 w-2/3 flex justify-start"
+						"text-lg text-white text-start lg:w-1/2 w-3/4 flex justify-start"
 					}
 				>
 					Top Languages
 				</div>
 				<ul
 					className={
-						"flex flex-row gap-4 text-[#585858] flex-wrap md:w-1/2 w-2/3 justify-start items-center"
+						"flex flex-row gap-4 text-[#585858] flex-wrap lg:w-1/2 w-3/4 justify-start items-center"
 					}
 				>
 					<li>Python</li>
