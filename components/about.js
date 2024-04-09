@@ -18,7 +18,7 @@ export default function About() {
         <div
             ref={ref}
             id={"about"}
-            className={`${inView ? "slide-in opacity-1" : "opacity-0"} h-max p-20 text-justify pt-[-100px] lg:pt-36  bg-black flex flex-wrap justify-center ${inter.className}`}
+            className={`${inView ? "slide-in opacity-1" : "opacity-0"} h-max md:p-20 p-10 text-justify pt-[-100px] lg:pt-36  bg-black flex flex-wrap justify-center ${inter.className}`}
         >
             `
             <div
