@@ -13,7 +13,7 @@
 }
 
 :root {
-	background-color: #222222;
+	background-color: black;
 }
 
 .based-data {
@@ -67,7 +67,9 @@
 		transform: translateX(0); /* Move to the original position */
 	}
 }
-
+.slide-in{
+	animation: custom-fade-in 1s ease forwards;
+}
 .main-one {
 	transform: translateX(-100%); /* Start from outside the viewport */
 	animation: custom-fade-in 1s ease forwards;
