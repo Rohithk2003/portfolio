@@ -120,7 +120,7 @@
 .bg-left-to-right:hover {
 	background-position: left bottom;
 }
-ul li:not(:last-child)::after {
+.home   ul li:not(:last-child)::after {
 	content: "•";
 	margin-left: 0.5rem;
 	color: #585858;

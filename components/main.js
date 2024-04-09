@@ -27,7 +27,7 @@ export default function Main() {
 	return (
 		<div
 			id={"home"}
-			className={` flex flex-wrap flex-row text-white      w-full bg-[#000000]   h-[100vh] ${inter.className}`}
+			className={`home flex flex-wrap flex-row text-white      w-full bg-[#000000]   h-[100vh] ${inter.className}`}
 		>
 			<div className={"w-2/3 flex justify-center gap-4 items-center flex-col"}>
 				<div className={"flex justify-start w-1/2"}>
