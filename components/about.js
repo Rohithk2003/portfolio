@@ -8,12 +8,12 @@ export default function About() {
 	return (
 		<div
 			id={"about"}
-			className={`h-max p-10  bg-black flex flex-wrap justify-center ${inter.className}`}
+			className={`h-max p-10 pt-[-300px] lg:pt-44  bg-black flex flex-wrap justify-center ${inter.className}`}
 		>
 			`
 			<div
 				className={
-					"w-full lg:w-3/4 h-full  p-10   flex flex-col justify-center flex-wrap "
+					"w-full lg:w-3/4 h-full   flex flex-col justify-center flex-wrap "
 				}
 			>
 				<div className={"w-full mb-2"}>
@@ -21,7 +21,7 @@ export default function About() {
 					<div className={"w-44  border-b border-b-white text-[#ef6c50]"}></div>
 				</div>
 				<div className={"w-full text-md text-white"}>
-					<div className={"w-full mb-4 font-bold text-2xl"}>
+					<div className={"w-full mb-4 font-bold text-lg lg:text-2xl"}>
 						You {`can't`} use up creativity. The more you use, the more you have
 						in your significant mind.
 					</div>
