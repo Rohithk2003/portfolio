@@ -47,10 +47,10 @@ export default function Navbar() {
 							className={`w-7 h-1 mb-1 bg-white  ease-in-out ${HamStatus ? "top-5 hidden" : ""}`}
 						></span>
 						<span
-							className={`w-7 h-1 mb-1 bg-white transition-all duration-300 ease-in-out ${HamStatus ? "top-5 rotate-45" : ""}`}
+							className={`w-7 h-1 mb-1 bg-white transition-all duration-300 ease-in-out ${HamStatus ? "top-5 rotate-45 translate-y-[8px]" : ""}`}
 						></span>
 						<span
-							className={`w-7 h-1 mb-1 bg-white transition-all duration-300 ease-in-out ${HamStatus ? "top-5 rotate-[-45deg] translate-y-[-8px]" : ""}`}
+							className={`w-7 h-1 mb-1 bg-white transition-all duration-300 ease-in-out ${HamStatus ? "top-5 rotate-[-45deg] translate-y-[0px]" : ""}`}
 						></span>
 					</a>
 				</div>

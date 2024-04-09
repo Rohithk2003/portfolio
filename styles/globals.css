@@ -12,8 +12,6 @@
 	box-sizing: border-box;
 }
 
-
-
 :root {
 	background-color: #222222;
 }
@@ -117,8 +115,17 @@
 .bg-left-to-right:hover {
 	background-position: left bottom;
 }
-.home   ul li:not(:last-child)::after {
+.home ul li:not(:last-child)::after {
 	content: "•";
 	margin-left: 0.5rem;
 	color: #585858;
+}
+.open-x .line-1 {
+	transform: rotate(45deg) translate(4px, 5px);
+}
+.open-x .line-2 {
+	opacity: 0;
+}
+.open-x .line-3 {
+	transform: rotate(-45deg) translate(4px, -5px);
 }
