@@ -29,7 +29,7 @@ export default function Navbar() {
 			>
 				<ul
 					className={
-						"md:flex hidden flex-row w-1/4 text-[#595959]  justify-center gap-10 items-center"
+						"md:flex hidden flex-row md:w-1/4 w-2/4 text-[#595959] mr-20  justify-center gap-10 items-center"
 					}
 				>
 					<li className="hover:text-white">Github</li>
