@@ -49,10 +49,10 @@ export default function Main() {
                     </div>
                 </div>
 
-                <div className={"text-xl text-start lg:w-1/2 w-3/4 flex justify-start"}>
+                <div className={"text-xl h-14 text-start lg:w-1/2 w-3/4 flex justify-start"}>
                     <span ref={el}/>
                 </div>
-                <div className={"flex flex-col lg:w-1/2 w-3/4  text-[#454545] mt-3"}>
+                <div className={"flex flex-col lg:w-1/2 w-3/4  text-[#454545]"}>
 					<span>
 						A Software Developer who develops well-architected applications.
 					</span>
