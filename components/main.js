@@ -100,7 +100,7 @@ export default function Main() {
                     <li>C++</li>
                     <li>Java</li>
                 </ul>
-                <div className={" text-black flex justify-start items-center lg:w-1/2 w-3/4 mt-5"}>
+                <div className={" text-black flex lg:justify-start justify-center items-center lg:w-1/2 w-3/4 mt-5"}>
                     <div className={"bg-white h-11 w-44 hover:bg-gray-500 hover:text-white hover:cursor-pointer rounded-full flex justify-center items-center"}>
                         Say Hello!
                     </div>
