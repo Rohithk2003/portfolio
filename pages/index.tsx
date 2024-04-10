@@ -17,7 +17,7 @@ export default function Home() {
 			<Services />
 			{/* <Skills/> */}
 			 {/* <ContactDetails/> */}
-			{/* <Footer /> */}
+			<Footer />
 			<Script
 				src="https://kit.fontawesome.com/93a493583b.js"
 				crossOrigin="anonymous"
