@@ -44,7 +44,7 @@ export default function Main() {
                             alt="Profile Picture"
                             width={128}
                             height={128}
-                            className="w-32 h-32 rounded-full object-cover"
+                            className="md:w-16 md:h-16 w-24 h-24 rounded-full object-cover"
                         />
                     </div>
                 </div>
