@@ -6,7 +6,7 @@ import Services from "@/components/services";
 import Skills from "@/components/skills";
 import ContactDetails from "@/components/contact";
 import Footer from "@/components/footer";
-import Project from "@/components/project";
+import Project from "@/components/Project";
 export default function Home() {
     return (
         <>
