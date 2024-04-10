@@ -146,7 +146,10 @@ export default function Project() {
 	});
 
 	return (
-		<div className="flex flex-col justify-center items-center md:h-[100vh] h-svh gap-10 md:p-20 p-10 ">
+		<div
+			id={"projects"}
+			className="flex flex-col justify-center items-center md:h-[100vh] h-svh gap-10 md:p-20 p-10 "
+		>
 			<p className="text-2xl text-start text-[#454545] md:w-3/4 w-full ">
 				Projects
 			</p>

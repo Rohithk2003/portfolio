@@ -34,7 +34,9 @@ export default function Navbar() {
 				>
 					<li className="hover:text-white">Github</li>
 					<li className="hover:text-white">Linkedin</li>
-					<li className="hover:text-white">Projects</li>
+					<li className="hover:text-white">
+						<Link href="#projects">Projects</Link>
+					</li>
 				</ul>
 				<div
 					className={`md:hidden flex z-[1000]  order-0 align-middle w-full ${HamStatus ? "fixed" : "absolute"} top-5 pl-14 justify-start m-auto `}
@@ -95,7 +97,7 @@ export default function Navbar() {
 								setTopBarVisibility(!topBarVisible);
 								setHamButtonStatus(!HamStatus);
 							}}
-							href={""}
+							href={"#projects"}
 						>
 							<li
 								className={
