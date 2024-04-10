@@ -146,8 +146,8 @@ export default function Project() {
 	});
 
 	return (
-		<div>
-			<p className="text-4xl text-center">Projects</p>
+		<div className="flex flex-col justify-center items-center">
+			<p className="text-4xl text-center text-white w-full">Projects</p>
 			<div className="flex flex-row  gap-10 justify-center h-[100vh] items-center w-full">
 				<div className="scroller ">
 					<ul className="tag-list scroller__inner">
