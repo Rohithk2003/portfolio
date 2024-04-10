@@ -136,6 +136,11 @@
 	color: white;
 	/*	outline: 3px solid lime;*/
 }
+@media screen and (min-width: 300px) {
+	.scroller {
+		max-width: 100%;
+	}
+}
 .scroller[data-animated="true"] {
 	overflow: hidden;
 	-webkit-mask: linear-gradient(

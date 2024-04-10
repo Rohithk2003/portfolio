@@ -146,9 +146,11 @@ export default function Project() {
 	});
 
 	return (
-		<div className="flex flex-col justify-center items-center h-[100vh] gap-10 md:p-20 p-10 ">
-			<p className="text-2xl text-start text-[#454545] w-3/4">Projects</p>
-			<div className="flex flex-row p-5 gap-10 justify-center  items-center w-full">
+		<div className="flex flex-col justify-center items-center md:h-[100vh] h-svh gap-10 md:p-20 p-10 ">
+			<p className="text-2xl text-start text-[#454545] md:w-3/4 w-full ">
+				Projects
+			</p>
+			<div className="flex flex-row md:p-5 p-0 gap-10 justify-center  items-center w-full">
 				<div className="scroller ">
 					<ul className="tag-list scroller__inner">
 						{projects.map((project) => {

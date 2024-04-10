@@ -3,13 +3,21 @@ export default function Footer() {
 		<footer>
 			<div
 				className={
-					"flex flex-wrap flex-row justify-between w-full h-24 align-middle items-center p-10 pt-5"
+					"flex flex-wrap flex-row justify-between w-full h-24 md:gap-0 gap-10 align-middle items-center p-10 pt-5"
 				}
 			>
-				<div className={"text-[#ffffff] text-md w-1/2 "}>
+				<div
+					className={
+						"text-[#ffffff] md:text-start md:pl-10 pl-0 text-center md:w-1/2 w-full "
+					}
+				>
 					®2023 Rohith K. All rights reserved
 				</div>
-				<div className={"flex flex-row justify-end align-middle w-1/2 gap-10 "}>
+				<div
+					className={
+						"flex flex-row md:justify-end justify-center align-middle md:w-1/2 w-full gap-10 md:pb-0 pb-10"
+					}
+				>
 					<div className={"w-64"}>
 						<ul className={"flex justify-center flex-row gap-10 "}>
 							<li>
