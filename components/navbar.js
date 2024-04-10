@@ -39,7 +39,7 @@ export default function Navbar() {
 					</li>
 				</ul>
 				<div
-					className={`md:hidden flex z-[1000]  order-0 align-middle w-full ${HamStatus ? "fixed" : "absolute"} top-5 pl-14 justify-start m-auto `}
+					className={`md:hidden flex z-[1000]  order-0 align-middle w-full ${HamStatus ? "fixed" : "absolute"} top-5  justify-start m-auto `}
 				>
 					<a
 						className={" grid ml-2 grid-rows-3w"}
