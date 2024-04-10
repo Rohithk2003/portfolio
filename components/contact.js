@@ -1,6 +1,10 @@
 import { useState } from "react";
 import { useInView } from "react-intersection-observer";
-
+import { Inter } from "next/font/google";
+const inter = Inter({
+	subsets: ["latin"],
+	weight: ["300"],
+});
 export default function Contact() {
 	const [emailid, setemailid] = useState("");
 	const [firstname, setfirstname] = useState("");
@@ -59,13 +63,13 @@ export default function Contact() {
 				id="model"
 				className={`transition ease-out duration-500 ${
 					modelOpen ? "opacity-1 fixed z-[900] " : "opacity-0 "
-				}`}
+				} ${inter.className}`}
 			>
 				<div className="overlay flex flex-col justify-center items-center w-[100%] h-[100%]">
-					<div className="  absolute  h-96 w-96 z-[1000] ">
+					<div className="  absolute  h-96 w-[1000px] z-[1000] ">
 						<div className="relative p-4 w-full max-w-lg h-full md:h-auto">
 							<div className="relative p-4 bg-white rounded-lg shadow bg-gray-800 md:p-8">
-								<div className="mb-4 text-sm font-light text-gray-500 text-gray-400">
+								<div className="mb-4 text-sm font-light text-gray-500 ">
 									<h3 className="mb-3 text-2xl font-bold text-white text-white">
 										{modelHeading}
 									</h3>
@@ -79,7 +83,7 @@ export default function Contact() {
 												setLoading(false);
 											}}
 											type="button"
-											className="py-2 px-4 w-full text-sm font-medium text-gray-500 bg-white rounded-lg border border-gray-200 sm:w-auto hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-primary-300 hover:text-white focus:z-10 bg- text-gray-300 border-gray-500 hover:text-white hover:bg-gray-600 focus:ring-gray-600"
+											className="py-2 px-4 w-full text-sm font-medium text-gray-500 bg-white rounded-lg border border-gray-200 sm:w-auto hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-primary-300 hover:text-white focus:z-10 bg-  border-gray-500 hover:text-white hover:bg-gray-600 focus:ring-gray-600"
 										>
 											Okay
 										</button>
@@ -92,16 +96,16 @@ export default function Contact() {
 			</div>
 			<section
 				className={
-					" text-white!  w-full justify-center h-[200vh] px-44 flex flex-wrap flex-row"
+					" text-white!  w-full justify-center h-[200vh]  flex flex-wrap flex-row"
 				}
 				id={"contact"}
 			>
 				<div
 					className={
-						"flex flex-col w-3/4 justify-center items-center text-white"
+						"flex flex-col w-full justify-center items-center text-white"
 					}
 				>
-					<h2 className={"text-center text-6xl py-10"}>
+					<h2 className={"text-center text-3xl py-10"}>
 						Have an idea ? Let&apos;s talk
 					</h2>
 
@@ -119,12 +123,12 @@ export default function Contact() {
 								return (
 									<div
 										key={index}
-										className={"w-full  md:w-1/2"}
+										className={"w-full  md:w-3/4"}
 									>
 										<label
 											htmlFor="firstname"
 											className={
-												"block mb-2 pl-1.5 text-md w-full font-medium text-white text-gray-300"
+												"block mb-2 pl-1.5 text-md w-full font-medium text-white "
 											}
 										>{`${name.name} (required)`}</label>
 										<input
@@ -135,7 +139,7 @@ export default function Contact() {
 												name.state_change_function(event.target.value);
 											}}
 											className={
-												"shadow-sm bg-gray-50 border border-gray-300 text-white text-md rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 bg- border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500 shadow-sm-light"
+												"shadow-sm bg-gray-50 border text-black text-md rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 bg- border-gray-600 placeholder-gray-400  focus:ring-primary-500 focus:border-primary-500 shadow-sm-light"
 											}
 											placeholder={`${name.name}`}
 											required
@@ -153,7 +157,7 @@ export default function Contact() {
 								<label
 									htmlFor="email"
 									className={
-										"block mb-2 pl-1.5 text-md font-medium text-white text-gray-300"
+										"block mb-2 pl-1.5 text-md font-medium text-white "
 									}
 								>
 									Email (required)
@@ -166,7 +170,7 @@ export default function Contact() {
 										setemailid(event.target.value);
 									}}
 									className={
-										"shadow-sm bg-gray-50 border border-gray-300 text-white text-md rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 bg- border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500 shadow-sm-light"
+										"shadow-sm bg-gray-50 border text-black text-md rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 bg- border-gray-600 placeholder-gray-400  focus:ring-primary-500 focus:border-primary-500 shadow-sm-light"
 									}
 									placeholder={`Email..`}
 									required
@@ -176,9 +180,7 @@ export default function Contact() {
 						<div className=" ">
 							<label
 								htmlFor="subject"
-								className={
-									"block mb-2 text-md font-medium text-white text-gray-300"
-								}
+								className={"block mb-2 text-md font-medium text-white "}
 							>
 								Subject (required)
 							</label>
@@ -190,7 +192,7 @@ export default function Contact() {
 									setSubject(event.target.value);
 								}}
 								className={
-									"block p-3 w-full text-md text-white bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 bg- border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500 shadow-sm-light"
+									"block p-3 w-full text-md text-black bg-gray-50 rounded-lg border shadow-sm focus:ring-primary-500 focus:border-primary-500 bg- border-gray-600 placeholder-gray-400  focus:ring-primary-500 focus:border-primary-500 shadow-sm-light"
 								}
 								placeholder="Let us know how we can help you"
 								required
@@ -200,11 +202,11 @@ export default function Contact() {
 							<label
 								htmlFor="message"
 								className={
-									"flex flex-col gap-3 mb-[-100px]  text-md font-medium text-white text-gray-400"
+									"flex flex-col gap-3 mb-[-100px]  text-md font-medium text-white "
 								}
 							>
 								<span>Message (required)</span>
-								<span className="mb-20 text-gray-800">
+								<span className="mb-20 text-white">
 									Tell me more about commission idea or project...
 								</span>
 							</label>
@@ -217,7 +219,7 @@ export default function Contact() {
 								setMessage(event.target.value);
 							}}
 							className={
-								"block  mb-20 p-2.5  w-full text-md text-white bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 bg- border-gray-600 placeholder-gray-400 text-white focus:ring-primary-500 focus:border-primary-500"
+								"block  mb-20 p-2.5  w-full text-md text-black bg-gray-50 rounded-lg shadow-sm border focus:ring-primary-500 focus:border-primary-500 bg- border-gray-600 placeholder-gray-400  focus:ring-primary-500 focus:border-primary-500"
 							}
 							placeholder="Leave a comment..."
 							required
@@ -252,9 +254,6 @@ export default function Contact() {
 								"Send Message"
 							)}
 						</button>
-						<div className="text-2xl leading-loose ">
-							Contact Us @ email or send us a message to +91 123456789
-						</div>
 					</form>
 				</div>
 			</section>
