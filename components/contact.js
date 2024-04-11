@@ -165,7 +165,7 @@ export default function Contact() {
 						<button
 							className={`${
 								inView ? "slide-in animate-5 opacity-1" : "opacity-0"
-							} py-3 px-5  flex justify-center items-center  text-md font-medium text-center text-white rounded-lg h-14 bg-gray-800 sm:w-44 hover:bg-gray-600 transition duration-300 ease-in-out focus:ring-4 focus:outline-none focus:ring-primary-300`}
+							} py-3 px-5  flex justify-center items-center  text-md font-medium text-center text-white rounded-lg h-14 bg-[#454545] sm:w-44 hover:bg-gray-600 transition duration-300 ease-in-out focus:ring-4 focus:outline-none focus:ring-primary-300`}
 						>
 							{loading ? (
 								<div role="status">
