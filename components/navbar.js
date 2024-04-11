@@ -25,7 +25,7 @@ export default function Navbar() {
 	return (
 		<nav>
 			<div
-				className={` w-full  h-16 flex justify-end align-middle  z-[999] bg-[#000000] ${inter.className}`}
+				className={` w-full  h-16 flex justify-end align-middle   z-[999] bg-[#000000] ${inter.className}`}
 			>
 				<ul
 					className={

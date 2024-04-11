@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { Inter } from "next/font/google";
+
 const inter = Inter({
 	subsets: ["latin"],
 	weight: ["300"],
@@ -54,36 +55,49 @@ export default function Contact() {
 			}
 		});
 	};
-	const [ref, inView, entry] = useInView({
-		threshold: 0.15,
-	});
+	const [ref, inView, entry] = useInView({});
+	const [ref1, inView1, entry1] = useInView({});
+	const [ref2, inView2, entry2] = useInView({});
+	const [ref3, inView3, entry3] = useInView({});
+
+	const [ref4, inView4, entry4] = useInView({});
 	return (
-		<div className="w-full h-max ">
+		<div className={`w-full h-max `}>
 			<div
 				id="model"
 				className={`transition ease-out duration-500 ${
 					modelOpen ? "opacity-1 fixed z-[900] " : "opacity-0 "
 				} ${inter.className}`}
 			>
-				<div className="overlay flex flex-col justify-center items-center w-[100%] h-[100%]">
-					<div className="  absolute  h-96 w-[1000px] z-[1000] ">
-						<div className="relative p-4 w-full max-w-lg h-full md:h-auto">
-							<div className="relative p-4 bg-white rounded-lg shadow bg-gray-800 md:p-8">
-								<div className="mb-4 text-sm font-light text-gray-500 ">
-									<h3 className="mb-3 text-2xl font-bold text-white text-white">
+				<div
+					className={`overlay flex flex-col justify-center items-center w-[100%] h-[100%]`}
+				>
+					<div className={`  absolute  h-96 w-[1000px] z-[1000] `}>
+						<div className={`relative p-4 w-full max-w-lg h-full md:h-auto`}>
+							<div
+								className={`relative p-4 bg-white rounded-lg shadow bg-gray-800 md:p-8`}
+							>
+								<div className={`mb-4 text-sm font-light text-gray-500 `}>
+									<h3
+										className={`mb-3 text-2xl font-bold text-white text-white`}
+									>
 										{modelHeading}
 									</h3>
 									<p>{modelMessage}</p>
 								</div>
-								<div className="justify-between items-center pt-0 space-y-4 sm:flex sm:space-y-0">
-									<div className="items-center space-y-4 sm:space-x-4 sm:flex sm:space-y-0">
+								<div
+									className={`justify-between items-center pt-0 space-y-4 sm:flex sm:space-y-0`}
+								>
+									<div
+										className={`items-center space-y-4 sm:space-x-4 sm:flex sm:space-y-0`}
+									>
 										<button
 											onClick={() => {
 												setModelOpen(false);
 												setLoading(false);
 											}}
 											type="button"
-											className="py-2 px-4 w-full text-sm font-medium text-gray-500 bg-white rounded-lg border border-gray-200 sm:w-auto hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-primary-300 hover:text-white focus:z-10 bg-  border-gray-500 hover:text-white hover:bg-gray-600 focus:ring-gray-600"
+											className={`py-2 px-4 w-full text-sm font-medium text-gray-500 bg-white rounded-lg border border-gray-200 sm:w-auto hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-primary-300 hover:text-white focus:z-10 bg-  border-gray-500 hover:text-white hover:bg-gray-600 focus:ring-gray-600`}
 										>
 											Okay
 										</button>
@@ -94,147 +108,97 @@ export default function Contact() {
 					</div>
 				</div>
 			</div>
-			<section
-				className={
-					" text-white!  w-full justify-center h-[200vh]  flex flex-wrap flex-row"
-				}
-				id={"contact"}
-			>
-				<div
-					className={
-						"flex flex-col w-full justify-center items-center text-white"
-					}
-				>
-					<h2 className={"text-center text-3xl py-10"}>
-						Have an idea ? Let&apos;s talk
-					</h2>
+			<section className={`bg-white dark:bg-black`}>
+				<div className={`py-8 lg:py-16 px-4 mx-auto max-w-screen-md`}>
+					<div
+						ref={ref}
+						className={`mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white ${
+							inView ? "slide-in animate-1 opacity-1" : "opacity-0"
+						} `}
+					>
+						Have an Idea ? Let&apos;s Talk about it!
+					</div>
 
 					<form
-						onSubmit={handleSubmit}
-						className={"space-y-8"}
-						enctype="multipart/form-data"
+						action="#"
+						className={`space-y-8`}
 					>
 						<div
-							className={
-								"md:flex grid  grid-rows-2 gap-2 w-full flex-row justify-normal md:justify-between"
-							}
+							ref={ref1}
+							className={`${
+								inView1 ? "slide-in animate-2 opacity-1" : "opacity-0"
+							} `}
 						>
-							{names.map((name, index) => {
-								return (
-									<div
-										key={index}
-										className={"w-full  md:w-3/4"}
-									>
-										<label
-											htmlFor="firstname"
-											className={
-												"block mb-2 pl-1.5 text-md w-full font-medium text-white "
-											}
-										>{`${name.name} (required)`}</label>
-										<input
-											type="name"
-											id="name"
-											value={name.state_var}
-											onChange={(event) => {
-												name.state_change_function(event.target.value);
-											}}
-											className={
-												"shadow-sm bg-gray-50 border text-black text-md rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 bg- border-gray-600 placeholder-gray-400  focus:ring-primary-500 focus:border-primary-500 shadow-sm-light"
-											}
-											placeholder={`${name.name}`}
-											required
-										/>
-									</div>
-								);
-							})}
+							<label
+								htmlFor="email"
+								className={`block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300`}
+							>
+								Your email
+							</label>
+							<input
+								type="email"
+								id="email"
+								value={emailid}
+								onChange={(e) => setemailid(e.target.value)}
+								className={`shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-[#454545] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light`}
+								placeholder="name@flowbite.com"
+								required
+							/>
 						</div>
 						<div
-							className={
-								"md:flex grid  grid-rows-2 gap-2 h-20 mb-[10px]  w-full flex-row justify-normal md:justify-between"
-							}
+							ref={ref2}
+							className={`${
+								inView2 ? "slide-in animate-3 opacity-1" : "opacity-0"
+							} `}
 						>
-							<div className={"w-full  "}>
-								<label
-									htmlFor="email"
-									className={
-										"block mb-2 pl-1.5 text-md font-medium text-white "
-									}
-								>
-									Email (required)
-								</label>
-								<input
-									type="email"
-									id="email"
-									value={emailid}
-									onChange={(event) => {
-										setemailid(event.target.value);
-									}}
-									className={
-										"shadow-sm bg-gray-50 border text-black text-md rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 bg- border-gray-600 placeholder-gray-400  focus:ring-primary-500 focus:border-primary-500 shadow-sm-light"
-									}
-									placeholder={`Email..`}
-									required
-								/>
-							</div>
-						</div>
-						<div className=" ">
 							<label
 								htmlFor="subject"
-								className={"block mb-2 text-md font-medium text-white "}
+								className={`block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300`}
 							>
-								Subject (required)
+								Subject
 							</label>
 							<input
 								type="text"
 								id="subject"
 								value={subject}
-								onChange={(event) => {
-									setSubject(event.target.value);
-								}}
-								className={
-									"block p-3 w-full text-md text-black bg-gray-50 rounded-lg border shadow-sm focus:ring-primary-500 focus:border-primary-500 bg- border-gray-600 placeholder-gray-400  focus:ring-primary-500 focus:border-primary-500 shadow-sm-light"
-								}
+								onChange={(e) => setSubject(e.target.value)}
+								className={`block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-[#454545] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light`}
 								placeholder="Let us know how we can help you"
 								required
 							/>
 						</div>
-						<div className={"sm:col-span-2 pb-4 "}>
+						<div
+							ref={ref3}
+							className={`${
+								inView3 ? "slide-in animate-4 opacity-1" : "opacity-0"
+							} `}
+						>
 							<label
 								htmlFor="message"
-								className={
-									"flex flex-col gap-3 mb-[-100px]  text-md font-medium text-white "
-								}
+								className={`block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400`}
 							>
-								<span>Message (required)</span>
-								<span className="mb-20 text-white">
-									Tell me more about commission idea or project...
-								</span>
+								Your message
 							</label>
+							<textarea
+								id="message"
+								value={message}
+								onChange={(e) => setMessage(e.target.value)}
+								rows="6"
+								className={`block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-[#454545] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500`}
+								placeholder="Leave a comment.."
+							></textarea>
 						</div>
-						<textarea
-							id="message"
-							rows="6"
-							value={message}
-							onChange={(event) => {
-								setMessage(event.target.value);
-							}}
-							className={
-								"block  mb-20 p-2.5  w-full text-md text-black bg-gray-50 rounded-lg shadow-sm border focus:ring-primary-500 focus:border-primary-500 bg- border-gray-600 placeholder-gray-400  focus:ring-primary-500 focus:border-primary-500"
-							}
-							placeholder="Leave a comment..."
-							required
-						></textarea>
-
 						<button
-							className={
-								"py-3 px-5 flex justify-center items-center  text-md font-medium text-center text-white rounded-lg h-14 bg-gray-800 sm:w-44 hover:bg-gray-600 transition duration-300 ease-in-out focus:ring-4 focus:outline-none focus:ring-primary-300"
-							}
+							ref={ref4}
+							className={`${
+								inView4 ? "slide-in animate-5 opacity-1" : "opacity-0"
+							} py-3 px-5  flex justify-center items-center  text-md font-medium text-center text-white rounded-lg h-14 bg-gray-800 sm:w-44 hover:bg-gray-600 transition duration-300 ease-in-out focus:ring-4 focus:outline-none focus:ring-primary-300`}
 						>
 							{loading ? (
 								<div role="status">
 									<svg
 										aria-hidden="true"
-										className="w-8 h-8 text-gray-200 animate-spin text-gray-600 fill-blue-600"
+										className={`w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600`}
 										viewBox="0 0 100 101"
 										fill="none"
 										xmlns="http://www.w3.org/2000/svg"
@@ -248,7 +212,7 @@ export default function Contact() {
 											fill="currentFill"
 										/>
 									</svg>
-									<span className="sr-only">Loading...</span>
+									<span className={`sr-only`}>Loading...</span>
 								</div>
 							) : (
 								"Send Message"
