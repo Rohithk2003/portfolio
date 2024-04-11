@@ -43,6 +43,7 @@ export default function Contact() {
 	const [ref, inView, entry] = useInView({});
 	return (
 		<div
+			ref={ref}
 			id={"contact"}
 			className={`relative`}
 		>
@@ -88,7 +89,6 @@ export default function Contact() {
 			<section className={`bg-white dark:bg-black `}>
 				<div className={`py-8 lg:py-16 px-4 mx-auto max-w-screen-md`}>
 					<div
-						ref={ref}
 						className={`mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white ${
 							inView ? "slide-in animate-1 opacity-1" : "opacity-0"
 						} `}
@@ -101,7 +101,6 @@ export default function Contact() {
 						className={`space-y-8`}
 					>
 						<div
-							ref={ref}
 							className={`${
 								inView ? "slide-in animate-2 opacity-1" : "opacity-0"
 							} `}
@@ -123,7 +122,6 @@ export default function Contact() {
 							/>
 						</div>
 						<div
-							ref={ref}
 							className={`${
 								inView ? "slide-in animate-3 opacity-1" : "opacity-0"
 							} `}
@@ -145,7 +143,6 @@ export default function Contact() {
 							/>
 						</div>
 						<div
-							ref={ref}
 							className={`${
 								inView ? "slide-in animate-4 opacity-1" : "opacity-0"
 							} `}
@@ -166,7 +163,6 @@ export default function Contact() {
 							></textarea>
 						</div>
 						<button
-							ref={ref}
 							className={`${
 								inView ? "slide-in animate-5 opacity-1" : "opacity-0"
 							} py-3 px-5  flex justify-center items-center  text-md font-medium text-center text-white rounded-lg h-14 bg-gray-800 sm:w-44 hover:bg-gray-600 transition duration-300 ease-in-out focus:ring-4 focus:outline-none focus:ring-primary-300`}
