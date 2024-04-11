@@ -56,13 +56,8 @@ export default function Contact() {
 		});
 	};
 	const [ref, inView, entry] = useInView({});
-	const [ref1, inView1, entry1] = useInView({});
-	const [ref2, inView2, entry2] = useInView({});
-	const [ref3, inView3, entry3] = useInView({});
-
-	const [ref4, inView4, entry4] = useInView({});
 	return (
-		<div className={`w-full h-max `}>
+		<div className={`w-full h-max`}>
 			<div
 				id="model"
 				className={`transition ease-out duration-500 ${
@@ -70,9 +65,15 @@ export default function Contact() {
 				} ${inter.className}`}
 			>
 				<div
-					className={`overlay flex flex-col justify-center items-center w-[100%] h-[100%]`}
+					className={`${
+						modelOpen ? "overlay w-[100%]" : ""
+					} flex flex-col justify-center items-center h-[100%]`}
 				>
-					<div className={`  absolute  h-96 w-[1000px] z-[1000] `}>
+					<div
+						className={`  absolute  h-96 ${
+							modelOpen ? "w-[1000px] " : " w-0"
+						}  z-[1000] `}
+					>
 						<div className={`relative p-4 w-full max-w-lg h-full md:h-auto`}>
 							<div
 								className={`relative p-4 bg-white rounded-lg shadow bg-gray-800 md:p-8`}
@@ -108,7 +109,7 @@ export default function Contact() {
 					</div>
 				</div>
 			</div>
-			<section className={`bg-white dark:bg-black`}>
+			<section className={`bg-white dark:bg-black `}>
 				<div className={`py-8 lg:py-16 px-4 mx-auto max-w-screen-md`}>
 					<div
 						ref={ref}
@@ -124,9 +125,9 @@ export default function Contact() {
 						className={`space-y-8`}
 					>
 						<div
-							ref={ref1}
+							ref={ref}
 							className={`${
-								inView1 ? "slide-in animate-2 opacity-1" : "opacity-0"
+								inView ? "slide-in animate-2 opacity-1" : "opacity-0"
 							} `}
 						>
 							<label
@@ -146,9 +147,9 @@ export default function Contact() {
 							/>
 						</div>
 						<div
-							ref={ref2}
+							ref={ref}
 							className={`${
-								inView2 ? "slide-in animate-3 opacity-1" : "opacity-0"
+								inView ? "slide-in animate-3 opacity-1" : "opacity-0"
 							} `}
 						>
 							<label
@@ -168,9 +169,9 @@ export default function Contact() {
 							/>
 						</div>
 						<div
-							ref={ref3}
+							ref={ref}
 							className={`${
-								inView3 ? "slide-in animate-4 opacity-1" : "opacity-0"
+								inView ? "slide-in animate-4 opacity-1" : "opacity-0"
 							} `}
 						>
 							<label
@@ -189,9 +190,9 @@ export default function Contact() {
 							></textarea>
 						</div>
 						<button
-							ref={ref4}
+							ref={ref}
 							className={`${
-								inView4 ? "slide-in animate-5 opacity-1" : "opacity-0"
+								inView ? "slide-in animate-5 opacity-1" : "opacity-0"
 							} py-3 px-5  flex justify-center items-center  text-md font-medium text-center text-white rounded-lg h-14 bg-gray-800 sm:w-44 hover:bg-gray-600 transition duration-300 ease-in-out focus:ring-4 focus:outline-none focus:ring-primary-300`}
 						>
 							{loading ? (
