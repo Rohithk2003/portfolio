@@ -8,10 +8,12 @@ const inter = Inter({
 })
 const services = [
     {
+        "id":1,
         "image_link": www,
         "text": "Web Design",
         "about": "Elevate your online presence with dynamic and immersive web development with stunning and functionally seamless websites that leave a lasting impact."
     }, {
+        "id":2,
         "image_link": web,
         "text": "UI Development",
         "about": "Unlock the potential of unforgettable user experiences through cutting-edge UI development"
@@ -59,7 +61,7 @@ export default function Services() {
             <div className={"flex w-full flex-wrap h-full flex-row justify-center gap-14 "}>
                 {services.map((service, index) => {
                     return (
-                        <ServiceCard key={index} image_link={service.image_link} text={service.text}
+                        <ServiceCard key={service.id} image_link={service.image_link} text={service.text}
                                      about={service.about}/>
                     )
                 })}
