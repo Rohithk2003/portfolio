@@ -55,7 +55,7 @@ export class ServiceCard extends Component<{ image_link: any, key: any, text: an
 
 export default function Services() {
     return (
-        <div className={"flex flex-col w-full h-full justify-center items-center mb-20 md:p-20 p-0 pt-0"} id={"services"}>
+        <div className={"flex flex-col w-full h-full justify-center items-center mb-20 md:p-20 p-0 "} id={"services"}>
             <p className={"text-2xl  text-[#454545]  md:w-3/4 md:text-start text-center w-full h-10"}>Services</p>
             <p className={"text-4xl  text-[#454545]  md:w-3/4 w-full h-24 md:text-start text-center"}>What We Do?</p>
             <div className={"flex w-full flex-wrap h-full flex-row justify-center gap-14 "}>

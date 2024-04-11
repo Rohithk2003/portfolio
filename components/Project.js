@@ -151,7 +151,7 @@ export default function Project() {
 	return (
 		<div
 			id={"projects"}
-			className="flex flex-col justify-center items-center md:h-[100vh] h-svh gap-10 md:p-20 p-10 "
+			className="flex flex-col justify-center items-center md:h-[100vh] h-svh gap-10 md:p-20 p-10 pb-0"
 		>
 			<p className="text-2xl md:text-start text-center text-[#454545] md:w-3/4 w-full ">
 				Projects
