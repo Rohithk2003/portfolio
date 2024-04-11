@@ -6,7 +6,9 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { useEffect } from "react";
-import Link from "next/link"; //import this
+import Link from "next/link";
+import LazyLoad from "react-lazyload";
+
 const projects = [
 	{
 		id: 1,
@@ -79,7 +81,8 @@ function MediaCard({ text, heading, url, image_url }) {
 			<CardMedia
 				sx={{ height: 140 }}
 				image={image_url}
-				title="green iguana"
+				preload={true}
+				title={heading}
 			/>
 			<CardContent>
 				<Typography
