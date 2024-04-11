@@ -37,6 +37,16 @@
 	}
 	100% {
 		opacity: 1;
+		transform: translateY(0); /* Reset translation */
+	}
+}
+@keyframes custom-fade-left {
+	0% {
+		opacity: 0;
+		transform: translateX(-200%); /* Move the element from left */
+	}
+	100% {
+		opacity: 1;
 		transform: translateX(0); /* Reset translation */
 	}
 }
@@ -70,6 +80,10 @@
 .slide-in {
 	opacity: 0;
 	animation: custom-fade-in 1s ease forwards;
+}
+.slide-in-left {
+	opacity: 0;
+	animation: custom-fade-left 1s ease forwards;
 }
 .main-one {
 	transform: translateX(-100%); /* Start from outside the viewport */
