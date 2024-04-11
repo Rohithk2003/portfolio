@@ -1,30 +1,10 @@
 import { useState } from "react";
 import { useInView } from "react-intersection-observer";
-import { Inter } from "next/font/google";
 
-const inter = Inter({
-	subsets: ["latin"],
-	weight: ["300"],
-});
 export default function Contact() {
 	const [emailid, setemailid] = useState("");
-	const [firstname, setfirstname] = useState("");
-	const [lastname, setlastname] = useState("");
 	const [subject, setSubject] = useState("");
 	const [message, setMessage] = useState("");
-
-	const names = [
-		{
-			name: "First Name",
-			state_var: firstname,
-			state_change_function: setfirstname,
-		},
-		{
-			name: "Second Name",
-			state_var: lastname,
-			state_change_function: setlastname,
-		},
-	];
 	const [modelOpen, setModelOpen] = useState(false);
 	const [modelMessage, setModelMessage] = useState("");
 	const [modelHeading, setModelHeading] = useState("");
@@ -32,10 +12,10 @@ export default function Contact() {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		const formData = new FormData();
-		formData.append("name", firstname + " " + lastname);
 		formData.append("email", emailid);
 		formData.append("subject", subject);
 		formData.append("message", message);
+		const body = document.body;
 		setLoading(true);
 		fetch("https://formspree.io/f/mkndqkjp", {
 			method: "POST",
@@ -45,60 +25,56 @@ export default function Contact() {
 			},
 		}).then((response) => {
 			if (response.ok) {
+				setLoading(false);
 				setModelOpen(true);
-				setModelMessage("Your Message was successfully sent!");
+				setModelMessage(
+					"Your Message was successfully sent!.We will get back to you soon.Thank you!"
+				);
 				setModelHeading("Success");
+				body.classList.add("overflow-hidden");
 			} else {
 				setModelOpen(true);
-				setModelMessage("Message not sent");
+				setModelMessage("Message not sent.Please try again later.");
 				setModelHeading("Success");
+				body.classList.remove("overflow-hidden");
 			}
 		});
 	};
 	const [ref, inView, entry] = useInView({});
 	return (
-		<div className={`w-full h-max`}>
+		<div
+			id={"contact"}
+			className={`relative`}
+		>
 			<div
-				id="model"
-				className={`transition ease-out duration-500 ${
-					modelOpen ? "opacity-1 fixed z-[900] " : "opacity-0 "
-				} ${inter.className}`}
+				className={`transition ease-out absolute duration-500 w-full h-full ${
+					modelOpen ? "block z-[10000] " : "hidden "
+				}`}
 			>
-				<div
-					className={`${
-						modelOpen ? "overlay w-[100%]" : ""
-					} flex flex-col justify-center items-center h-[100%]`}
-				>
-					<div
-						className={`  absolute  h-96 ${
-							modelOpen ? "w-[1000px] " : " w-0"
-						}  z-[1000] `}
-					>
-						<div className={`relative p-4 w-full max-w-lg h-full md:h-auto`}>
-							<div
-								className={`relative p-4 bg-white rounded-lg shadow bg-gray-800 md:p-8`}
-							>
-								<div className={`mb-4 text-sm font-light text-gray-500 `}>
-									<h3
-										className={`mb-3 text-2xl font-bold text-white text-white`}
-									>
+				<div className="overlay flex flex-col justify-center items-center w-[100%] h-[100%]">
+					<div class="  absolute  h-96 w-96 z-[1000] ">
+						<div class="relative p-4 w-full max-w-lg h-full md:h-auto">
+							<div class="relative p-4 bg-white rounded-lg shadow dark:bg-gray-800 md:p-8">
+								<div class="mb-4 text-sm font-light text-gray-500 dark:text-gray-400">
+									<h3 class="mb-3 text-2xl font-bold text-gray-900 dark:text-white">
 										{modelHeading}
 									</h3>
 									<p>{modelMessage}</p>
 								</div>
-								<div
-									className={`justify-between items-center pt-0 space-y-4 sm:flex sm:space-y-0`}
-								>
-									<div
-										className={`items-center space-y-4 sm:space-x-4 sm:flex sm:space-y-0`}
-									>
+								<div class="justify-between items-center pt-0 space-y-4 sm:flex sm:space-y-0">
+									<div class="items-center space-y-4 sm:space-x-4 sm:flex sm:space-y-0">
 										<button
 											onClick={() => {
+												const body = document.body;
 												setModelOpen(false);
+												setMessage("");
+												setemailid("");
+												setSubject("");
 												setLoading(false);
+												body.classList.remove("overflow-hidden");
 											}}
 											type="button"
-											className={`py-2 px-4 w-full text-sm font-medium text-gray-500 bg-white rounded-lg border border-gray-200 sm:w-auto hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-primary-300 hover:text-white focus:z-10 bg-  border-gray-500 hover:text-white hover:bg-gray-600 focus:ring-gray-600`}
+											class="py-2 px-4 w-full text-sm font-medium text-gray-500 bg-white rounded-lg border border-gray-200 sm:w-auto hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-primary-300 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600"
 										>
 											Okay
 										</button>
@@ -121,7 +97,7 @@ export default function Contact() {
 					</div>
 
 					<form
-						action="#"
+						onSubmit={handleSubmit}
 						className={`space-y-8`}
 					>
 						<div
