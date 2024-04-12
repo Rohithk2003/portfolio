@@ -31,7 +31,7 @@ export default function Main() {
 		<>
 			<div
 				id={"home"}
-				className={`home flex flex-wrap relative z-[1000] flex-row scroll-reveal-main w-full text-start   h-dvh ${inter.className}`}
+				className={`home flex flex-wrap relative z-[999] flex-row scroll-reveal-main w-full text-start   h-dvh ${inter.className}`}
 			>
 				<div
 					className={
