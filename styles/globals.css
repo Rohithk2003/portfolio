@@ -199,3 +199,26 @@
 	background-color: rgba(0, 0, 0, 0.7); /* semi-transparent black overlay */
 	z-index: 999;
 }
+.scroll-reveal span {
+	color: hsl(0 0% 100%/0.2);
+	background-image: linear-gradient(90deg, white, white);
+	background-clip: text;
+	-webkit-background-clip: text;
+	background-repeat: no-repeat;
+	background-size: 0% 100%;
+	animation: scroll-reveal-temp linear forwards;
+	animation-timeline: view();
+}
+.scroll-reveal div div span {
+	animation-range-start: cover 20vh;
+	animation-range-end: cover 30vh;
+}
+.scroll-reveal div section span {
+	animation-range-start: cover 22.5vh;
+	animation-range-end: cover 50vh;
+}
+@keyframes scroll-reveal-temp {
+	to {
+		background-size: 100% 100%;
+	}
+}
