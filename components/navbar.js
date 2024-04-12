@@ -91,7 +91,7 @@ export default function Navbar() {
 				<div
 					className={` ${
 						topBarVisible ? "translate-x-[-6%]" : "translate-x-[-150%]"
-					} w-full h-[120vh] bg-white transition-all duration-300 ease-in-out translate-y-[44%] pt-[200px] text-[#454545]  fixed z-[3000]`}
+					} w-full h-[120vh] bg-white transition-all duration-300 ease-in-out translate-y-[44%] text-[#454545]  fixed z-[3000]`}
 				>
 					<div
 						className="mt-10 font-bold ml-10 text-4xl"
@@ -103,7 +103,7 @@ export default function Navbar() {
 						Close
 					</div>
 					<ul
-						className={`flex md:hidden w-full h-[400px] fixed z-[999] gap-2 flex-col justify-center items-center `}
+						className={`flex md:hidden w-full mt-[200px] h-[400px] fixed z-[999] gap-2 flex-col justify-center items-center `}
 					>
 						{" "}
 						<il className="w-full text-3xl flex justify-center  items-center rounded hover:text-white transition-all duration-300 ease-in-out   h-16  ">
