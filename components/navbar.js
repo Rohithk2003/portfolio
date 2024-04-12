@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Inter } from "next/font/google";
 import Image from "next/image";
 const inter = Inter({
@@ -21,11 +21,36 @@ export default function Navbar() {
 	function handleNavItemClicking() {
 		setNavItemStatus(!NavItemClicked);
 	}
+	const [scrolled, setScrolled] = useState(false);
+
+	useEffect(() => {
+		const handleScroll = () => {
+			if (window.scrollY > 0) {
+				setScrolled(true);
+			} else {
+				setScrolled(false);
+			}
+		};
+
+		window.addEventListener("scroll", handleScroll);
+
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, []);
 
 	return (
-		<nav className="flex w-full justify-center md:h-24 h-16 items-center">
+		<nav
+			className={`flex w-full justify-center ${
+				scrolled ? "h-16" : "h-24"
+			} items-center`}
+		>
 			<div
-				className={` md:w-3/4 w-full md:rounded-full rounded-none navbar fixed h-16 flex justify-between items-center p-2 pl-5   z-[2000] bg-[#222222] ${inter.className}`}
+				className={` ${
+					scrolled ? "w-full rounded-none " : "w-3/4 rounded-full"
+				} navbar fixed h-16 flex justify-between   transition-all duration-300 ease-in-out items-center p-2 pl-5   z-[2000] bg-[#222222] ${
+					inter.className
+				}`}
 			>
 				<div className="md:w-10 md:h-10 w-9 h-9 rounded-full  transition-all duration-300 p-3 bg-white flex justify-center items-center overflow-hidden">
 					<Image
@@ -52,15 +77,59 @@ export default function Navbar() {
 							|
 						</span>
 					</li>
-					<li className="hover:text-white">
-						<Link href="https://twitter.com/reidd_777">Twitter</Link>
+					<li className="flex flex-row gap-2 justify-center items-center text-white nav-items w-10 hover:w-20 transition-all duration-300 ease-in-out">
+						Twitter
+						<Link
+							href="https://twitter.com/reidd_777"
+							className="w-4 h-4 mb-4 "
+						>
+							<svg
+								fill="none"
+								stroke="currentColor"
+								viewBox="0 0 12 12"
+								aria-hidden="true"
+								class="flex-none mt-2 stroke-current"
+							>
+								<path d="M10.976 1.193A.314.314 0 0010.687 1H6.312a.313.313 0 000 .625h3.62L5.467 6.091a.313.313 0 00.443.442l4.466-4.466v3.62a.313.313 0 00.625 0V1.313a.328.328 0 00-.024-.119z"></path>
+								<path d="M3.5 1v.625H2.25a.625.625 0 00-.625.625v7.5c0 .345.28.625.625.625h7.5c.345 0 .625-.28.625-.625V8.5H11v1.875c0 .345-.28.625-.625.625h-8.75A.625.625 0 011 10.375v-8.75C1 1.28 1.28 1 1.625 1H3.5z"></path>
+							</svg>
+						</Link>
 					</li>
-					<li className="hover:text-white">
-						<Link href="https://github.com/Rohithk2003">Github</Link>
+
+					<li className="flex flex-row gap-2 justify-center items-center text-white nav-items w-10 hover:w-20 transition-all duration-300 ease-in-out">
+						Github
+						<Link
+							href="https://github.com/Rohithk2003"
+							className="w-4 h-4 mb-4 "
+						>
+							<svg
+								fill="none"
+								stroke="currentColor"
+								viewBox="0 0 12 12"
+								aria-hidden="true"
+								class="flex-none mt-2 stroke-current"
+							>
+								<path d="M10.976 1.193A.314.314 0 0010.687 1H6.312a.313.313 0 000 .625h3.62L5.467 6.091a.313.313 0 00.443.442l4.466-4.466v3.62a.313.313 0 00.625 0V1.313a.328.328 0 00-.024-.119z"></path>
+								<path d="M3.5 1v.625H2.25a.625.625 0 00-.625.625v7.5c0 .345.28.625.625.625h7.5c.345 0 .625-.28.625-.625V8.5H11v1.875c0 .345-.28.625-.625.625h-8.75A.625.625 0 011 10.375v-8.75C1 1.28 1.28 1 1.625 1H3.5z"></path>
+							</svg>
+						</Link>
 					</li>
-					<li className="hover:text-white">
-						<Link href="https://www.linkedin.com/in/rohith-krishnan-645137262/">
-							Linkedin
+					<li className="flex flex-row gap-2 justify-center items-center text-white nav-items w-10 hover:w-24 transition-all duration-300 ease-in-out">
+						<span>Linkedin</span>
+						<Link
+							href="https://www.linkedin.com/in/rohith-krishnan-645137262/"
+							className="w-4 h-4 mb-4 "
+						>
+							<svg
+								fill="none"
+								stroke="currentColor"
+								viewBox="0 0 12 12"
+								aria-hidden="true"
+								class="flex-none mt-2 stroke-current"
+							>
+								<path d="M10.976 1.193A.314.314 0 0010.687 1H6.312a.313.313 0 000 .625h3.62L5.467 6.091a.313.313 0 00.443.442l4.466-4.466v3.62a.313.313 0 00.625 0V1.313a.328.328 0 00-.024-.119z"></path>
+								<path d="M3.5 1v.625H2.25a.625.625 0 00-.625.625v7.5c0 .345.28.625.625.625h7.5c.345 0 .625-.28.625-.625V8.5H11v1.875c0 .345-.28.625-.625.625h-8.75A.625.625 0 011 10.375v-8.75C1 1.28 1.28 1 1.625 1H3.5z"></path>
+							</svg>
 						</Link>
 					</li>
 				</ul>

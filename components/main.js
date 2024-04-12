@@ -69,14 +69,12 @@ export default function Main() {
 							Passionate to develop them with engineering and design principles.
 						</span>
 					</div>
-					<div
-						className={" lg:w-1/2 w-3/4 text-[#454545] flex flex-row gap-1 "}
-					>
-						<span>Currently working on </span>
-						<p className={"text-white"}>
+					<span className={" lg:w-1/2 w-3/4 text-[#454545]  "}>
+						Currently working on
+						<span className={"text-white"}>
 							&nbsp;being a better person and a developer
-						</p>
-					</div>
+						</span>
+					</span>
 					<div
 						className={
 							"text-lg text-white text-start lg:w-1/2 w-3/4 flex justify-start"

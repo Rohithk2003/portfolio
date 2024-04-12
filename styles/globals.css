@@ -301,6 +301,10 @@ body {
 .temp:hover img {
 	display: none;
 }
-.navbar li:hover {
+/* .navbar li:hover {
 	color: #585858;
+} */
+
+.nav-items:hover div {
+	transform: translateX(10%);
 }
