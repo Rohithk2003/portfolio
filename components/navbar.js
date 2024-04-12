@@ -90,7 +90,7 @@ export default function Navbar() {
 				</div>
 				<div
 					className={` ${
-						topBarVisible ? "translate-x-[0%]" : "translate-x-[-150%]"
+						topBarVisible ? "translate-x-[-6%]" : "translate-x-[-150%]"
 					} w-full h-[120vh] bg-white transition-all duration-300 ease-in-out translate-y-[44%] text-[#454545]  fixed z-[3000]`}
 				>
 					<div
