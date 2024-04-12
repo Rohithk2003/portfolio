@@ -23,9 +23,9 @@ export default function Navbar() {
 	}
 
 	return (
-		<nav className="flex w-full justify-center h-24 items-center">
+		<nav className="flex w-full justify-center md:h-24 h-16 items-center">
 			<div
-				className={` w-3/4 rounded-full navbar fixed h-16 flex justify-between items-center p-2 pl-5   z-[2000] bg-[#222222] ${inter.className}`}
+				className={` md:w-3/4 w-full rounded-full navbar fixed h-16 flex justify-between items-center p-2 pl-5   z-[2000] bg-[#222222] ${inter.className}`}
 			>
 				<div className="md:w-10 md:h-10 w-9 h-9 rounded-full  transition-all duration-300 p-3 bg-white flex justify-center items-center overflow-hidden">
 					<Image
