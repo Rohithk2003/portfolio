@@ -91,10 +91,10 @@ export default function Navbar() {
 				<div
 					className={` ${
 						topBarVisible ? "translate-x-[-6%]" : "translate-x-[-150%]"
-					} w-full h-[120vh] bg-white transition-all duration-300 ease-in-out translate-y-[44%] text-[#454545]  fixed z-[3000]`}
+					} w-full h-[120vh] relative bg-white transition-all duration-300 ease-in-out translate-y-[44%] text-[#454545]  fixed z-[3000]`}
 				>
 					<div
-						className="pt-56 font-bold ml-10 text-4xl"
+						className="absolute top-44 left-8  font-bold ml-10 text-4xl"
 						onClick={() => {
 							setTopBarVisibility(!topBarVisible);
 							setHamButtonStatus(!HamStatus);
