@@ -94,7 +94,7 @@ export default function Navbar() {
 					} w-full h-[120vh] bg-white transition-all duration-300 ease-in-out translate-y-[44%] text-[#454545]  fixed z-[3000]`}
 				>
 					<div
-						className="mt-10 font-bold ml-10 text-4xl"
+						className="mt-56 font-bold ml-10 text-4xl"
 						onClick={() => {
 							setTopBarVisibility(!topBarVisible);
 							setHamButtonStatus(!HamStatus);
