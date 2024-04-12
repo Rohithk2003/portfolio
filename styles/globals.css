@@ -261,20 +261,24 @@ body {
 	}
 }
 .glow-background {
-	position: relative;
+	position: absolute;
+	padding: 20px;
+	overflow: hidden; /* Ensures the glow stays within the container */
+	display: inline-block;
+	color: white;
 	padding: 20px;
 }
 
-.glow-background::before {
+.glow-background {
 	content: "";
 	position: absolute;
 	top: 0;
 	left: -100%; /* Move the glow to the left */
-	width: 300%;
+	width: 200%;
 	height: 300%;
 	background: radial-gradient(circle, rgba(0, 150, 255, 0.5), transparent);
 	border-radius: 50%;
-	z-index: 1000;
+	z-index: -1; /* Positions the glow behind the text */
 	animation: glow 2s infinite alternate;
 	transform: rotate(45deg);
 	transform-origin: center center;

@@ -11,6 +11,7 @@ import Project from "@/components/Project";
 export default function Home() {
 	return (
 		<>
+			<div className="md:block hidden glow-background "></div>
 			<Navbar />
 			<Main />
 			<About />
