@@ -13,13 +13,8 @@ export default function About() {
 
 	return (
 		<div
-			ref={ref}
 			id={"about"}
-			className={`${
-				inView ? "slide-in-left opacity-1" : "opacity-0"
-			} h-max  md:p-20 p-10 text-justify pt-[-100px] lg:pt-36  flex flex-wrap justify-center ${
-				inter.className
-			}`}
+			className={`h-max  md:p-20 p-10 text-justify pt-[-100px] lg:pt-36  flex flex-wrap justify-center ${inter.className}`}
 		>
 			`
 			<div
