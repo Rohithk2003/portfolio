@@ -14,7 +14,7 @@ export default function About() {
 	return (
 		<div
 			id={"about"}
-			className={`h-max  md:p-20 p-10 text-justify pt-[-100px] lg:pt-36  flex flex-wrap justify-center ${inter.className}`}
+			className={`h-max  md:p-20 p-10  text-justify pt-[-10px] lg:pt-36  flex flex-wrap justify-center ${inter.className}`}
 		>
 			`
 			<div
