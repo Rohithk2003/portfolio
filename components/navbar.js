@@ -90,8 +90,8 @@ export default function Navbar() {
 				</div>
 				<div
 					className={` ${
-						topBarVisible ? "translate-x-[-17%]" : "translate-x-[-150%]"
-					} w-full h-[100vh] bg-white transition-all duration-300 ease-in-out translate-y-[44%] text-[#454545]  fixed z-[3000]`}
+						topBarVisible ? "translate-x-[0%]" : "translate-x-[-150%]"
+					} w-full h-[120vh] bg-white transition-all duration-300 ease-in-out translate-y-[44%] text-[#454545]  fixed z-[3000]`}
 				>
 					<div
 						className="mt-10 font-bold ml-10 text-4xl"
