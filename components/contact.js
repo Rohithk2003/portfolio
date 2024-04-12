@@ -89,7 +89,7 @@ export default function Contact() {
 			<section className={`bg-white dark:bg-black `}>
 				<div className={`py-8 lg:py-16 px-4 mx-auto max-w-screen-md`}>
 					<div
-						className={`mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white ${
+						className={`mb-4 text-4xl tracking-tight font-extrabold text-center scroll-reveal-contact text-gray-900 dark:text-white ${
 							inView ? "slide-in animate-1 opacity-1" : "opacity-0"
 						} `}
 					>

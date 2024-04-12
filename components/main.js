@@ -30,7 +30,7 @@ export default function Main() {
 	return (
 		<div
 			id={"home"}
-			className={`home flex flex-wrap flex-row text-white w-full text-start bg-[#000000]  h-dvh ${inter.className}`}
+			className={`home flex flex-wrap flex-row text-white scroll-reveal-main w-full text-start bg-[#000000]  h-dvh ${inter.className}`}
 		>
 			<div
 				className={
@@ -54,7 +54,7 @@ export default function Main() {
 						"text-xl h-14 text-start lg:w-1/2 w-3/4 flex justify-start"
 					}
 				>
-					<span ref={el} />
+					<p ref={el} />
 				</div>
 				<div className={"flex flex-col lg:w-1/2 w-3/4  text-[#454545]"}>
 					<span>
@@ -64,11 +64,11 @@ export default function Main() {
 						Passionate to develop them with engineering and design principles.
 					</span>
 				</div>
-				<div className={" lg:w-1/2 w-3/4 text-[#454545] "}>
-					Currently working on{" "}
-					<span className={"text-white"}>
+				<div className={" lg:w-1/2 w-3/4 text-[#454545] flex flex-row gap-1 "}>
+					<span>Currently working on </span>
+					<p className={"text-white"}>
 						&nbsp;being a better person and a developer
-					</span>
+					</p>
 				</div>
 				<div
 					className={
