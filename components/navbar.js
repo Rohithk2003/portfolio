@@ -41,7 +41,9 @@ export default function Navbar() {
 						"md:flex hidden flex-row pr-10 text-white  justify-center gap-10 items-center"
 					}
 				>
-					<il className="hover:text-[#585858] hover:cursor-pointer">About</il>
+					<il className="hover:text-[#585858] hover:cursor-pointer">
+						<Link href="#about">About</Link>
+					</il>
 					<li className="e">
 						<Link href="#projects">Projects</Link>
 					</li>
@@ -50,9 +52,17 @@ export default function Navbar() {
 							|
 						</span>
 					</li>
-					<li className="hover:text-white">Twitter</li>
-					<li className="hover:text-white">Github</li>
-					<li className="hover:text-white">Linkedin</li>
+					<li className="hover:text-white">
+						<Link href="https://twitter.com/reidd_777">Twitter</Link>
+					</li>
+					<li className="hover:text-white">
+						<Link href="https://github.com/Rohithk2003">Github</Link>
+					</li>
+					<li className="hover:text-white">
+						<Link href="https://www.linkedin.com/in/rohith-krishnan-645137262/">
+							Linkedin
+						</Link>
+					</li>
 				</ul>
 				<div
 					className={`md:hidden flex  align-middle w-full top-5 right-5 mr-2 justify-end m-auto `}
