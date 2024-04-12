@@ -30,11 +30,11 @@ export default function Main() {
 	return (
 		<div
 			id={"home"}
-			className={`home flex flex-wrap flex-row text-white scroll-reveal-main w-full text-start bg-[#000000]  h-dvh ${inter.className}`}
+			className={`home flex flex-wrap flex-row scroll-reveal-main w-full text-start   h-dvh ${inter.className}`}
 		>
 			<div
 				className={
-					"lg:w-2/3 w-full mt-10 flex justify-start gap-4 pl-5 md:pl-0 slide-in-left items-center flex-col"
+					"lg:w-2/3 w-full mt-10 flex justify-start glow-background text-white  gap-4 pl-5 md:pl-0  items-center flex-col"
 				}
 			>
 				<div className={"flex lg:justify-start justify-center lg:w-1/2 w-full"}>
