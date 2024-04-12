@@ -188,9 +188,9 @@ body {
 		transform: translate(calc(-50% - 1rem));
 	}
 }
-/* .scroller[data-animated="true"] .scroller__inner:hover {
+.scroller[data-animated="true"] .scroller__inner:hover {
 	animation-play-state: paused;
-} */
+}
 .overlay {
 	position: fixed;
 	top: 0;
@@ -199,7 +199,7 @@ body {
 	transition: all 0.5s ease-in-out;
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0.7); /* semi-transparent black overlay */
-	z-index: 999;
+	z-index: 900;
 }
 .scroll-reveal span {
 	color: hsl(0 0% 100%/0.2);

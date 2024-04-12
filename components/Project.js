@@ -70,6 +70,7 @@ const projects = [
 function MediaCard({ text, heading, url, image_url }) {
 	return (
 		<Card
+			className="hover:scale-125 hover:rounded-lg transition-all duration-300 hover:z-[1000] z-[10000]"
 			sx={{
 				width: 345,
 				height: 300,
@@ -151,7 +152,7 @@ export default function Project() {
 	return (
 		<div
 			id={"projects"}
-			className="flex scroll-reveal flex-col justify-center items-center md:h-[100vh] h-svh gap-10 md:p-20 p-10 pb-0"
+			className="flex scroll-reveal flex-col justify-center z-[10] items-center md:h-[100vh] h-svh gap-10 md:p-20 p-10 pb-0"
 		>
 			<p className="text-2xl md:text-start text-center text-[#454545] md:w-3/4 w-full ">
 				Projects
