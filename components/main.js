@@ -122,7 +122,7 @@ export default function Main() {
 								});
 							}}
 							className={
-								"bg-white box h-11 w-44 hover:bg-gray-500 hover:text-white hover:cursor-pointer rounded-full flex justify-center items-center"
+								"bg-white box h-11 w-44 hover:scale-110 hover:cursor-pointer rounded-full flex justify-center items-center"
 							}
 						>
 							Say Hello!
