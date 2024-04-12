@@ -31,11 +31,11 @@ export default function Main() {
 		<>
 			<div
 				id={"home"}
-				className={`home flex flex-wrap flex-row scroll-reveal-main w-full text-start   h-dvh ${inter.className}`}
+				className={`home flex flex-wrap relative z-[1000] flex-row scroll-reveal-main w-full text-start   h-dvh ${inter.className}`}
 			>
 				<div
 					className={
-						"lg:w-2/3 w-full mt-10 flex justify-start text-white  gap-4 pl-5 md:pl-0  items-center flex-col"
+						"lg:w-2/3 w-full z-[200] mt-10 flex justify-start text-white  gap-4 pl-5 md:pl-0  items-center flex-col"
 					}
 				>
 					<div
@@ -54,12 +54,14 @@ export default function Main() {
 
 					<div
 						className={
-							"text-xl h-14 text-start lg:w-1/2 w-3/4 flex justify-start"
+							"text-xl h-14 text-start lg:w-1/2 z-[1000] w-3/4 flex justify-start"
 						}
 					>
 						<p ref={el} />
 					</div>
-					<div className={"flex flex-col lg:w-1/2 w-3/4  text-[#454545]"}>
+					<div
+						className={"flex flex-col lg:w-1/2 w-3/4 z-[1000] text-[#454545]"}
+					>
 						<span>
 							A Software Developer who develops well-architected applications.
 						</span>
@@ -122,7 +124,7 @@ export default function Main() {
 								});
 							}}
 							className={
-								"bg-white h-11 w-44 hover:bg-gray-500 hover:text-white hover:cursor-pointer rounded-full flex justify-center items-center"
+								"bg-white box h-11 w-44 hover:bg-gray-500 hover:text-white hover:cursor-pointer rounded-full flex justify-center items-center"
 							}
 						>
 							Say Hello!
