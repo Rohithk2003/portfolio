@@ -10,7 +10,7 @@ import Project from "@/components/Project";
 import Head from "next/head";
 import { useEffect, useState } from "react";
 export default function Home() {
-	const [title, setTitle] = useState("Hello there fellow Coder");
+	const [title, setTitle] = useState("Hello there fellow Coder!");
 	useEffect(() => {
 		setTimeout(() => {
 			if (title === "Hello there fellow Coder!")
