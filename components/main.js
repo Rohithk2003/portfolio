@@ -34,9 +34,10 @@ export default function Main() {
 			<div
 				className={`md:pl-0 pl-1 home-text md:w-1/2 sm:w-2/3 w-full text-gray-400 font-[400]  calibre-font text-[20px] pr-5 ${ca.className}`}
 			>
-				I&apos;m a software engineer specializing in building (and occasionally
-				designing) exceptional digital experiences. Currently, I&apos;m a
-				student at Amrita Vishwa Vidyapeetham based in India.
+				I&apos;m a software engineer specializing in building exceptional
+				digital experiences. Currently, I&apos;m a student at Amrita Vishwa
+				Vidyapeetham.Passionate to develop them with engineering and design
+				principles.
 			</div>
 			<button
 				className={`bg-white ${sf.className} sm:mt-0 mt-20 text-black md:ml-0 ml-1 rounded-md sm:w-44 w-32 text-md h-12 btn-style5`}
