@@ -2,6 +2,8 @@ import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import { Roboto } from "next/font/google";
 import Image from "next/image";
+import localFont from "next/font/local";
+const sf = localFont({ src: "./sf.otf" });
 
 const roboto = Roboto({
 	subsets: ["latin"],
@@ -92,7 +94,9 @@ export default function Navbar() {
 						</svg>
 					</div>
 				</div>
-				<div className="lg:w-1/2 w-2/3 md:block  hidden h-28 nav-items text-md">
+				<div
+					className={`${sf.className} lg:w-1/2 w-2/3 md:block  hidden h-28 nav-items text-md `}
+				>
 					<div className="flex flex-row gap-14 h-28 ffff justify-center items-center">
 						<div className="flex flex-row gap-1 slide-down animate-1-faster">
 							<span>01. </span>
@@ -165,7 +169,9 @@ export default function Navbar() {
 						/>
 					</svg>
 				</div>
-				<ul className="sf-mono-text flex flex-col justify-between items-center h-2/3 mb-10 pb-10">
+				<ul
+					className={`${sf.className} flex flex-col justify-between items-center h-2/3 mb-10 pb-10`}
+				>
 					<li className=" flex flex-col justify-center items-center text-center">
 						<span>01.</span> <span className="">About</span>
 					</li>
