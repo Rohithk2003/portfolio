@@ -3,6 +3,8 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import Typed from "typed.js";
 import { useRef, useEffect } from "react";
+import localFont from "next/font/local";
+const sf = localFont({ src: "./sf.otf" });
 
 const inter = Inter({
 	subsets: ["latin"],
@@ -32,7 +34,7 @@ export default function Main() {
 			id={"home"}
 			className={`home pop-up md:animate-9 animate-2 flex bg-black flex-wrap  flex-col w-full h-dvh xs:gap-3 gap-6 md:gap-15! lg:gap-12  md:pl-44 sm:pl-14 pl-5 md:p-20 sm:p-14 p-5 xs:pt-0 pt-20  pr-2 `}
 		>
-			<div className="md:h-3 h-6 w-full text-gray-300 sf-mono-text ">
+			<div className={`md:h-3 h-6 w-full text-gray-300 ${sf.className}`}>
 				Hi, my name is
 			</div>
 			<div className="home-name text-white calibre-font md:text-7xl sm:text-6xl xs:text-5xl text-4xl font-bold ">
@@ -46,7 +48,9 @@ export default function Main() {
 				designing) exceptional digital experiences. Currently, I&apos;m a
 				student at Amrita Vishwa Vidyapeetham based in India.
 			</div>
-			<button className="bg-white sf-mono-text sm:mt-0 mt-24 text-black rounded-md sm:w-44 w-32 text-md h-12 btn-style5">
+			<button
+				className={`bg-white ${sf.className} sm:mt-0 mt-24 text-black rounded-md sm:w-44 w-32 text-md h-12 btn-style5`}
+			>
 				Say Hello!
 			</button>
 		</div>
