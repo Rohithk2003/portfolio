@@ -32,7 +32,7 @@ export default function Main() {
 				I build things for the web
 			</div>
 			<div
-				className={`home-text md:w-1/2 sm:w-2/3 w-full text-gray-400 font-[400]  calibre-font text-[20px] pr-5 ${ca.className}`}
+				className={`md:pl-0 pl-1 home-text md:w-1/2 sm:w-2/3 w-full text-gray-400 font-[400]  calibre-font text-[20px] pr-5 ${ca.className}`}
 			>
 				I&apos;m a software engineer specializing in building (and occasionally
 				designing) exceptional digital experiences. Currently, I&apos;m a
