@@ -46,7 +46,7 @@ export default function Main() {
 				designing) exceptional digital experiences. Currently, I&apos;m a
 				student at Amrita Vishwa Vidyapeetham based in India.
 			</div>
-			<button class="bg-white calibre-font text-black rounded-md sm:w-44 w-32 text-xl h-12 btn-style5">
+			<button class="bg-white sf-mono-font text-black rounded-md sm:w-44 w-32 text-xl h-12 btn-style5">
 				Say Hello!
 			</button>
 		</div>
