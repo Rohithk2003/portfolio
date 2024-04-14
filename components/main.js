@@ -17,7 +17,7 @@ export default function Main() {
 			className={`home pop-up md:animate-9 animate-2 flex bg-black flex-wrap  flex-col w-full h-dvh xs:gap-3 gap-6 md:gap-15! lg:gap-12  md:pl-44 sm:pl-14 pl-5 md:p-20 sm:p-14 p-5 xs:pt-0 pt-20  pr-2 `}
 		>
 			<div
-				className={`md:h-3 md:mb-0 mb-6 h-6 w-full text-gray-300 ${sf.className}`}
+				className={`md:h-3 md:mb-0 mb-6 md:mt-0 mt-11 h-6 w-full text-gray-300 ${sf.className}`}
 			>
 				Hi, my name is
 			</div>
