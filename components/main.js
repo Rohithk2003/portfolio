@@ -5,7 +5,7 @@ import Typed from "typed.js";
 import { useRef, useEffect } from "react";
 import localFont from "next/font/local";
 const sf = localFont({ src: "./sf.otf" });
-
+const ca = localFont({ src: "./ca.otf" });
 const inter = Inter({
 	subsets: ["latin"],
 	weights: [300],
@@ -20,14 +20,18 @@ export default function Main() {
 				Hi, my name is
 			</div>
 			<div
-				className={`home-name text-white calibre-font md:text-7xl sm:text-6xl text-5xl font-bold  `}
+				className={`home-name text-white  md:text-8xl sm:text-7xl text-6xl font-bold ${ca.className} `}
 			>
 				Rohith Krishnan
 			</div>
-			<div className="home-sub-text calibre-font md:text-7xl sm:text-6xl xs:text-5xl text-4xl font-bold text-gray-300">
+			<div
+				className={`home-sub-text calibre-font md:text-8xl sm:text-7xl xs:text-6xl text-5xl font-bold text-gray-300 ${ca.className}`}
+			>
 				I build things for the web
 			</div>
-			<div className="home-text md:w-1/2 sm:w-2/3 w-full text-gray-400 font-[400]  calibre-font text-[20px] pr-5">
+			<div
+				className={`home-text md:w-1/2 sm:w-2/3 w-full text-gray-400 font-[400]  calibre-font text-[20px] pr-5 ${ca.className}`}
+			>
 				I&apos;m a software engineer specializing in building (and occasionally
 				designing) exceptional digital experiences. Currently, I&apos;m a
 				student at Amrita Vishwa Vidyapeetham based in India.
