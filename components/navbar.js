@@ -133,12 +133,12 @@ export default function Navbar() {
 						></span>
 						<span
 							className={`rotate-[180deg] w-6  h-1 mb-1 bg-white transition-all duration-300 ease-in-out ${
-								HamStatus ? "top-5 rotate-45 translate-y-[8px] w-7" : ""
+								HamStatus ? "top-5 hidden" : ""
 							}`}
 						></span>
 						<span
 							className={`rotate-[360deg] origin-right w-4 h-1 mb-1 bg-white transition-all duration-300 ease-in-out ${
-								HamStatus ? "top-5 rotate-[-45deg] translate-y-[0px] w-7" : ""
+								HamStatus ? "top-5 hidden" : ""
 							}`}
 						></span>
 					</div>
