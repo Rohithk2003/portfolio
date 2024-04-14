@@ -30,18 +30,18 @@ export default function Main() {
 	return (
 		<div
 			id={"home"}
-			className={`home flex bg-black flex-wrap  flex-col w-full h-dvh gap-3 md:gap-15!  md:pl-44 sm:pl-14 pl-5 md:p-20 sm:p-14 p-5   pr-2 `}
+			className={`home flex bg-black flex-wrap  flex-col w-full h-dvh xs:gap-3 gap-6 md:gap-15!  md:pl-44 sm:pl-14 pl-5 md:p-20 sm:p-14 p-5 xs:pt-0 pt-20  pr-2 `}
 		>
 			<div className="md:h-3 h-6 w-full text-gray-300 sf-mono-text ">
 				Hi, my name is
 			</div>
-			<div className="home-name text-white calibre-font md:text-7xl sm:text-6xl xs:text-5xl text-2xl font-bold ">
+			<div className="home-name text-white calibre-font md:text-7xl sm:text-6xl xs:text-5xl text-4xl font-bold ">
 				Rohith Krishnan{""}
 			</div>
-			<div className="home-sub-text calibre-font md:text-7xl sm:text-6xl xs:text-5xl text-xl font-bold text-gray-300">
+			<div className="home-sub-text calibre-font md:text-7xl sm:text-6xl xs:text-5xl text-4xl font-bold text-gray-300">
 				I build things for the web
 			</div>
-			<div className="home-text md:w-1/2 sm:w-2/3 w-full text-gray-400 font-[400]  calibre-font md:text-[20px] text-[17.5px] pr-5">
+			<div className="home-text md:w-1/2 sm:w-2/3 w-full text-gray-400 font-[400]  calibre-font text-[20px] pr-5">
 				I&apos;m a software engineer specializing in building (and occasionally
 				designing) exceptional digital experiences. Currently, I&apos;m a
 				student at Amrita Vishwa Vidyapeetham based in India.
