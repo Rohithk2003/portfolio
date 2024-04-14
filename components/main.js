@@ -30,7 +30,7 @@ export default function Main() {
 	return (
 		<div
 			id={"home"}
-			className={`home pop-up animate-9 flex bg-black flex-wrap  flex-col w-full h-dvh xs:gap-3 gap-6 md:gap-15! lg:gap-12  md:pl-44 sm:pl-14 pl-5 md:p-20 sm:p-14 p-5 xs:pt-0 pt-20  pr-2 `}
+			className={`home pop-up animate-9 flex bg-black flex-wrap  flex-col w-full h-dvh xs:gap-3 gap-6 md:gap-15! lg:gap-12  md:pl-44 sm:pl-14 pl-5 md:p-20 sm:p-14 p-5 xs:pt-0 pt-32  pr-2 `}
 		>
 			<div className="md:h-3 h-6 w-full text-gray-300 sf-mono-text ">
 				Hi, my name is
