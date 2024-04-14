@@ -114,7 +114,7 @@ export default function Navbar() {
 							<span>04. </span>
 							<div className="nav-item ">Contact</div>
 						</div>
-						<div class="bg-white text-center align-middle flex justify-center items-center text-black rounded-md w-28  h-10 btn-style5 slide-down animate-5-faster">
+						<div class="bg-white text-center align-middle flex justify-center items-center text-black rounded-md w-24  h-10 btn-style5 slide-down animate-5-faster">
 							<Link href="https://flowcv.com/resume/34p8i21ase">Resume </Link>
 						</div>
 					</div>
@@ -188,7 +188,7 @@ export default function Navbar() {
 						<span>04.</span> <span className="">Contact</span>
 					</li>
 					<li>
-						<div class="bg-white flex justify-center items-center text-black rounded-md w-28  h-10 btn-style5">
+						<div class="bg-white flex justify-center items-center text-black rounded-md w-24  h-10 btn-style5">
 							<Link href="https://flowcv.com/resume/34p8i21ase">Resume </Link>
 						</div>
 					</li>
