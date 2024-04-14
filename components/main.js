@@ -11,24 +11,6 @@ const inter = Inter({
 	weights: [300],
 });
 export default function Main() {
-	const el = useRef(null);
-	// useEffect(() => {
-	// 	const typed = new Typed(el.current, {
-	// 		strings: [
-	// 			"Hi , I am Rohith Krishnan",
-	// 			" Based in India.",
-	// 			"I'm a web-developer and ML enthusiast.",
-	// 		],
-	// 		typeSpeed: 50,
-	// 		startDelay: 1500,
-	// 		loop: true,
-	// 		backSpeed: 50,
-	// 	});
-
-	// 	return () => {
-	// 		typed.destroy();
-	// 	};
-	// }, []);
 	return (
 		<div
 			id={"home"}
@@ -37,8 +19,10 @@ export default function Main() {
 			<div className={`md:h-3 h-6 w-full text-gray-300 ${sf.className}`}>
 				Hi, my name is
 			</div>
-			<div className="home-name text-white calibre-font md:text-7xl sm:text-6xl xs:text-5xl text-4xl font-bold ">
-				Rohith Krishnan{""}
+			<div
+				className={`home-name text-white calibre-font md:text-7xl sm:text-6xl text-5xl font-bold  `}
+			>
+				Rohith Krishnan
 			</div>
 			<div className="home-sub-text calibre-font md:text-7xl sm:text-6xl xs:text-5xl text-4xl font-bold text-gray-300">
 				I build things for the web
@@ -49,7 +33,7 @@ export default function Main() {
 				student at Amrita Vishwa Vidyapeetham based in India.
 			</div>
 			<button
-				className={`bg-white ${sf.className} sm:mt-0 mt-24 text-black rounded-md sm:w-44 w-32 text-md h-12 btn-style5`}
+				className={`bg-white ${sf.className} sm:mt-0 mt-20 text-black rounded-md sm:w-44 w-32 text-md h-12 btn-style5`}
 			>
 				Say Hello!
 			</button>
