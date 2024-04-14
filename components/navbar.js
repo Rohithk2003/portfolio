@@ -51,10 +51,25 @@ export default function Navbar() {
 	const handleMouseLeave = () => {
 		setHovered(false);
 	};
+
+	useEffect(() => {
+		const navbar = document.getElementsByClassName("navbar")[0];
+		var prevScrollpos = window.pageYOffset;
+		window.onscroll = function () {
+			var currentScrollPos = window.pageYOffset;
+			if (prevScrollpos > currentScrollPos) {
+				navbar.style.top = "0";
+			} else {
+				navbar.style.top = "-150px";
+			}
+			prevScrollpos = currentScrollPos;
+		};
+	});
+
 	return (
 		<div className="w-[100vw]! overflow-hidden">
 			<nav
-				className={`flex w-[100vw] h-28 z-[500] justify-between md:px-10 px-4 md:pb-0 pb-6 bg-black text-white relative items-center`}
+				className={`flex w-full fixed navbar h-24 transition-all duration-300 ease-in-out z-[500] justify-between md:px-10 px-4 md:pb-0 pb-6 bg-black text-white  items-center`}
 			>
 				<div className="w-1/6 h-28 flex  justify-start items-center pop-up animate-1">
 					<div className={"w-10 h-10  "}>
