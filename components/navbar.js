@@ -54,7 +54,7 @@ export default function Navbar() {
 			<nav
 				className={`flex w-[100vw] h-28 z-[500] justify-between px-10 bg-black text-white relative items-center`}
 			>
-				<div className="w-1/2 h-28 flex  justify-start items-center">
+				<div className="w-1/2 h-28 flex  justify-start items-center pop-up animate-1">
 					<div className={"w-10 h-10  "}>
 						<svg
 							id="logo"
@@ -94,19 +94,23 @@ export default function Navbar() {
 				</div>
 				<div className="lg:w-1/2 w-2/3 md:block  hidden h-28 nav-items text-md">
 					<div className="flex flex-row gap-14 h-28 ffff justify-center items-center">
-						<div className="">
-							01. <span className="nav-item">About</span>
+						<div className="flex flex-row gap-1 slide-down animate-1-faster">
+							<span>01. </span>
+							<div className="nav-item ">About</div>
 						</div>
-						<div className="">
-							02 <span className="nav-item">Experience</span>
+						<div className="flex flex-row gap-1 slide-down animate-2-faster">
+							<span>02. </span>
+							<div className="nav-item ">Experience</div>
 						</div>
-						<div className="">
-							03. <span className="nav-item">Work</span>
+						<div className="flex flex-row gap-1 slide-down animate-3-faster">
+							<span>03. </span>
+							<div className="nav-item ">Work</div>
 						</div>
-						<div className="">
-							04. <span className="nav-item">Contact</span>
+						<div className="flex flex-row gap-1 slide-down animate-4-faster">
+							<span>04. </span>
+							<div className="nav-item ">Contact</div>
 						</div>
-						<button class="bg-white text-black rounded-md w-28  h-10 btn-style5">
+						<button class="bg-white text-black rounded-md w-28  h-10 btn-style5 slide-down animate-5-faster">
 							Resume
 						</button>
 					</div>

@@ -46,7 +46,7 @@ body {
 @keyframes custom-fade-in {
 	0% {
 		opacity: 0;
-		transform: translateY(-300%); /* Move the element from left */
+		transform: translateY(-30px); /* Move the element from left */
 	}
 	100% {
 		opacity: 1;
@@ -57,7 +57,7 @@ body {
 @keyframes custom-fade-left {
 	0% {
 		opacity: 0;
-		transform: translateX(-200%); /* Move the element from left */
+		transform: translateX(-30px); /* Move the element from left */
 	}
 	100% {
 		opacity: 1;
@@ -94,12 +94,12 @@ body {
 	}
 }
 
-.slide-in {
+.slide-down {
 	opacity: 0;
-	animation: custom-fade-in 1s ease forwards;
+	animation: custom-fade-in 1s ease-in-out forwards;
 }
 
-.slide-in-left {
+.slide-left {
 	opacity: 0;
 	animation: custom-fade-left 1s ease forwards;
 }
@@ -109,7 +109,18 @@ body {
 	animation: custom-fade-in 1s ease forwards;
 	animation-delay: 0.25s;
 }
-
+@keyframes opacity-anim {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+.pop-up {
+	opacity: 0;
+	animation: opacity-anim 0.5s ease-in-out forwards;
+}
 .main-one-fast {
 	opacity: 0;
 	transform: translateX(-200%);
@@ -146,7 +157,58 @@ body {
 .animate-6 {
 	animation-delay: 1.25s;
 }
+.animate-7 {
+	animation-delay: 1.5s;
+}
+.animate-8 {
+	animation-delay: 1.75s;
+}
+.animate-9 {
+	animation-delay: 2s;
+} /* Generate more animation classes with incremental delays */
+.animate-10 {
+	animation-delay: 2.25s;
+}
 
+.animate-11 {
+	animation-delay: 2.5s;
+}
+
+.animate-12 {
+	animation-delay: 2.75s;
+}
+
+.animate-13 {
+	animation-delay: 3s;
+}
+
+.animate-14 {
+	animation-delay: 3.25s;
+}
+
+.animate-15 {
+	animation-delay: 3.5s;
+}
+
+.animate-2-faster {
+	animation-delay: 0.1s; /* Adjusted animation delay */
+}
+
+.animate-3-faster {
+	animation-delay: 0.25s; /* Adjusted animation delay */
+}
+
+.animate-4-faster {
+	animation-delay: 0.4s; /* Adjusted animation delay */
+}
+
+.animate-5-faster {
+	animation-delay: 0.55s; /* Adjusted animation delay */
+}
+
+.animate-6-faster {
+	animation-delay: 0.7s; /* Adjusted animation delay */
+}
 .bg-left-to-right {
 	background: linear-gradient(to right, #f26c4f 50%, white 50%);
 	background-size: 200% 100%;
@@ -326,11 +388,11 @@ body {
 	display: none;
 }
 
-.instagram-logo {
+.instagram-logo path {
 	fill: #454545;
 }
 
-.instagram-logo:hover {
+.instagram-logo:hover path {
 	fill: #fff;
 }
 

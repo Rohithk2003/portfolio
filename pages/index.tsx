@@ -39,7 +39,7 @@ export default function Home() {
 				<div className={"w-[5%] md:block hidden"}>
 					<LeftSidebar />
 				</div>
-				<div className={"md:w-[90%] w-full text-white bg-white"}>
+				<div className={"md:w-[90%] w-full text-white bg-black"}>
 					<Main />
 				</div>
 				<div className={"w-[5%] md:block hidden"}>

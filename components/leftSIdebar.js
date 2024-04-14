@@ -4,7 +4,7 @@ export default function LeftSidebar() {
 		<div className="w-24  h-[100vh] top-0 left-0 fixed bg-black text-[#454545] flex flex-col justify-end">
 			<div className="w-full h-2/4 flex flex-col justify-between items-center">
 				<ul className="flex  pb-10  h-3/4 flex-col items-center gap-5 justify-end w-full">
-					<li className="h-5 w-5">
+					<li className="h-5 w-5 pop-up animate-11">
 						<Link
 							href="https://github.com/Rohithk2003"
 							className="w-5 h-5"
@@ -25,7 +25,7 @@ export default function LeftSidebar() {
 							</svg>
 						</Link>
 					</li>
-					<li className="h-5 w-5">
+					<li className="h-5 w-5 pop-up animate-11">
 						<Link
 							href="https://instagram.com/r0hxth._"
 							className="w-5 h-5"
@@ -63,7 +63,7 @@ export default function LeftSidebar() {
 							</svg>
 						</Link>
 					</li>
-					<li className="h-5 w-5">
+					<li className="h-5 w-5 pop-up animate-11">
 						<Link
 							href="https://github.com/Rohithk2003"
 							className="h-5 w-5"
@@ -95,7 +95,7 @@ export default function LeftSidebar() {
 							</svg>
 						</Link>
 					</li>
-					<li className="h-5 w-5">
+					<li className="h-5 w-5 pop-up animate-11">
 						<Link
 							href="https://github.com/Rohithk2003"
 							className="w-5 h-5"
@@ -117,7 +117,7 @@ export default function LeftSidebar() {
 						</Link>
 					</li>
 				</ul>
-				<div className="h-32 bg-gray-500 w-px"></div>
+				<div className="h-32 bg-gray-500 w-px pop-up animate-11"></div>
 			</div>
 		</div>
 	);
