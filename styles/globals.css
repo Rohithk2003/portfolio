@@ -406,7 +406,7 @@ body {
 }
 @media screen and (min-width: 500px) {
 	.home {
-		gap: 34px;
+		gap: 29px;
 	}
 	.home-name {
 		font-size: 70px;
@@ -415,6 +415,6 @@ body {
 }
 @media screen and (min-width: 700px) {
 	.home {
-		gap: 40px;
+		gap: 34px;
 	}
 }
