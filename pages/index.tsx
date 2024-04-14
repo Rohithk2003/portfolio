@@ -8,6 +8,7 @@ import ContactDetails from "@/components/contact";
 import Footer from "@/components/footer";
 import Project from "@/components/Project";
 import Head from "next/head";
+import Sidebar from "@/components/sidebar";
 import { useEffect, useState } from "react";
 export default function Home() {
 	const [title, setTitle] = useState("Hello there fellow Coder");
@@ -23,14 +24,15 @@ export default function Home() {
 			<Head>
 				<title>{title}</title>
 			</Head>
-			<Navbar />
-			<Main />
-			<About />
-			<Project />
-			<Services />
+			{/* <Navbar /> */}
+			{/* <Main /> */}
+			{/* <About /> */}
+			{/* <Project /> */}
+			{/* <Services /> */}
 			{/* <Skills/> */}
-			<ContactDetails />
-			<Footer />
+			{/* <ContactDetails /> */}
+			{/* <Footer /> */}
+			<Sidebar />
 			<Script
 				src="https://kit.fontawesome.com/93a493583b.js"
 				crossOrigin="anonymous"
