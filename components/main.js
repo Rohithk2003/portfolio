@@ -39,7 +39,7 @@ export default function Main() {
 				student at Amrita Vishwa Vidyapeetham based in India.
 			</div>
 			<button
-				className={`bg-white ${sf.className} sm:mt-0 mt-20 text-black rounded-md sm:w-44 w-32 text-md h-12 btn-style5`}
+				className={`bg-white ${sf.className} sm:mt-0 mt-20 text-black md:pl-0 pl-1 rounded-md sm:w-44 w-32 text-md h-12 btn-style5`}
 			>
 				Say Hello!
 			</button>
