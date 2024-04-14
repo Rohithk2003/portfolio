@@ -30,13 +30,13 @@ export default function Main() {
 	return (
 		<div
 			id={"home"}
-			className={`home flex bg-black flex-wrap  flex-col w-full h-dvh gap-3 md:gap-15!  pr-0  md:pl-44 sm:pl-14 pl-5 md:p-20 sm:p-14 p-5`}
+			className={`home flex bg-black flex-wrap  flex-col w-full h-dvh gap-3 md:gap-15!  md:pl-44 sm:pl-14 pl-5 md:p-20 sm:p-14 p-5   pr-2 `}
 		>
 			<div className="md:h-3 h-6 w-full text-gray-300 sf-mono-text ">
 				Hi, my name is
 			</div>
-			<div className="home-name text-white calibre-font md:text-7xl sm:text-6xl xs:text-5xl text-2xl font-bold">
-				Rohith Krishnan
+			<div className="home-name text-white calibre-font md:text-7xl sm:text-6xl xs:text-5xl text-2xl font-bold ">
+				Rohith Krishnan{""}
 			</div>
 			<div className="home-sub-text calibre-font md:text-7xl sm:text-6xl xs:text-5xl text-xl font-bold text-gray-300">
 				I build things for the web
@@ -46,7 +46,7 @@ export default function Main() {
 				designing) exceptional digital experiences. Currently, I&apos;m a
 				student at Amrita Vishwa Vidyapeetham based in India.
 			</div>
-			<button class="bg-white sf-mono-font text-black rounded-md sm:w-44 w-32 text-xl h-12 btn-style5">
+			<button className="bg-white sf-mono-text text-black rounded-md sm:w-44 w-32 text-md h-12 btn-style5">
 				Say Hello!
 			</button>
 		</div>
