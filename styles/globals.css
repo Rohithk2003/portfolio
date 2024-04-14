@@ -93,7 +93,18 @@ body {
 		transform: translateX(0); /* Move to the original position */
 	}
 }
-
+.btn-style5 {
+	border: 1px solid white;
+	transition: all 0.5s ease-in-out !important;
+	color: white;
+	background-color: transparent;
+}
+.btn-style5:hover {
+	transform: translateX(-0.3em) translateY(-0.3em) !important;
+	box-shadow: 0.3em 0.3em 0 #ffffff;
+	transition: all 0.5s ease-in-out !important;
+	color: #fff;
+}
 .slide-down {
 	opacity: 0;
 	animation: custom-fade-in 1s ease-in-out forwards;
@@ -422,17 +433,6 @@ body {
 	font-size: 0.89rem;
 }
 
-.btn-style5 {
-	border: 1px solid white;
-	transition: all 0.3s ease;
-	color: white;
-	background-color: transparent;
-}
-.btn-style5:hover {
-	transform: translateX(-0.3em) translateY(-0.3em);
-	box-shadow: 0.3em 0.3em 0 #ffffff;
-	color: #fff;
-}
 .nav-item {
 	color: hsl(0 0% 100% / 0.5);
 }
