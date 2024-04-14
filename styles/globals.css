@@ -170,6 +170,13 @@ body {
 	);
 	mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
 }
+@media screen and (max-width: 400px) {
+	.scroller[data-animated="true"] {
+		overflow: hidden;
+		-webkit-mask:none;
+		mask: none;
+	}
+}
 .scroller__inner {
 	padding-block: 1rem;
 	display: flex;
@@ -218,7 +225,7 @@ body {
 	background-clip: text;
 	-webkit-background-clip: text;
 	background-repeat: no-repeat;
-	background-size: 0% 100%;
+	background-size: 0 100%;
 	animation: scroll-reveal-temp linear forwards;
 	animation-timeline: view();
 	animation-range-start: contain 50vh;
