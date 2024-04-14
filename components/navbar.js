@@ -1,8 +1,9 @@
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
-import { Inter } from "next/font/google";
+import { Roboto } from "next/font/google";
 import Image from "next/image";
-const inter = Inter({
+
+const roboto = Roboto({
 	subsets: ["latin"],
 	weight: ["300"],
 });
@@ -21,6 +22,7 @@ export default function Navbar() {
 	function handleNavItemClicking() {
 		setNavItemStatus(!NavItemClicked);
 	}
+
 	const [scrolled, setScrolled] = useState(false);
 
 	useEffect(() => {
@@ -38,202 +40,176 @@ export default function Navbar() {
 			window.removeEventListener("scroll", handleScroll);
 		};
 	}, []);
+	const [hovered, setHovered] = useState(false);
 
+	const handleMouseEnter = () => {
+		setHovered(true);
+	};
+
+	const handleMouseLeave = () => {
+		setHovered(false);
+	};
 	return (
 		<nav
-			className={`flex w-full justify-center ${
-				scrolled ? "h-16" : "h-24"
-			} items-center`}
+			className={`flex w-full h-28 z-[1000] justify-between px-10 bg-black text-white relative items-center`}
 		>
+			<div className="w-1/2 h-28 flex justify-start items-center">
+				<div className={"w-10 h-10  "}>
+					<svg
+						id="logo"
+						xmlns="http://www.w3.org/2000/svg"
+						role="img"
+						onMouseEnter={handleMouseEnter}
+						onMouseLeave={handleMouseLeave}
+						viewBox="0 0 84 96"
+						className={`${roboto.className}  w-10 h-10 text-white font-bold`}
+					>
+						<title>Logo</title>
+						<g transform="translate(-8.000000, -2.000000)">
+							<g transform="translate(11.000000, 5.000000)">
+								<polygon
+									id="Shape"
+									stroke="currentColor"
+									strokeWidth="7"
+									strokeLinecap="round"
+									strokeLinejoin="round"
+									points="39 0 0 22 0 67 39 90 78 68 78 23 "
+								></polygon>
+
+								<text
+									x="26"
+									y="57"
+									fill="currentColor"
+									fontSize="40"
+									fontFamily="Roboto"
+									fontWeight={"1000"}
+								>
+									R
+								</text>
+							</g>
+						</g>
+					</svg>
+				</div>
+			</div>
+			<div className="w-1/2 md:block hidden h-28 nav-items text-md">
+				<div className="flex flex-row gap-14 h-28 ffff justify-center items-center">
+					<div className="">
+						01. <span className="nav-item">About</span>
+					</div>
+					<div className="">
+						02 <span className="nav-item">Experience</span>
+					</div>
+					<div className="">
+						03. <span className="nav-item">Work</span>
+					</div>
+					<div className="">
+						04. <span className="nav-item">Contact</span>
+					</div>
+					<button class="bg-white text-black rounded-md w-28  h-10 btn-style5">
+						Resume
+					</button>
+				</div>
+			</div>
+			<div
+				className={`md:hidden flex  align-middle w-full top-5 right-5 mr-2 justify-end m-auto `}
+			>
+				<a
+					className={" grid ml-2 grid-rows-3w"}
+					onClick={handleHamButtonClick}
+				>
+					<span
+						className={`rotate-[180deg] w-7 h-1 mb-1 bg-white  ease-in-out ${
+							HamStatus ? "top-5 hidden" : ""
+						}`}
+					></span>
+					<span
+						className={`rotate-[180deg] w-6  h-1 mb-1 bg-white transition-all duration-300 ease-in-out ${
+							HamStatus ? "top-5 rotate-45 translate-y-[8px]" : ""
+						}`}
+					></span>
+					<span
+						className={`rotate-[360deg] origin-right w-4 h-1 mb-1 bg-white transition-all duration-300 ease-in-out ${
+							HamStatus ? "top-5 rotate-[-45deg] translate-y-[0px]" : ""
+						}`}
+					></span>
+				</a>
+			</div>
 			<div
 				className={` ${
-					scrolled ? "w-full rounded-none " : "w-3/4 rounded-full"
-				} navbar fixed h-16 flex justify-between   transition-all duration-300 ease-in-out items-center p-2 pl-5   z-[2000] bg-[#222222] ${
-					inter.className
-				}`}
+					topBarVisible ? "translate-x-[-6%]" : "translate-x-[-150%]"
+				} w-full h-[120vh] bg-white transition-all duration-300 ease-in-out translate-y-[44%] text-[#454545]  fixed z-[3000]`}
 			>
-				<div className="md:w-10 md:h-10 w-9 h-9 rounded-full  transition-all duration-300 p-3 bg-white flex justify-center items-center overflow-hidden">
-					<Image
-						src="/images/menu.png"
-						alt="menu"
-						width={24}
-						className="absolute"
-						height={24}
-					/>
+				<div
+					className="mt-10  font-bold ml-10 text-4xl"
+					onClick={() => {
+						setTopBarVisibility(!topBarVisible);
+						setHamButtonStatus(!HamStatus);
+					}}
+				>
+					Close
 				</div>
 				<ul
-					className={
-						"md:flex hidden flex-row pr-10 text-white  justify-center gap-10 items-center"
-					}
+					className={`flex md:hidden w-full mt-[200px] h-[400px] fixed z-[999] gap-2 flex-col justify-center items-center `}
 				>
-					<il className="hover:text-[#585858] hover:cursor-pointer">
-						<Link href="#about">About</Link>
+					{" "}
+					<il className="w-full text-3xl flex justify-center  items-center rounded hover:text-white transition-all duration-300 ease-in-out   h-16  ">
+						About
 					</il>
-					<li className="e">
-						<Link href="#projects">Projects</Link>
-					</li>
-					<li className="w-2  h-10 b-white text-white flex justify-center items-center">
-						<span className="w-[3px] border-0 outline-none h-6 bg-white text-white">
-							|
-						</span>
-					</li>
-					<li className="flex flex-row gap-2 justify-center items-center text-white nav-items w-10 hover:w-20 transition-all duration-300 ease-in-out">
-						Twitter
-						<Link
-							href="https://twitter.com/reidd_777"
-							className="w-4 h-4 mb-4 "
+					<Link href={"#projects"}>
+						<li
+							className={
+								"w-full text-3xl flex justify-center  items-center rounded hover:text-white transition-all duration-300 ease-in-out   h-16  "
+							}
 						>
-							<svg
-								fill="none"
-								stroke="currentColor"
-								viewBox="0 0 12 12"
-								aria-hidden="true"
-								class="flex-none mt-2 stroke-current"
-							>
-								<path d="M10.976 1.193A.314.314 0 0010.687 1H6.312a.313.313 0 000 .625h3.62L5.467 6.091a.313.313 0 00.443.442l4.466-4.466v3.62a.313.313 0 00.625 0V1.313a.328.328 0 00-.024-.119z"></path>
-								<path d="M3.5 1v.625H2.25a.625.625 0 00-.625.625v7.5c0 .345.28.625.625.625h7.5c.345 0 .625-.28.625-.625V8.5H11v1.875c0 .345-.28.625-.625.625h-8.75A.625.625 0 011 10.375v-8.75C1 1.28 1.28 1 1.625 1H3.5z"></path>
-							</svg>
-						</Link>
-					</li>
-
-					<li className="flex flex-row gap-2 justify-center items-center text-white nav-items w-10 hover:w-20 transition-all duration-300 ease-in-out">
-						Github
-						<Link
-							href="https://github.com/Rohithk2003"
-							className="w-4 h-4 mb-4 "
-						>
-							<svg
-								fill="none"
-								stroke="currentColor"
-								viewBox="0 0 12 12"
-								aria-hidden="true"
-								class="flex-none mt-2 stroke-current"
-							>
-								<path d="M10.976 1.193A.314.314 0 0010.687 1H6.312a.313.313 0 000 .625h3.62L5.467 6.091a.313.313 0 00.443.442l4.466-4.466v3.62a.313.313 0 00.625 0V1.313a.328.328 0 00-.024-.119z"></path>
-								<path d="M3.5 1v.625H2.25a.625.625 0 00-.625.625v7.5c0 .345.28.625.625.625h7.5c.345 0 .625-.28.625-.625V8.5H11v1.875c0 .345-.28.625-.625.625h-8.75A.625.625 0 011 10.375v-8.75C1 1.28 1.28 1 1.625 1H3.5z"></path>
-							</svg>
-						</Link>
-					</li>
-					<li className="flex flex-row gap-2 justify-center items-center text-white nav-items w-10 hover:w-24 transition-all duration-300 ease-in-out">
-						<span>Linkedin</span>
-						<Link
-							href="https://www.linkedin.com/in/rohith-krishnan-645137262/"
-							className="w-4 h-4 mb-4 "
-						>
-							<svg
-								fill="none"
-								stroke="currentColor"
-								viewBox="0 0 12 12"
-								aria-hidden="true"
-								class="flex-none mt-2 stroke-current"
-							>
-								<path d="M10.976 1.193A.314.314 0 0010.687 1H6.312a.313.313 0 000 .625h3.62L5.467 6.091a.313.313 0 00.443.442l4.466-4.466v3.62a.313.313 0 00.625 0V1.313a.328.328 0 00-.024-.119z"></path>
-								<path d="M3.5 1v.625H2.25a.625.625 0 00-.625.625v7.5c0 .345.28.625.625.625h7.5c.345 0 .625-.28.625-.625V8.5H11v1.875c0 .345-.28.625-.625.625h-8.75A.625.625 0 011 10.375v-8.75C1 1.28 1.28 1 1.625 1H3.5z"></path>
-							</svg>
-						</Link>
-					</li>
-				</ul>
-				<div
-					className={`md:hidden flex  align-middle w-full top-5 right-5 mr-2 justify-end m-auto `}
-				>
-					<a
-						className={" grid ml-2 grid-rows-3w"}
-						onClick={handleHamButtonClick}
-					>
-						<span
-							className={`w-7 h-1 mb-1 bg-white  ease-in-out ${
-								HamStatus ? "top-5 hidden" : ""
-							}`}
-						></span>
-						<span
-							className={`w-7 h-1 mb-1 bg-white transition-all duration-300 ease-in-out ${
-								HamStatus ? "top-5 rotate-45 translate-y-[8px]" : ""
-							}`}
-						></span>
-						<span
-							className={`w-7 h-1 mb-1 bg-white transition-all duration-300 ease-in-out ${
-								HamStatus ? "top-5 rotate-[-45deg] translate-y-[0px]" : ""
-							}`}
-						></span>
-					</a>
-				</div>
-				<div
-					className={` ${
-						topBarVisible ? "translate-x-[-6%]" : "translate-x-[-150%]"
-					} w-full h-[120vh] bg-white transition-all duration-300 ease-in-out translate-y-[44%] text-[#454545]  fixed z-[3000]`}
-				>
-					<div
-						className="mt-10  font-bold ml-10 text-4xl"
+							Projects
+						</li>
+					</Link>
+					<Link
 						onClick={() => {
 							setTopBarVisibility(!topBarVisible);
 							setHamButtonStatus(!HamStatus);
 						}}
+						href={""}
 					>
-						Close
-					</div>
-					<ul
-						className={`flex md:hidden w-full mt-[200px] h-[400px] fixed z-[999] gap-2 flex-col justify-center items-center `}
+						<li
+							className={
+								"w-full text-3xl flex justify-center  items-center rounded hover:text-white transition-all duration-300 ease-in-out   h-16  "
+							}
+						>
+							Github
+						</li>
+					</Link>
+					<Link
+						onClick={() => {
+							setTopBarVisibility(!topBarVisible);
+							setHamButtonStatus(!HamStatus);
+						}}
+						href={""}
 					>
-						{" "}
-						<il className="w-full text-3xl flex justify-center  items-center rounded hover:text-white transition-all duration-300 ease-in-out   h-16  ">
-							About
-						</il>
-						<Link href={"#projects"}>
-							<li
-								className={
-									"w-full text-3xl flex justify-center  items-center rounded hover:text-white transition-all duration-300 ease-in-out   h-16  "
-								}
-							>
-								Projects
-							</li>
-						</Link>
-						<Link
-							onClick={() => {
-								setTopBarVisibility(!topBarVisible);
-								setHamButtonStatus(!HamStatus);
-							}}
-							href={""}
+						<li
+							className={
+								"w-full text-3xl flex justify-center  items-center rounded hover:text-white transition-all duration-300 ease-in-out   h-16  "
+							}
 						>
-							<li
-								className={
-									"w-full text-3xl flex justify-center  items-center rounded hover:text-white transition-all duration-300 ease-in-out   h-16  "
-								}
-							>
-								Github
-							</li>
-						</Link>
-						<Link
-							onClick={() => {
-								setTopBarVisibility(!topBarVisible);
-								setHamButtonStatus(!HamStatus);
-							}}
-							href={""}
+							Linkedin
+						</li>
+					</Link>
+					<Link
+						onClick={() => {
+							setTopBarVisibility(!topBarVisible);
+							setHamButtonStatus(!HamStatus);
+						}}
+						href={"#projects"}
+					>
+						<li
+							className={
+								"w-full text-3xl flex justify-center  items-center rounded hover:text-white transition-all duration-300 ease-in-out   h-16  "
+							}
 						>
-							<li
-								className={
-									"w-full text-3xl flex justify-center  items-center rounded hover:text-white transition-all duration-300 ease-in-out   h-16  "
-								}
-							>
-								Linkedin
-							</li>
-						</Link>
-						<Link
-							onClick={() => {
-								setTopBarVisibility(!topBarVisible);
-								setHamButtonStatus(!HamStatus);
-							}}
-							href={"#projects"}
-						>
-							<li
-								className={
-									"w-full text-3xl flex justify-center  items-center rounded hover:text-white transition-all duration-300 ease-in-out   h-16  "
-								}
-							>
-								Projects
-							</li>
-						</Link>
-					</ul>
-				</div>
+							Projects
+						</li>
+					</Link>
+				</ul>
 			</div>
 		</nav>
 	);

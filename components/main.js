@@ -10,126 +10,45 @@ const inter = Inter({
 });
 export default function Main() {
 	const el = useRef(null);
-	useEffect(() => {
-		const typed = new Typed(el.current, {
-			strings: [
-				"Hi , I am Rohith Krishnan",
-				" Based in India.",
-				"I'm a web-developer and ML enthusiast.",
-			],
-			typeSpeed: 50,
-			startDelay: 1500,
-			loop: true,
-			backSpeed: 50,
-		});
+	// useEffect(() => {
+	// 	const typed = new Typed(el.current, {
+	// 		strings: [
+	// 			"Hi , I am Rohith Krishnan",
+	// 			" Based in India.",
+	// 			"I'm a web-developer and ML enthusiast.",
+	// 		],
+	// 		typeSpeed: 50,
+	// 		startDelay: 1500,
+	// 		loop: true,
+	// 		backSpeed: 50,
+	// 	});
 
-		return () => {
-			typed.destroy();
-		};
-	}, []);
+	// 	return () => {
+	// 		typed.destroy();
+	// 	};
+	// }, []);
 	return (
-		<>
-			<div
-				id={"home"}
-				className={`home flex flex-wrap relative z-[999] flex-row scroll-reveal-main w-full text-start   h-dvh ${inter.className}`}
-			>
-				<div
-					className={
-						"lg:w-2/3 w-full z-[200] mt-10 flex justify-start text-white  gap-4 pl-5 md:pl-0  items-center flex-col"
-					}
-				>
-					<div
-						className={"flex lg:justify-start justify-center lg:w-1/2 w-full"}
-					>
-						<div className="flex justify-center items-center">
-							<Image
-								src={"/images/profile.jpg"}
-								alt="Profile Picture"
-								width={128}
-								height={128}
-								className="md:w-16 md:h-16 w-24 h-24 rounded-full object-cover"
-							/>
-						</div>
-					</div>
-
-					<div
-						className={
-							"text-xl h-14 text-start lg:w-1/2 z-[1000] w-3/4 flex justify-start"
-						}
-					>
-						<p ref={el} />
-					</div>
-					<div
-						className={"flex flex-col lg:w-1/2 w-3/4 z-[1000] text-[#454545]"}
-					>
-						<span>
-							A Software Developer who develops well-architected applications.
-						</span>
-						<span>
-							Passionate to develop them with engineering and design principles.
-						</span>
-					</div>
-					<span className={" lg:w-1/2 w-3/4 text-[#454545]  "}>
-						Currently working on
-						<span className={"text-white"}>
-							&nbsp;being a better person and a developer
-						</span>
-					</span>
-					<div
-						className={
-							"text-lg text-white text-start lg:w-1/2 w-3/4 flex justify-start"
-						}
-					>
-						Top Skills
-					</div>
-					<ul
-						className={
-							"flex flex-row gap-4 text-[#585858] flex-wrap lg:w-1/2 w-3/4 justify-start items-center"
-						}
-					>
-						<li>Next.js</li>
-						<li>Django</li>
-						<li>PostgresSQL</li>
-						<li>Machine Learning</li>
-						<li>Git</li>
-					</ul>
-					<div
-						className={
-							"text-lg text-white text-start lg:w-1/2 w-3/4 flex justify-start"
-						}
-					>
-						Top Languages
-					</div>
-					<ul
-						className={
-							"flex flex-row gap-4 text-[#585858] flex-wrap lg:w-1/2 w-3/4 justify-start items-center"
-						}
-					>
-						<li>Python</li>
-						<li>C++</li>
-						<li>Java</li>
-					</ul>
-					<div
-						className={
-							" text-black flex lg:justify-start justify-center items-center lg:w-1/2 w-3/4 mt-5"
-						}
-					>
-						<div
-							onClick={(e) => {
-								e.preventDefault();
-								document.getElementById("contact").scrollIntoView({
-									behavior: "smooth",
-								});
-							}}
-							className={
-								"bg-white box h-11 w-44 hover:scale-110 hover:cursor-pointer rounded-full flex justify-center items-center"
-							}
-						>
-							Say Hello!
-						</div>
-					</div>
-				</div>
+		<div
+			id={"home"}
+			className={`home flex bg-black flex-wrap  flex-col w-full h-dvh gap-5 md:gap-17!  pr-0  md:pl-44 sm:pl-14 pl-5 md:p-20 sm:p-14 p-5`}
+		>
+			<div className="md:h-1 h-3 w-full text-gray-300 sf-mono-text ">
+				Hi, my name is
 			</div>
-		</>
+			<div className="home-name text-white calibre-font md:text-8xl sm:text-6xl text-4xl font-bold">
+				Rohith Krishnan
+			</div>
+			<div className="home-sub-text calibre-font md:text-7xl sm:text-5xl xs:text-4xl text-xl font-bold text-gray-300">
+				I build things for the web
+			</div>
+			<div className="home-text md:w-1/2 sm:w-2/3 w-full text-gray-400 font-[400]  calibre-font md:text-[20px] text-[17.5px] pr-5">
+				I&apos;m a software engineer specializing in building (and occasionally
+				designing) exceptional digital experiences. Currently, I&apos;m a
+				student at Amrita Vishwa Vidyapeetham based in India.
+			</div>
+			<button class="bg-white calibre-font text-black rounded-md sm:w-44 w-32 text-xl h-12 btn-style5">
+				Say Hello!
+			</button>
+		</div>
 	);
 }
