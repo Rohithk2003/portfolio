@@ -54,7 +54,7 @@ export default function Navbar() {
 	return (
 		<div className="w-[100vw]! overflow-hidden">
 			<nav
-				className={`flex w-[100vw] h-28 z-[500] justify-between px-10 bg-black text-white relative items-center`}
+				className={`flex w-[100vw] h-28 z-[500] justify-between md:px-10 px-4 md:pb-0 pb-6 bg-black text-white relative items-center`}
 			>
 				<div className="w-1/6 h-28 flex  justify-start items-center pop-up animate-1">
 					<div className={"w-10 h-10  "}>
@@ -120,7 +120,7 @@ export default function Navbar() {
 					</div>
 				</div>
 				<div
-					className={`md:hidden z-[1000]! flex  align-middle w-full top-5 right-5 mr-2 justify-end m-auto `}
+					className={`md:hidden z-[1000]! flex  align-middle w-full top-0 right-0 mr-2 justify-end m-auto `}
 				>
 					<div
 						className={" grid ml-2 grid-rows-3w z-[999]!"}
@@ -144,7 +144,10 @@ export default function Navbar() {
 					</div>
 				</div>
 			</nav>
-			<div className={`${topBarVisible ? "overlay" : ""}`}></div>
+			<div
+				onClick={handleHamButtonClick}
+				className={`${topBarVisible ? "overlay" : ""} md:hidden block`}
+			></div>
 			<div
 				className={`top-0 right-0 md:hidden block fixed transition-all w-56 duration-300 ease-in-out h-[100vh] bg-black text-white z-[998] ${
 					topBarVisible ? "left-0" : "left-[-100%]"
