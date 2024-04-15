@@ -6,7 +6,7 @@ import localFont from "next/font/local";
 import Link from "next/link";
 
 const sf = localFont({ src: "./sf.otf" });
-const ca = localFont({ src: "./ca.otf", weight: ["600"] });
+const ca = localFont({ src: "./ca.otf" });
 const inter = Inter({
 	subsets: ["latin"],
 	weights: [300],

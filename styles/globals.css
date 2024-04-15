@@ -459,3 +459,23 @@ body {
 		gap: 34px;
 	}
 }
+.about-text{
+	position: relative;
+	font-family: var(--font-ca);
+}
+.about-text::before{
+	content:'01.';
+	font-family: var(--font-sf);
+	font-size: 20px;
+	position: relative;
+	left:-5px;
+}
+.about-text::after{
+	content: "";
+	display: block;
+	position: relative;
+	top: -28px;
+	height: 1px;
+	margin-left: 20px;
+	background-color: dimgray;
+}

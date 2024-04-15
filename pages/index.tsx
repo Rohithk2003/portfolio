@@ -41,6 +41,7 @@ export default function Home() {
 				</div>
 				<div className={"md:w-[90%] h-[500vh] w-full text-white bg-black"}>
 					<Main />
+					<About />
 				</div>
 				<div className={"w-[5%] md:block hidden"}>
 					<RightSidebar />
