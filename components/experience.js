@@ -61,7 +61,7 @@ export default function Experience() {
 						<span className="text-white">ACM Amritapuri</span>
 					</div>
 					<div className={`${sf.className}`}>Sept 2023 - Feb 2024</div>
-					<ul className={`${ca.className} skills text-lg `}>
+					<ul className={`${ca.className} skills text-lg flex flex-col gap-3`}>
 						<li>
 							I&apos;ve authored a research paper on &quot;SQL Query Processing
 							using Matrix Factorization and Query Recommendation&quot;,
