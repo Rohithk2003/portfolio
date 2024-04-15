@@ -491,6 +491,7 @@ body {
     content: '01.';
     font-family: var(--font-sf);
     font-size: 20px;
+    font-weight: 300;
     position: relative;
     left: -5px;
 }

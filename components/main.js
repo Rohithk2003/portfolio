@@ -1,7 +1,4 @@
-import Image from "next/image";
 import {Inter} from "next/font/google";
-import Typed from "typed.js";
-import {useRef, useEffect} from "react";
 import localFont from "next/font/local";
 import Link from "next/link";
 
