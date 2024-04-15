@@ -7,475 +7,527 @@
 @tailwind utilities;
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-	overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 :root {
-	background-color: black;
+    background-color: black;
 }
 
 .based-data {
-	font-family: "Poppins", serif;
+    font-family: "Poppins", serif;
 }
 
 .name-label {
-	font-family: "Poppins", serif;
+    font-family: "Poppins", serif;
 }
 
 .progress-ring__circle {
-	transition: 0.35s stroke-dashoffset;
-	transform: rotate(-90deg);
-	transform-origin: 50% 50%;
+    transition: 0.35s stroke-dashoffset;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
 }
+
 .overlay {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.5); /* Background color with transparency */
-	backdrop-filter: blur(2px); /* Apply blur effect */
-	z-index: 50; /* Ensure it's above other content */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Background color with transparency */
+    backdrop-filter: blur(2px); /* Apply blur effect */
+    z-index: 50; /* Ensure it's above other content */
 }
+
 @keyframes custom-fade-in {
-	0% {
-		opacity: 0;
-		transform: translateY(-30px); /* Move the element from left */
-	}
-	100% {
-		opacity: 1;
-		transform: translateY(0); /* Reset translation */
-	}
+    0% {
+        opacity: 0;
+        transform: translateY(-30px); /* Move the element from left */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Reset translation */
+    }
 }
 
 @keyframes custom-fade-left {
-	0% {
-		opacity: 0;
-		transform: translateX(-30px); /* Move the element from left */
-	}
-	100% {
-		opacity: 1;
-		transform: translateX(0); /* Reset translation */
-	}
+    0% {
+        opacity: 0;
+        transform: translateX(-30px); /* Move the element from left */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); /* Reset translation */
+    }
 }
 
 @keyframes zoom-in {
-	0% {
-		transform: scale(1, 1);
-	}
-	100% {
-		transform: scale(1.5, 1.5);
-	}
+    0% {
+        transform: scale(1, 1);
+    }
+    100% {
+        transform: scale(1.5, 1.5);
+    }
 }
 
 @keyframes custom-fadeIn {
-	from {
-		transform: translateX(-100%); /* Start from outside the viewport */
-	}
-	to {
-		transform: translateX(0); /* Move to the original position */
-	}
+    from {
+        transform: translateX(-100%); /* Start from outside the viewport */
+    }
+    to {
+        transform: translateX(0); /* Move to the original position */
+    }
 }
 
 @keyframes fadeIn-right {
-	from {
-		opacity: 0;
-		transform: translateX(100%); /* Start from outside the viewport */
-	}
-	to {
-		opacity: 1;
-		transform: translateX(0); /* Move to the original position */
-	}
+    from {
+        opacity: 0;
+        transform: translateX(100%); /* Start from outside the viewport */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* Move to the original position */
+    }
 }
+
 .btn-style5 {
-	border: 1px solid white;
-	transition: all 0.5s ease-in-out !important;
-	color: white;
-	background-color: transparent;
+    border: 1px solid white;
+    transition: all 0.25s ease-in-out !important;
+    color: white;
+    background-color: transparent;
 }
+
 .btn-style5:hover {
-	transform: translateX(-0.3em) translateY(-0.3em) !important;
-	box-shadow: 0.3em 0.3em 0 #ffffff;
-	transition: all 0.5s ease-in-out !important;
-	color: #fff;
+    transform: translateX(-0.3em) translateY(-0.3em) !important;
+    box-shadow: 0.3em 0.3em 0 #ffffff;
+    transition: all 0.25s ease-in-out !important;
+    color: #fff;
 }
+
 .slide-down {
-	opacity: 0;
-	animation: custom-fade-in 1s ease-in-out forwards;
+    opacity: 0;
+    animation: custom-fade-in 1s ease-in-out forwards;
 }
 
 .slide-left {
-	opacity: 0;
-	animation: custom-fade-left 1s ease forwards;
+    opacity: 0;
+    animation: custom-fade-left 1s ease forwards;
 }
 
 .main-one {
-	transform: translateX(-100%); /* Start from outside the viewport */
-	animation: custom-fade-in 1s ease forwards;
-	animation-delay: 0.25s;
+    transform: translateX(-100%); /* Start from outside the viewport */
+    animation: custom-fade-in 1s ease forwards;
+    animation-delay: 0.25s;
 }
+
 @keyframes opacity-anim {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
+
 .pop-up {
-	opacity: 0;
-	animation: opacity-anim 0.5s ease-in-out forwards;
+    opacity: 0;
+    animation: opacity-anim 0.25s ease-in-out forwards;
 }
+
 .main-one-fast {
-	opacity: 0;
-	transform: translateX(-200%);
-	animation: fadeIn 0.3s ease forwards;
-	animation-delay: 0.25s;
+    opacity: 0;
+    transform: translateX(-200%);
+    animation: fadeIn 0.3s ease forwards;
+    animation-delay: 0.25s;
 }
 
 .main-one-right {
-	opacity: 0;
-	transform: translateX(100%);
-	animation: fadeIn-right 1s ease forwards;
+    opacity: 0;
+    transform: translateX(100%);
+    animation: fadeIn-right 1s ease forwards;
 }
 
 .animate-1 {
-	animation-delay: 0s;
+    animation-delay: 0s;
 }
 
 .animate-2 {
-	animation-delay: 0.25s;
+    animation-delay: 0.25s;
 }
 
 .animate-3 {
-	animation-delay: 0.5s; /* Delay the animation start for 0.5s */
+    animation-delay: 0.25s; /* Delay the animation start for 0.25s */
 }
 
 .animate-4 {
-	animation-delay: 0.75s;
+    animation-delay: 0.75s;
 }
 
 .animate-5 {
-	animation-delay: 1s;
+    animation-delay: 1s;
 }
 
 .animate-6 {
-	animation-delay: 1.25s;
+    animation-delay: 1.25s;
 }
+
 .animate-7 {
-	animation-delay: 1.5s;
+    animation-delay: 1.5s;
 }
+
 .animate-8 {
-	animation-delay: 1.75s;
+    animation-delay: 1.75s;
 }
+
 .animate-9 {
-	animation-delay: 2s;
-} /* Generate more animation classes with incremental delays */
+    animation-delay: 2s;
+}
+
+/* Generate more animation classes with incremental delays */
 .animate-10 {
-	animation-delay: 2.25s;
+    animation-delay: 2.25s;
 }
 
 .animate-11 {
-	animation-delay: 2.5s;
+    animation-delay: 2.5s;
 }
 
 .animate-12 {
-	animation-delay: 2.75s;
+    animation-delay: 2.75s;
 }
 
 .animate-13 {
-	animation-delay: 3s;
+    animation-delay: 3s;
 }
 
 .animate-14 {
-	animation-delay: 3.25s;
+    animation-delay: 3.25s;
 }
 
 .animate-15 {
-	animation-delay: 3.5s;
+    animation-delay: 3.5s;
 }
 
 .animate-2-faster {
-	animation-delay: 0.1s; /* Adjusted animation delay */
+    animation-delay: 0.1s; /* Adjusted animation delay */
 }
 
 .animate-3-faster {
-	animation-delay: 0.25s; /* Adjusted animation delay */
+    animation-delay: 0.25s; /* Adjusted animation delay */
 }
 
 .animate-4-faster {
-	animation-delay: 0.4s; /* Adjusted animation delay */
+    animation-delay: 0.4s; /* Adjusted animation delay */
 }
 
 .animate-5-faster {
-	animation-delay: 0.55s; /* Adjusted animation delay */
+    animation-delay: 0.55s; /* Adjusted animation delay */
 }
 
 .animate-6-faster {
-	animation-delay: 0.7s; /* Adjusted animation delay */
+    animation-delay: 0.7s; /* Adjusted animation delay */
 }
+
 .bg-left-to-right {
-	background: linear-gradient(to right, #f26c4f 50%, white 50%);
-	background-size: 200% 100%;
-	background-position: right bottom;
-	transition: all 0.5s ease-out;
-	color: black;
+    background: linear-gradient(to right, #f26c4f 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 0.25s ease-out;
+    color: black;
 }
 
 .bg-left-to-right:hover {
-	background-position: left bottom;
+    background-position: left bottom;
 }
 
 .open-x .line-1 {
-	transform: rotate(45deg) translate(4px, 5px);
+    transform: rotate(45deg) translate(4px, 5px);
 }
 
 .open-x .line-2 {
-	opacity: 0;
+    opacity: 0;
 }
 
 .open-x .line-3 {
-	transform: rotate(-45deg) translate(4px, -5px);
+    transform: rotate(-45deg) translate(4px, -5px);
 }
 
 .scroller {
-	max-width: 80%;
-	color: white;
-	/*	outline: 3px solid lime;*/
+    max-width: 80%;
+    color: white;
+    /*	outline: 3px solid lime;*/
 }
 
 @media screen and (min-width: 300px) {
-	.scroller {
-		max-width: 100%;
-	}
+    .scroller {
+        max-width: 100%;
+    }
 }
 
 .scroller[data-animated="true"] {
-	overflow: hidden;
-	/* -webkit-mask: linear-gradient(
-		90deg,
-		transparent,
-		white 20%,
-		white 80%,
-		transparent
-	); */
-	mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+    overflow: hidden;
+    /* -webkit-mask: linear-gradient(
+        90deg,
+        transparent,
+        white 20%,
+        white 80%,
+        transparent
+    ); */
+    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
 }
 
 @media screen and (max-width: 400px) {
-	.scroller[data-animated="true"] {
-		overflow: hidden;
-		-webkit-mask: none;
-		mask: none;
-	}
+    .scroller[data-animated="true"] {
+        overflow: hidden;
+        -webkit-mask: none;
+        mask: none;
+    }
 }
 
 .scroller__inner {
-	padding-block: 1rem;
-	display: flex;
-	flex-wrap: wrap;
-	gap: 2rem;
+    padding-block: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
 .tag-list li {
-	padding: 0.5rem;
+    padding: 0.5rem;
 }
 
 .scroller[data-animated="true"] .scroller__inner {
-	flex-wrap: nowrap;
-	width: max-content;
-	animation: scroll 40s linear infinite;
+    flex-wrap: nowrap;
+    width: max-content;
+    animation: scroll 40s linear infinite;
 }
 
 @keyframes scroll {
-	to {
-		transform: translate(calc(-50% - 1rem));
-	}
+    to {
+        transform: translate(calc(-50% - 1rem));
+    }
 }
 
 .scroller[data-animated="true"] .scroller__inner:hover {
-	animation-play-state: paused;
+    animation-play-state: paused;
 }
 
 .overlay {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	transition: all 0.5s ease-in-out;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.7); /* semi-transparent black overlay */
-	z-index: 900;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: all 0.25s ease-in-out;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* semi-transparent black overlay */
+    z-index: 900;
 }
 
 .scroll-reveal span {
-	color: hsl(0 0% 100%/0.2);
-	background-image: linear-gradient(90deg, white, white);
-	background-clip: text;
-	-webkit-background-clip: text;
-	background-repeat: no-repeat;
-	background-size: 0% 100%;
-	animation: scroll-reveal-temp linear forwards;
-	animation-timeline: view();
+    color: hsl(0 0% 100%/0.2);
+    background-image: linear-gradient(90deg, white, white);
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    animation: scroll-reveal-temp linear forwards;
+    animation-timeline: view();
 }
 
 .scroll-reveal p {
-	color: hsl(0 0% 100%/0.2);
-	background-image: linear-gradient(90deg, white, white);
-	background-clip: text;
-	-webkit-background-clip: text;
-	background-repeat: no-repeat;
-	background-size: 0 100%;
-	animation: scroll-reveal-temp linear forwards;
-	animation-timeline: view();
-	animation-range-start: contain 50vh;
-	animation-range-end: contain 400vh;
+    color: hsl(0 0% 100%/0.2);
+    background-image: linear-gradient(90deg, white, white);
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-repeat: no-repeat;
+    background-size: 0 100%;
+    animation: scroll-reveal-temp linear forwards;
+    animation-timeline: view();
+    animation-range-start: contain 50vh;
+    animation-range-end: contain 400vh;
 }
 
 .scroll-reveal-services p {
-	color: hsl(0 0% 100%/0.2);
-	background-image: linear-gradient(90deg, white, white);
-	background-clip: text;
-	-webkit-background-clip: text;
-	background-repeat: no-repeat;
-	background-size: 0% 100%;
-	animation: scroll-reveal-temp linear forwards;
-	animation-timeline: view();
-	animation-range-start: contain 50vh;
-	animation-range-end: contain 120vh;
+    color: hsl(0 0% 100%/0.2);
+    background-image: linear-gradient(90deg, white, white);
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    animation: scroll-reveal-temp linear forwards;
+    animation-timeline: view();
+    animation-range-start: contain 50vh;
+    animation-range-end: contain 120vh;
 }
 
 .scroll-reveal-main span {
-	color: hsl(0 0% 100%/0.2);
-	background-image: linear-gradient(90deg, white, white);
-	background-clip: text;
-	-webkit-background-clip: text;
-	background-repeat: no-repeat;
-	background-size: 0% 100%;
-	animation: scroll-reveal-temp linear forwards;
-	animation-timeline: view();
-	animation-range-start: contain 59vh;
-	animation-range-end: contain 90vh;
+    color: hsl(0 0% 100%/0.2);
+    background-image: linear-gradient(90deg, white, white);
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    animation: scroll-reveal-temp linear forwards;
+    animation-timeline: view();
+    animation-range-start: contain 59vh;
+    animation-range-end: contain 90vh;
 }
 
 .scroll-reveal div div span {
-	animation-range-start: cover 20vh;
-	animation-range-end: cover 30vh;
+    animation-range-start: cover 20vh;
+    animation-range-end: cover 30vh;
 }
 
 .scroll-reveal div section span {
-	animation-range-start: cover 22.5vh;
-	animation-range-end: cover 50vh;
+    animation-range-start: cover 22.5vh;
+    animation-range-end: cover 50vh;
 }
 
 @keyframes scroll-reveal-temp {
-	to {
-		background-size: 100% 100%;
-	}
+    to {
+        background-size: 100% 100%;
+    }
 }
 
 .box {
-	background: hsl(0, 0%, 100%);
-	position: relative;
-	box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.01);
+    background: hsl(0, 0%, 100%);
+    position: relative;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.01);
 }
 
 @keyframes animateGlow {
-	0% {
-		background-position: 0% 50%;
-	}
-	100% {
-		background-position: 200% 50%;
-	}
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 200% 50%;
+    }
 }
 
 .temp:hover img {
-	display: none;
+    display: none;
 }
 
 .instagram-logo path {
-	fill: #454545;
+    fill: #454545;
 }
 
 .instagram-logo:hover path {
-	fill: #fff;
+    fill: #fff;
 }
 
 .rotated-text {
-	writing-mode: vertical-rl;
-	transform: rotate(360deg);
-	white-space: nowrap;
-	width: 30px;
-	color: #454545;
-	text-align: center;
-	transition: all 0.5s ease-in-out;
-	overflow: hidden;
+    writing-mode: vertical-rl;
+    transform: rotate(360deg);
+    white-space: nowrap;
+    width: 30px;
+    color: #454545;
+    text-align: center;
+    transition: all 0.25s ease-in-out;
+    overflow: hidden;
 }
 
 .rotated-text:hover {
-	color: #fff;
-	cursor: pointer;
-	transform: translateY(-10px);
+    color: #fff;
+    cursor: pointer;
+    transform: translateY(-10px);
 }
+
 .logo:hover {
-	position: relative;
-	transform: translateX(-5px) translateY(-5px);
-	box-shadow: 0.3em 0.3em 0 #979695;
+    position: relative;
+    transform: translateX(-5px) translateY(-5px);
+    box-shadow: 0.3em 0.3em 0 #979695;
 }
+
 .ffff {
-	font-family: --apple-system, "SF Mono";
-	font-size: 0.89rem;
+    font-family: --apple-system, "SF Mono";
+    font-size: 0.89rem;
 }
 
 .nav-item {
-	color: hsl(0 0% 100% / 0.5);
+    color: hsl(0 0% 100% / 0.5);
 }
+
 .nav-item:hover {
-	color: #fff;
+    color: #fff;
 }
+
 .sf-mono-text {
-	font-family: "SF Mono";
+    font-family: "SF Mono";
 }
+
 .calibre-font {
-	font-family: "Calibre", sans-serif;
+    font-family: "Calibre", sans-serif;
 }
+
 @media screen and (min-width: 500px) {
-	.home {
-		gap: 29px;
-	}
-	.home-name {
-		font-size: 70px;
-		line-height: 70px;
-	}
+    .home {
+        gap: 29px;
+    }
+
+    .home-name {
+        font-size: 70px;
+        line-height: 70px;
+    }
 }
+
 @media screen and (min-width: 700px) {
-	.home {
-		gap: 34px;
-	}
+    .home {
+        gap: 34px;
+    }
 }
-.about-text{
-	position: relative;
-	font-family: var(--font-ca);
+
+.about-text {
+    position: relative;
+    font-family: var(--font-ca);
 }
-.about-text::before{
-	content:'01.';
-	font-family: var(--font-sf);
-	font-size: 20px;
-	position: relative;
-	left:-5px;
+
+.about-text::before {
+    content: '01.';
+    font-family: var(--font-sf);
+    font-size: 20px;
+    position: relative;
+    left: -5px;
 }
-.about-text::after{
-	content: "";
-	display: block;
-	position: relative;
-	top: -28px;
-	height: 1px;
-	margin-left: 20px;
-	background-color: dimgray;
+
+.about-text::after {
+    content: "";
+    display: block;
+    position: relative;
+    top: -28px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: dimgray;
 }
+
+.skills li::before {
+    content: "▹";
+    color: white;
+}
+
+.image-overlay img {
+    transition: transform 0.25s ease-in-out;
+}
+
+.image-overlay + .border-profile {
+    transition: transform 0.25s ease-in-out;
+
+}
+
+.image-overlay:hover img {
+    transform: translateX(-5px) translateY(-5px);
+}
+
+.image-overlay:hover + .border-profile {
+    transition: transform 0.25s ease-in-out;
+}
+
+.image-overlay:hover + .border-profile {
+    transform: translateX(20px) translateY(5px);
+}
+
