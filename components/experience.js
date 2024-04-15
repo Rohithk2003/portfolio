@@ -21,8 +21,11 @@ export default function Experience() {
 
 	return (
 		<div
+			ref={ref}
 			id={"about"}
-			className={`h-max text-justify mt-28 lg:pt-36  flex flex-wrap justify-center lg:pl-[184px] md:pl-20     pl-5 md:p-20 sm:p-14 p-5 xs:pt-0 pt-20  pr-22 `}
+			className={`${
+				inView ? "slide-up-down" : "opacity-0"
+			} h-max text-justify mt-28 lg:pt-36  flex flex-wrap justify-center lg:pl-[184px] md:pl-20     pl-5 md:p-20 sm:p-14 p-5 xs:pt-0 pt-20  pr-22 `}
 		>
 			<div className="w-full h-20">
 				<div className="flex flex-row gap-5 justify-start items-center ">
