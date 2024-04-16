@@ -164,7 +164,7 @@ const projectsReducedDescriptions = [
 	{
 		id: 3,
 		project_name: "Web Tumor",
-		text: "Web App for detecting Tumors using Deep Learning and Django",
+		text: "Deep Learning Tumor Detection Web App",
 		description:
 			"Django Web App detecting tumors with Deep Learning, TensorFlow, and Keras.",
 		tools: ["Python", "Django", "Tensorflow", "Keras", "Next.JS"],
@@ -173,24 +173,16 @@ const projectsReducedDescriptions = [
 	{
 		id: 4,
 		project_name: "Lung Cancer Prediction",
-		text: "Lung Cancer Prediction using Machine Learning",
+		text: "Machine Learning",
 		description:
 			"ML project for predicting lung cancer using Python and various libraries.",
-		tools: [
-			"Machine Learning",
-			"Python",
-			"Pandas",
-			"Numpy",
-			"Matplotlib",
-			"Seaborn",
-			"Scikit-learn",
-		],
+		tools: ["Python", "Jupyter Notebook"],
 		url: "https://github.com/Rohithk2003/LungCancerPrediction",
 	},
 	{
 		id: 5,
 		project_name: "Youtube Music Scraper",
-		text: "Youtube Video Downloader and Audio Converter using Python",
+		text: "Video Downloader",
 		description:
 			"Python tool for downloading and converting YouTube videos to audio.",
 		tools: ["Python", "Pytube", "Moviepy"],
@@ -199,7 +191,7 @@ const projectsReducedDescriptions = [
 	{
 		id: 6,
 		project_name: "Leavescape",
-		text: "Java based Software for Leave Management System",
+		text: "Leave Management System",
 		description:
 			"Java-based Leave Management System software using Swing and PostgreSQL.",
 		tools: ["Java", "Swing", "PostgreSQL"],
@@ -289,33 +281,34 @@ export default function Project() {
 				</div>
 			</div>
 			<ul
-				className={`grid grid-rows-auto grid-cols-3 xl:gap-2 xl:pt-0 mt-10  pr-0 w-full items-start h-full`}
+				className={`flex flex-row flex-wrap md:justify-normal justify-center xl:gap-4 lg:gap-5 md:gap-6 pr-0 w-full items-start h-full`}
 			>
 				{projectsReducedDescriptions.map((project) => {
 					return (
 						<li
 							id={project.id}
 							ref={projectRefs[project.id]}
-							className={`flex flex-col bg-gray-800 gap-4 p-4 py-7 w-80 h-80 opacity-0 text-center  `}
+							className={`flex flex-col bg-gray-800 mt-10 pt-10 gap-4 p-4 py-7 w-80 h-80 opacity-0 text-center  `}
 							key={project.id}
 						>
-							<div
-								className={`${ca.className} text-md text-start w-full  text-[#6f6f6f] `}
-							>
-								{`${project.project_name}-${project.text}`}
-							</div>
-							<div className={`${ca.className}  text-start rounded-md `}>
-								{project.description}
-							</div>
-							<ul
-								className={`flex flex-wrap flex-row gap-3 ${sf.className} text-[13px] text-[#6f6f6f]`}
-							>
-								{project.tools.map((tool, index) => {
-									return <li key={index}>{tool}</li>;
-								})}
-							</ul>
-							<ul>
-								<li className="h-5 w-5 pop-up animate-8 text-[#6f6f6f]">
+							<div className="flex flex-row justify-between w-full">
+								<div className="w-10 h-10">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										role="img"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="1"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										className="feather feather-folder text-gray-400 hover:text-white transition-all duration-300 hover:-translate-y-1"
+									>
+										<title>Folder</title>
+										<path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+									</svg>
+								</div>
+								<div className="flex justify-center items-center pop-up animate-8 text-[#6f6f6f]">
 									<Link
 										href="https://github.com/Rohithk2003"
 										className="w-5 h-5"
@@ -335,7 +328,22 @@ export default function Project() {
 											<path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
 										</svg>
 									</Link>
-								</li>
+								</div>
+							</div>
+							<div
+								className={`${ca.className} text-md text-start w-full h-12  text-[#6f6f6f] `}
+							>
+								{`${project.project_name}-${project.text}`}
+							</div>
+							<div className={`${ca.className} h-24 text-start rounded-md `}>
+								{project.description}
+							</div>
+							<ul
+								className={`flex flex-wrap flex-row gap-3 ${sf.className} text-[13px] text-[#6f6f6f]`}
+							>
+								{project.tools.map((tool, index) => {
+									return <li key={index}>{tool}</li>;
+								})}
 							</ul>
 						</li>
 					);
