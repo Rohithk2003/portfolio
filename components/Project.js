@@ -196,7 +196,7 @@ export default function Project() {
 			id={"project"}
 			className={`${
 				inView ? "pop-up animate-1" : "opacity-0"
-			} h-max text-justify mt-28 lg:pt-36  flex flex-wrap  lg:pl-[184px] md:pl-20  pl-5 md:p-20 sm:p-14 p-5 xs:pt-0 pt-20   pr-0 `}
+			} h-max text-justify mt-28 lg:pt-36  flex flex-wrap  lg:pl-[184px] md:pl-20  pl-5 md:p-20 sm:p-14 p-5 xs:pt-0 pt-20   sm:pr-0  `}
 		>
 			<div className="w-full min-h-20">
 				<div className="flex flex-row gap-5  justify-start items-center ">
@@ -208,7 +208,7 @@ export default function Project() {
 				</div>
 			</div>
 			<ul
-				className={`flex flex-col flex-wrap xl:gap-2 xl:pt-0 mt-10 gap-3 pr-0 w-full items-start h-full`}
+				className={`flex flex-col flex-wrap xl:gap-2 xl:pt-0 mt-10 gap-3 sm:pr-0 pr-5 w-full items-start h-full`}
 			>
 				{main_projects.map((project) => {
 					return (
