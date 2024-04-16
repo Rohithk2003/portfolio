@@ -142,6 +142,87 @@ const projects = [
 		url: "https://aestheticdesigns.vercel.app",
 	},
 ];
+const projectsReducedDescriptions = [
+	{
+		id: 1,
+		project_name: "Tool Connect",
+		text: "E-Commerce Web App using ReactJS and Django",
+		description:
+			"E-Commerce Web App with ReactJS and Django for secure password management.",
+		tools: ["ReactJS", "Django", "Tailwind CSS", "SQLite"],
+		url: "https://github.com/Rohithk2003/toolConnect",
+	},
+	{
+		id: 2,
+		project_name: "One Pass",
+		text: "Password Manager",
+		description:
+			"Python-based Password Manager using AES 256 encryption and Tkinter interface.",
+		tools: ["Python", "Tkinter", "MySQL"],
+		url: "https://github.com/Rohithk2003/One-Pass",
+	},
+	{
+		id: 3,
+		project_name: "Web Tumor",
+		text: "Web App for detecting Tumors using Deep Learning and Django",
+		description:
+			"Django Web App detecting tumors with Deep Learning, TensorFlow, and Keras.",
+		tools: ["Python", "Django", "Tensorflow", "Keras", "Next.JS"],
+		url: "https://github.com/Rohithk2003/webTumor",
+	},
+	{
+		id: 4,
+		project_name: "Lung Cancer Prediction",
+		text: "Lung Cancer Prediction using Machine Learning",
+		description:
+			"ML project for predicting lung cancer using Python and various libraries.",
+		tools: [
+			"Machine Learning",
+			"Python",
+			"Pandas",
+			"Numpy",
+			"Matplotlib",
+			"Seaborn",
+			"Scikit-learn",
+		],
+		url: "https://github.com/Rohithk2003/LungCancerPrediction",
+	},
+	{
+		id: 5,
+		project_name: "Youtube Music Scraper",
+		text: "Youtube Video Downloader and Audio Converter using Python",
+		description:
+			"Python tool for downloading and converting YouTube videos to audio.",
+		tools: ["Python", "Pytube", "Moviepy"],
+		url: "https://github.com/Rohithk2003/youtubeMusicScraper",
+	},
+	{
+		id: 6,
+		project_name: "Leavescape",
+		text: "Java based Software for Leave Management System",
+		description:
+			"Java-based Leave Management System software using Swing and PostgreSQL.",
+		tools: ["Java", "Swing", "PostgreSQL"],
+		url: "https://github.com/Rohithk2003/Leavescape",
+	},
+	{
+		id: 7,
+		project_name: "Skyblaze",
+		text: "2-D Game using Pygame",
+		description: "Pygame-based 2D game development project.",
+		tools: ["Python", "Pygame"],
+		url: "https://github.com/Rohithk2003/Skyblaze",
+	},
+	{
+		id: 8,
+		project_name: "Aesthetic Designs",
+		text: "Website for a client",
+		description:
+			"Client website developed with ReactJS, Tailwind CSS, and Next.JS.",
+		tools: ["ReactJS", "Tailwind CSS", "Next.JS"],
+		url: "https://aestheticdesigns.vercel.app",
+	},
+];
 
 function useProjectRefs(projects) {
 	const refs = useRef({});
@@ -159,7 +240,7 @@ export default function Project() {
 		threshold: 0.1,
 		triggerOnce: true,
 	});
-	const projectRefs = useProjectRefs(main_projects);
+	const projectRefs = useProjectRefs(projectsReducedDescriptions);
 	useEffect(() => {
 		const options = {
 			threshold: 0.4,
@@ -208,51 +289,26 @@ export default function Project() {
 				</div>
 			</div>
 			<ul
-				className={`flex flex-col flex-wrap xl:gap-2 xl:pt-0 mt-10 gap-3 pr-0 w-full items-start h-full`}
+				className={`grid grid-rows-auto grid-cols-3 xl:gap-2 xl:pt-0 mt-10  pr-0 w-full items-start h-full`}
 			>
-				{main_projects.map((project) => {
+				{projectsReducedDescriptions.map((project) => {
 					return (
 						<li
 							id={project.id}
 							ref={projectRefs[project.id]}
-							className={`flex flex-col w-full opacity-0 ${
-								project.id % 2 !== 0
-									? "lg:justify-end justify-start lg:items-end items-start"
-									: "lg:justify-start justify-start lg:items-start items-start"
-							}   `}
+							className={`flex flex-col bg-gray-800 gap-4 p-4 py-7 w-80 h-80 opacity-0 text-center  `}
 							key={project.id}
 						>
 							<div
-								className={`${sf.className} mb-5 text-md  ${
-									project.id % 2 !== 0
-										? "lg:text-end text-start"
-										: "lg:text-start text-start"
-								}  w-full`}
+								className={`${ca.className} text-md text-start w-full  text-[#6f6f6f] `}
 							>
-								{project.project_name}
+								{`${project.project_name}-${project.text}`}
 							</div>
-							<div
-								className={`${
-									ca.className
-								} text-xl  w-full mb-5 text-[#6f6f6f]  ${
-									project.id % 2 !== 0
-										? "lg:text-end text-start"
-										: "lg:text-start text-start"
-								}`}
-							>
-								{project.text}
-							</div>
-							<div
-								className={`${
-									ca.className
-								} max-w-[400px]  bg-gray-800 text-[#7b8fac] p-6 ${
-									project.id % 2 !== 0 ? "lg:text-right" : "lg:text-start"
-								} text-start rounded-md `}
-							>
+							<div className={`${ca.className}  text-start rounded-md `}>
 								{project.description}
 							</div>
 							<ul
-								className={`flex flex-wrap flex-row lg:gap-10 gap-7 p-5 lg:pr-0 pr-auto lg:pl-auto pl-0  ${sf.className} text-[13px] text-[#6f6f6f]`}
+								className={`flex flex-wrap flex-row gap-3 ${sf.className} text-[13px] text-[#6f6f6f]`}
 							>
 								{project.tools.map((tool, index) => {
 									return <li key={index}>{tool}</li>;

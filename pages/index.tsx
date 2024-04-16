@@ -10,7 +10,7 @@ import Project from "@/components/Project";
 import Head from "next/head";
 import LeftSidebar from "@/components/leftSIdebar";
 import RightSidebar from "@/components/rightSidebar";
-
+import OtherProjects from "@/components/otherProjects";
 import { useEffect, useState } from "react";
 import Experience from "@/components/experience";
 
@@ -39,6 +39,7 @@ export default function Home() {
 					<About />
 					<Experience />
 					<Project />
+					<OtherProjects />
 				</div>
 				<div className={"w-[5%] md:block hidden"}>
 					<RightSidebar />
