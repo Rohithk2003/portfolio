@@ -17,6 +17,7 @@ const main_projects = [
 							management, ensuring security and usability.`,
 		tools: ["ReactJS", "Django", "Tailwind CSS", "SQLite"],
 		url: "https://github.com/Rohithk2003/toolConnect",
+		website_url: "",
 	},
 	{
 		id: 2,
@@ -28,6 +29,7 @@ const main_projects = [
 		management, ensuring security and usability.`,
 		tools: ["Python", "Tkinter", "MySQL"],
 		url: "https://github.com/Rohithk2003/One-Pass",
+		website_url: "",
 	},
 	{
 		id: 3,
@@ -40,6 +42,7 @@ const main_projects = [
 		facilitates an intuitive interface for efficient password
 		management, ensuring security and usability.`,
 		url: "https://github.com/Rohithk2003/webTumor",
+		website_url: "",
 	},
 ];
 
@@ -54,6 +57,7 @@ const projects = [
 								management, ensuring security and usability.`,
 		tools: ["ReactJS", "Django", "Tailwind CSS", "SQLite"],
 		url: "https://github.com/Rohithk2003/toolConnect",
+		website_url: "",
 	},
 	{
 		id: 2,
@@ -65,6 +69,7 @@ const projects = [
 		management, ensuring security and usability.`,
 		tools: ["Python", "Tkinter", "MySQL"],
 		url: "https://github.com/Rohithk2003/One-Pass",
+		website_url: "",
 	},
 	{
 		id: 3,
@@ -77,6 +82,7 @@ const projects = [
 		facilitates an intuitive interface for efficient password
 		management, ensuring security and usability.`,
 		url: "https://github.com/Rohithk2003/webTumor",
+		website_url: "",
 	},
 	{
 		id: 4,
@@ -96,6 +102,7 @@ const projects = [
 			"Scikit-learn",
 		],
 		url: "https://github.com/Rohithk2003/LungCancerPrediction",
+		website_url: "",
 	},
 	{
 		id: 5,
@@ -107,6 +114,7 @@ const projects = [
 		management, ensuring security and usability.`,
 		tools: ["Python", "Pytube", "Moviepy"],
 		url: "https://github.com/Rohithk2003/youtubeMusicScraper",
+		website_url: "",
 	},
 	{
 		id: 6,
@@ -118,6 +126,7 @@ const projects = [
 		management, ensuring security and usability.`,
 		tools: ["Java", "Swing", "PostgreSQL"],
 		url: "https://github.com/Rohithk2003/Leavescape",
+		website_url: "",
 	},
 	{
 		id: 7,
@@ -129,6 +138,7 @@ const projects = [
 		management, ensuring security and usability.`,
 		tools: ["Python", "Pygame"],
 		url: "https://github.com/Rohithk2003/Skyblaze",
+		website_url: "",
 	},
 	{
 		id: 8,
@@ -140,6 +150,7 @@ const projects = [
 		facilitates an intuitive interface for efficient password
 		management, ensuring security and usability.`,
 		url: "https://aestheticdesigns.vercel.app",
+		website_url: "https://aestheticdesigns.vercel.app",
 	},
 ];
 
@@ -170,11 +181,13 @@ export default function Project() {
 			entries.forEach((entry) => {
 				if (entry.isIntersecting) {
 					entry.target.classList.remove("opacity-0");
-					entry.target.classList.add(
-						"slide-up-down-2",
-						"animate-1",
-						"opacity-1"
-					);
+					if (!entry.target.classList.contains("slide-up-down-2")) {
+						entry.target.classList.add(
+							"slide-up-down-2",
+							"animate-1",
+							"opacity-1"
+						);
+					}
 				}
 			});
 		}, options);

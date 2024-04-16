@@ -2,146 +2,8 @@ import * as React from "react";
 import { useEffect } from "react";
 import Link from "next/link";
 import { useInView } from "react-intersection-observer";
-import localFont from "next/font/local";
 import { useRef } from "react";
-const sf = localFont({ src: "./sf.otf" });
-const ca = localFont({ src: "./ca.otf" });
-const main_projects = [
-	{
-		id: 1,
-		project_name: "Tool Connect",
-		text: "E-Commerce Web App using ReactJS and Django",
-		description: `This Python-based project is a Password Manager employing AES
-							256 encryption for local storage in a MySQL database. Tkinter
-							facilitates an intuitive interface for efficient password
-							management, ensuring security and usability.`,
-		tools: ["ReactJS", "Django", "Tailwind CSS", "SQLite"],
-		url: "https://github.com/Rohithk2003/toolConnect",
-	},
-	{
-		id: 2,
-		project_name: "One Pass",
-		text: "Password Manager",
-		description: `This Python-based project is a Password Manager employing AES
-		256 encryption for local storage in a MySQL database. Tkinter
-		facilitates an intuitive interface for efficient password
-		management, ensuring security and usability.`,
-		tools: ["Python", "Tkinter", "MySQL"],
-		url: "https://github.com/Rohithk2003/One-Pass",
-	},
-	{
-		id: 3,
-		project_name: "Web Tumor",
-		text: "Web App for detecting Tumors using Deep Learning and Django",
-		tools: ["Python", "Django", "Tensorflow", "Keras", "Next.JS"],
 
-		description: `This Python-based project is a Password Manager employing AES
-		256 encryption for local storage in a MySQL database. Tkinter
-		facilitates an intuitive interface for efficient password
-		management, ensuring security and usability.`,
-		url: "https://github.com/Rohithk2003/webTumor",
-	},
-];
-
-const projects = [
-	{
-		id: 1,
-		project_name: "Tool Connect",
-		text: "E-Commerce Web App using ReactJS and Django",
-		description: `This Python-based project is a Password Manager employing AES
-								256 encryption for local storage in a MySQL database. Tkinter
-								facilitates an intuitive interface for efficient password
-								management, ensuring security and usability.`,
-		tools: ["ReactJS", "Django", "Tailwind CSS", "SQLite"],
-		url: "https://github.com/Rohithk2003/toolConnect",
-	},
-	{
-		id: 2,
-		project_name: "One Pass",
-		text: "Password Manager",
-		description: `This Python-based project is a Password Manager employing AES
-		256 encryption for local storage in a MySQL database. Tkinter
-		facilitates an intuitive interface for efficient password
-		management, ensuring security and usability.`,
-		tools: ["Python", "Tkinter", "MySQL"],
-		url: "https://github.com/Rohithk2003/One-Pass",
-	},
-	{
-		id: 3,
-		project_name: "Web Tumor",
-		text: "Web App for detecting Tumors using Deep Learning and Django",
-		tools: ["Python", "Django", "Tensorflow", "Keras", "Next.JS"],
-
-		description: `This Python-based project is a Password Manager employing AES
-		256 encryption for local storage in a MySQL database. Tkinter
-		facilitates an intuitive interface for efficient password
-		management, ensuring security and usability.`,
-		url: "https://github.com/Rohithk2003/webTumor",
-	},
-	{
-		id: 4,
-		project_name: "Lung Cancer Prediction",
-		text: "Lung Cancer Prediction using Machine Learning",
-		description: `This Python-based project is a Password Manager employing AES
-		256 encryption for local storage in a MySQL database. Tkinter
-		facilitates an intuitive interface for efficient password
-		management, ensuring security and usability.`,
-		tools: [
-			"Machine Learning",
-			"Python",
-			"Pandas",
-			"Numpy",
-			"Matplotlib",
-			"Seaborn",
-			"Scikit-learn",
-		],
-		url: "https://github.com/Rohithk2003/LungCancerPrediction",
-	},
-	{
-		id: 5,
-		project_name: "Youtube Music Scraper",
-		text: "Youtube Video Downloader and Audio Converter using Python",
-		description: `This Python-based project is a Password Manager employing AES
-		256 encryption for local storage in a MySQL database. Tkinter
-		facilitates an intuitive interface for efficient password
-		management, ensuring security and usability.`,
-		tools: ["Python", "Pytube", "Moviepy"],
-		url: "https://github.com/Rohithk2003/youtubeMusicScraper",
-	},
-	{
-		id: 6,
-		project_name: "Leavescape",
-		text: "Java based Software for Leave Management System",
-		description: `This Python-based project is a Password Manager employing AES
-		256 encryption for local storage in a MySQL database. Tkinter
-		facilitates an intuitive interface for efficient password
-		management, ensuring security and usability.`,
-		tools: ["Java", "Swing", "PostgreSQL"],
-		url: "https://github.com/Rohithk2003/Leavescape",
-	},
-	{
-		id: 7,
-		project_name: "Skyblaze",
-		text: "2-D Game using Pygame",
-		description: `This Python-based project is a Password Manager employing AES
-		256 encryption for local storage in a MySQL database. Tkinter
-		facilitates an intuitive interface for efficient password
-		management, ensuring security and usability.`,
-		tools: ["Python", "Pygame"],
-		url: "https://github.com/Rohithk2003/Skyblaze",
-	},
-	{
-		id: 8,
-		project_name: "Aesthetic Designs",
-		text: "Website for a client",
-		tools: ["ReactJS", "Tailwind CSS", "Next.JS"],
-		description: `This Python-based project is a Password Manager employing AES
-		256 encryption for local storage in a MySQL database. Tkinter
-		facilitates an intuitive interface for efficient password
-		management, ensuring security and usability.`,
-		url: "https://aestheticdesigns.vercel.app",
-	},
-];
 const projectsReducedDescriptions = [
 	{
 		id: 1,
@@ -150,6 +12,7 @@ const projectsReducedDescriptions = [
 		description:
 			"E-Commerce Web App with ReactJS and Django for secure password management.",
 		tools: ["ReactJS", "Django", "Tailwind CSS", "SQLite"],
+		website_url: "",
 		url: "https://github.com/Rohithk2003/toolConnect",
 	},
 	{
@@ -159,6 +22,7 @@ const projectsReducedDescriptions = [
 		description:
 			"Python-based Password Manager using AES 256 encryption and Tkinter interface.",
 		tools: ["Python", "Tkinter", "MySQL"],
+		website_url: "",
 		url: "https://github.com/Rohithk2003/One-Pass",
 	},
 	{
@@ -168,6 +32,7 @@ const projectsReducedDescriptions = [
 		description:
 			"Django Web App detecting tumors with Deep Learning, TensorFlow, and Keras.",
 		tools: ["Python", "Django", "Tensorflow", "Keras", "Next.JS"],
+		website_url: "https://webtumor.onrender.com/",
 		url: "https://github.com/Rohithk2003/webTumor",
 	},
 	{
@@ -177,6 +42,7 @@ const projectsReducedDescriptions = [
 		description:
 			"ML project for predicting lung cancer using Python and various libraries.",
 		tools: ["Python", "Jupyter Notebook"],
+		website_url: "",
 		url: "https://github.com/Rohithk2003/LungCancerPrediction",
 	},
 	{
@@ -186,6 +52,7 @@ const projectsReducedDescriptions = [
 		description:
 			"Python tool for downloading and converting YouTube videos to audio.",
 		tools: ["Python", "Pytube", "Moviepy"],
+		website_url: "",
 		url: "https://github.com/Rohithk2003/youtubeMusicScraper",
 	},
 	{
@@ -195,6 +62,7 @@ const projectsReducedDescriptions = [
 		description:
 			"Java-based Leave Management System software using Swing and PostgreSQL.",
 		tools: ["Java", "Swing", "PostgreSQL"],
+		website_url: "",
 		url: "https://github.com/Rohithk2003/Leavescape",
 	},
 	{
@@ -203,6 +71,7 @@ const projectsReducedDescriptions = [
 		text: "2-D Game using Pygame",
 		description: "Pygame-based 2D game development project.",
 		tools: ["Python", "Pygame"],
+		website_url: "",
 		url: "https://github.com/Rohithk2003/Skyblaze",
 	},
 	{
@@ -212,7 +81,8 @@ const projectsReducedDescriptions = [
 		description:
 			"Client website developed with ReactJS, Tailwind CSS, and Next.JS.",
 		tools: ["ReactJS", "Tailwind CSS", "Next.JS"],
-		url: "https://aestheticdesigns.vercel.app",
+		website_url: "https://aestheticdesigns.vercel.ap",
+		url: "",
 	},
 ];
 
@@ -237,6 +107,7 @@ export default function Project() {
 			elementRef.current &&
 			elementRef.current.classList.contains("slide-up-down-2")
 		) {
+			elementRef.current.classList.add("animation-over");
 			elementRef.current.classList.remove("slide-up-down-2");
 		}
 	};
@@ -244,6 +115,7 @@ export default function Project() {
 	useEffect(() => {
 		const options = {
 			threshold: 0.4,
+
 			triggerOnce: true,
 		};
 
@@ -251,17 +123,18 @@ export default function Project() {
 			entries.forEach((entry) => {
 				if (entry.isIntersecting) {
 					entry.target.classList.remove("opacity-0");
-					entry.target.classList.add(
-						"slide-up-down-2",
-						"hover:-translate-y-10",
-						"transition-all",
-						"duration-500",
-						"ease-in-out",
-						"hover:text-white!",
-						"card-animation",
-						"animate-1",
-						"opacity-1"
-					);
+					if (!entry.target.classList.contains("animation-over"))
+						entry.target.classList.add(
+							"slide-up-down-2",
+							"hover:-translate-y-2",
+							"transition-all",
+							"duration-500",
+							"ease-in-out",
+							"hover:text-white!",
+							"card-animation",
+							"animate-1",
+							"opacity-1"
+						);
 					entry.target.onAnimationEnd = () => {
 						entry.target.classList.remove("slide-up-down-2");
 					};
@@ -337,34 +210,68 @@ export default function Project() {
 										<path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
 									</svg>
 								</div>
-								<div className="flex justify-center items-center pop-up animate-8 text-[#6f6f6f]">
-									<Link
-										href="https://github.com/Rohithk2003"
-										className="w-5 h-5"
-									>
-										<svg
-											xmlns="http://www.w3.org/2000/svg"
-											role="img"
-											viewBox="0 0 24 24"
-											fill="none"
-											stroke="currentColor"
-											strokeWidth="2"
-											strokeLinecap="round"
-											strokeLinejoin="round"
-											className="feather feather-github h-5 hover:text-white transition-all duration-300 hover:-translate-y-1"
+								<div className="flex justify-center gap-2 items-center pop-up animate-8 text-[#6f6f6f]">
+									{project.url && (
+										<Link
+											href={project.url}
+											className="w-5 h-5"
 										>
-											<title>GitHub</title>
-											<path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-										</svg>
-									</Link>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												role="img"
+												viewBox="0 0 24 24"
+												fill="none"
+												stroke="currentColor"
+												strokeWidth="2"
+												strokeLinecap="round"
+												strokeLinejoin="round"
+												className="feather feather-github h-5 hover:text-white transition-all duration-300 hover:-translate-y-1"
+											>
+												<title>GitHub</title>
+												<path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+											</svg>
+										</Link>
+									)}
+									{project.website_url ? (
+										<Link
+											href={project.website_url}
+											className="w-5 h-5"
+										>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												role="img"
+												viewBox="0 0 24 24"
+												fill="none"
+												stroke="currentColor"
+												stroke-width="2"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												className="feather feather-github h-5 hover:text-white transition-all duration-300 hover:-translate-y-1"
+											>
+												<title>External Link</title>
+												<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+												<polyline points="15 3 21 3 21 9"></polyline>
+												<line
+													x1="10"
+													y1="14"
+													x2="21"
+													y2="3"
+												></line>
+											</svg>
+										</Link>
+									) : (
+										""
+									)}
 								</div>
 							</div>
 							<div
-								className={`font-mono text-md text-start w-full h-12  text-[#6f6f6f] `}
+								className={`font-mono text-lg text-start w-full h-12 heading-text font-extrabold text-[#9f9f9f] `}
 							>
 								{`${project.project_name}-${project.text}`}
 							</div>
-							<div className={`font-mono h-24 text-start rounded-md `}>
+							<div
+								className={`font-mono h-24 text-start rounded-md text-[#6f6f6f] `}
+							>
 								{project.description}
 							</div>
 							<ul
