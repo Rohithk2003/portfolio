@@ -232,6 +232,14 @@ export default function Project() {
 		threshold: 0.1,
 		triggerOnce: true,
 	});
+	const onAnimationEndHandler = (elementRef) => {
+		if (
+			elementRef.current &&
+			elementRef.current.classList.contains("slide-up-down-2")
+		) {
+			elementRef.current.classList.remove("slide-up-down-2");
+		}
+	};
 	const projectRefs = useProjectRefs(projectsReducedDescriptions);
 	useEffect(() => {
 		const options = {
@@ -245,9 +253,18 @@ export default function Project() {
 					entry.target.classList.remove("opacity-0");
 					entry.target.classList.add(
 						"slide-up-down-2",
+						"hover:-translate-y-10",
+						"transition-all",
+						"duration-500",
+						"ease-in-out",
+						"hover:text-white!",
+						"card-animation",
 						"animate-1",
 						"opacity-1"
 					);
+					entry.target.onAnimationEnd = () => {
+						entry.target.classList.remove("slide-up-down-2");
+					};
 				}
 			});
 		}, options);
@@ -273,8 +290,19 @@ export default function Project() {
 		>
 			<div className="w-full min-h-20">
 				<div className="flex flex-row gap-5  justify-center items-center ">
-					<div className={`font-mono   text-[25px]  font-bold `}>
-						Other Notable Projects
+					<div
+						className={`font-sf_display leading-loose text-[25px]  font-bold `}
+					>
+						Other Noteworthy Projects
+					</div>
+				</div>
+				<div className="w-full text-center font-sans text-gray-500 ">
+					<div className="flex flex-row gap-5  justify-center items-center ">
+						<div
+							className={`font-sf leading-loose text-md  font-bold underline-animation `}
+						>
+							view the archive
+						</div>
 					</div>
 				</div>
 			</div>
@@ -286,7 +314,10 @@ export default function Project() {
 						<li
 							id={project.id}
 							ref={projectRefs[project.id]}
-							className={`flex flex-col bg-gray-800  pt-10 gap-4 p-4 py-7 w-80 h-80 opacity-0 text-center  `}
+							onAnimationEnd={() => {
+								onAnimationEndHandler(projectRefs[project.id]);
+							}}
+							className={`flex flex-col relative  bg-gray-800  pt-10 gap-4 p-4 py-7 w-80 h-80 opacity-0 text-center  `}
 							key={project.id}
 						>
 							<div className="flex flex-row justify-between w-full">

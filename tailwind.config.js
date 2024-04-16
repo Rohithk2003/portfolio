@@ -19,6 +19,8 @@ module.exports = {
 				sans: ["var(--font-sf)"],
 				mono: ["var(--font-ca)"],
 				calibre: ["var(--font-calibre)"],
+				sf_pro: ["var(--font-sf-pro)"],
+				sf_display: ["var(--font-sf-display)"],
 			},
 			animation: {
 				"text-reveal": "text-reveal 1.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s",

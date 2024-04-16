@@ -582,3 +582,24 @@ body {
 .image-overlay:hover + .border-profile {
 	transform: translateX(20px) translateY(5px);
 }
+
+.underline-animation {
+	position: relative;
+	transition: all 0.5s ease-in-out;
+}
+.underline-animation::after {
+	content: "";
+	width: 0px;
+	background-color: gray;
+	transition: all 0.25s ease-in-out;
+	height: 2px;
+	position: absolute;
+	top: 27px;
+	left: 0;
+}
+.underline-animation:hover::after {
+	width: 100%;
+}
+.card-animation:hover > * {
+	color: white;
+}
