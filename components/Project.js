@@ -208,7 +208,7 @@ export default function Project() {
 				</div>
 			</div>
 			<ul
-				className={`flex flex-col flex-wrap xl:gap-2 xl:pt-0 mt-10 gap-3 sm:pr-0 pr-5 w-full items-start h-full`}
+				className={`flex flex-col flex-wrap xl:gap-2 xl:pt-0 mt-10 gap-3 sm:pr-0 pr-3 w-full items-start h-full`}
 			>
 				{main_projects.map((project) => {
 					return (
