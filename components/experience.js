@@ -25,7 +25,7 @@ export default function Experience() {
 			id={"about"}
 			className={`${
 				inView ? "slide-up-down" : "opacity-0"
-			} h-max text-justify mt-28 lg:pt-36  flex flex-wrap justify-center lg:pl-[184px] md:pl-20     pl-5 md:p-20 sm:p-14 p-5 xs:pt-0 pt-20  pr-22 `}
+			} h-max text-justify mt-28 lg:pt-36  flex flex-wrap  lg:pl-[184px] md:pl-20     pl-5 md:p-20 sm:p-14 p-5 xs:pt-0 pt-20  `}
 		>
 			<div className="w-full h-20">
 				<div className="flex flex-row gap-5 justify-start items-center ">
@@ -40,7 +40,7 @@ export default function Experience() {
 				className={`flex flex-row flex-wrap xl:gap-0 gap-10 justify-center  items-center  w-full h-full`}
 			>
 				<div
-					className={`${sf.className} lg:w-1/3 w-full h-full text-start font-mono text-[20px] text-[#767676] flex flex-col gap-2`}
+					className={`${sf.className} lg:w-1/4 w-full h-full text-start font-mono text-[20px] text-[#767676] flex flex-col gap-2`}
 				>
 					<ul className="flex lg:flex-col flex-row h-full justify-start md:w-[250px] w-full ">
 						<li
@@ -53,15 +53,17 @@ export default function Experience() {
 					</ul>
 				</div>
 				<div
-					className={`xl:w-2/3 w-full h-full flex justify-start flex-col gap-4 items-start ${ca.className}`}
+					className={`xl:w-3/4 w-full h-full flex justify-start flex-col gap-4 items-start ${ca.className}`}
 				>
-					<div className="text-2xl font-bold flex flex-row gap-2">
+					<div className="md:text-2xl text-xl font-bold flex flex-row gap-2">
 						<span className="text-[#767676]">Research Intern</span>{" "}
 						<span>@</span>
 						<span className="text-white">ACM Amritapuri</span>
 					</div>
 					<div className={`${sf.className}`}>Sept 2023 - Feb 2024</div>
-					<ul className={`${ca.className} skills text-lg flex flex-col gap-3`}>
+					<ul
+						className={`${ca.className} skills text-lg flex w-full flex-col gap-3`}
+					>
 						<li>
 							I&apos;ve authored a research paper on &quot;SQL Query Processing
 							using Matrix Factorization and Query Recommendation&quot;,
