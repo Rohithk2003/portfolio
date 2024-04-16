@@ -30,7 +30,6 @@ export default function Home() {
 			{/* <Services /> */}
 			{/* <Skills/> */}
 			{/* <ContactDetails /> */}
-			{/* <Footer /> */}
 			<div className={"flex "}>
 				<div className={"w-[5%] md:block hidden"}>
 					<LeftSidebar />
@@ -42,6 +41,7 @@ export default function Home() {
 					<Project />
 					<OtherProjects />
 					<Whatsnext />
+					<Footer />
 				</div>
 				<div className={"w-[5%] md:block hidden"}>
 					<RightSidebar />

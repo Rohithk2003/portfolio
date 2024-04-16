@@ -3,7 +3,7 @@ export default function Footer() {
 		<footer>
 			<div
 				className={
-					"flex flex-wrap flex-row justify-between w-full h-24 md:gap-0 gap-10 align-middle items-center p-10 pt-5"
+					"flex flex-wrap flex-row font-sans justify-between w-full text-sm h-24 md:gap-0 gap-10 align-middle items-center p-10 pt-5"
 				}
 			>
 				<div
