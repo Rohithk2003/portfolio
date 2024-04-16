@@ -190,7 +190,7 @@ export default function Project() {
 				</div>
 			</div>
 			<ul
-				className={`flex flex-wrap flex-row mt-10 p-16 md:justify-normal justify-center gap-4 pr-0 w-full items-start h-full`}
+				className={`flex flex-wrap flex-row mt-10 md:p-16 pr-0 p-4 md:justify-normal justify-center gap-4  w-full items-start h-full`}
 			>
 				{projectsReducedDescriptions.map((project) => {
 					return (
