@@ -81,8 +81,18 @@ const projectsReducedDescriptions = [
 		description:
 			"Client website developed with ReactJS, Tailwind CSS, and Next.JS.",
 		tools: ["ReactJS", "Tailwind CSS", "Next.JS"],
-		website_url: "https://aestheticdesigns.vercel.ap",
+		website_url: "https://aestheticdesigns.vercel.app",
 		url: "",
+	},
+	{
+		id: 9,
+		project_name: "Modiva",
+		text: "E-Commerce Shopping Website",
+		description:
+			"E-Commerce Shopping Website developed with HTML, CSS and Javascript",
+		tools: ["HTML", "CSS", "Javascript", "Bootstrap"],
+		website_url: "",
+		url: "https://github.com/Rohithk2003/modiva",
 	},
 ];
 
@@ -99,7 +109,7 @@ function useProjectRefs(projects) {
 }
 export default function Project() {
 	const [ref, inView, entry] = useInView({
-		threshold: 0.1,
+		threshold: 0.3,
 		triggerOnce: true,
 	});
 	const onAnimationEndHandler = (elementRef) => {
@@ -152,13 +162,13 @@ export default function Project() {
 			observer.disconnect();
 		};
 	});
-
+	const [showmore, setshowmore] = React.useState(false);
 	return (
 		<div
 			ref={ref}
 			id={"project"}
 			className={`${
-				inView ? "pop-up animate-1" : "opacity-0"
+				inView ? "pop-up animate-4" : "opacity-0"
 			} h-max text-justify mt-28 lg:pt-36  flex flex-wrap  lg:pl-[184px] md:pl-20  pl-5 md:p-20 sm:p-14 p-5 xs:pt-0 pt-20   pr-0 `}
 		>
 			<div className="w-full min-h-20">
@@ -180,7 +190,7 @@ export default function Project() {
 				</div>
 			</div>
 			<ul
-				className={`flex flex-wrap flex-row mt-10 p-16 md:justify-normal justify-center gap-2 pr-0 w-full items-start h-full`}
+				className={`flex flex-wrap flex-row mt-10 p-16 md:justify-normal justify-center gap-4 pr-0 w-full items-start h-full`}
 			>
 				{projectsReducedDescriptions.map((project) => {
 					return (
@@ -190,7 +200,9 @@ export default function Project() {
 							onAnimationEnd={() => {
 								onAnimationEndHandler(projectRefs[project.id]);
 							}}
-							className={`flex flex-col relative  bg-gray-800  pt-10 gap-4 p-4 py-7 w-80 h-80 opacity-0 text-center  `}
+							className={` flex-col relative ${
+								project.id >= 7 ? (showmore ? "flex" : "hidden") : "flex"
+							} bg-gray-800  pt-10 gap-4 p-4 py-7 w-80 h-80 opacity-0 text-center  `}
 							key={project.id}
 						>
 							<div className="flex flex-row justify-between w-full">
@@ -285,6 +297,16 @@ export default function Project() {
 					);
 				})}
 			</ul>
+			<div className="w-full h-24 flex justify-center items-center">
+				<div
+					onClick={() => {
+						setshowmore(!showmore);
+					}}
+					className={`bg-white flex justify-center items-center font-sans sm:mt-7 mt-20 text-black md:ml-0 ml-1 rounded-md sm:w-44 w-32 text-md h-12 btn-style5`}
+				>
+					{showmore ? "Show Less" : "Show More"}
+				</div>
+			</div>
 		</div>
 	);
 }
