@@ -17,7 +17,7 @@ const main_projects = [
 							management, ensuring security and usability.`,
 		tools: ["ReactJS", "Django", "Tailwind CSS", "SQLite"],
 		url: "https://github.com/Rohithk2003/toolConnect",
-		website_url: "",
+		website_url: "https://tool-connect.vercel.app",
 	},
 	{
 		id: 2,
@@ -57,7 +57,7 @@ const projects = [
 								management, ensuring security and usability.`,
 		tools: ["ReactJS", "Django", "Tailwind CSS", "SQLite"],
 		url: "https://github.com/Rohithk2003/toolConnect",
-		website_url: "",
+		website_url: "https://tool-connect.vercel.app",
 	},
 	{
 		id: 2,

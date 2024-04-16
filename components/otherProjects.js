@@ -12,7 +12,7 @@ const projectsReducedDescriptions = [
 		description:
 			"E-Commerce Web App with ReactJS and Django for secure password management.",
 		tools: ["ReactJS", "Django", "Tailwind CSS", "SQLite"],
-		website_url: "",
+		website_url: "https://tool-connect.vercel.app",
 		url: "https://github.com/Rohithk2003/toolConnect",
 	},
 	{
