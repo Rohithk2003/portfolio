@@ -23,7 +23,7 @@ const services = [
 	},
 ];
 
-export class ServiceCard extends Component<{
+export className ServiceCard extends Component<{
 	image_link: any;
 	key: any;
 	text: any;

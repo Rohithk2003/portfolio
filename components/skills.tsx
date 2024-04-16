@@ -11,7 +11,7 @@ const services = [
     }, {"text": "React", "percentage": "70"}
 ]
 
-export class SkillsCard extends Component<{ key: any, percentage: any, text: any }> {
+export className SkillsCard extends Component<{ key: any, percentage: any, text: any }> {
     render() {
         let {text, key, percentage} = this.props;
         return (

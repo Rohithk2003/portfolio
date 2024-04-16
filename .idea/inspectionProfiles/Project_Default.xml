@@ -1,21 +1,21 @@
 <component name="InspectionProjectProfileManager">
   <profile version="1.0">
     <option name="myName" value="Project Default" />
-    <inspection_tool class="CssUnknownProperty" enabled="true" level="WARNING" enabled_by_default="true">
+    <inspection_tool className="CssUnknownProperty" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="myCustomPropertiesEnabled" value="true" />
       <option name="myIgnoreVendorSpecificProperties" value="false" />
       <option name="myCustomPropertiesList">
         <value>
           <list size="3">
-            <item index="0" class="java.lang.String" itemvalue="animation-timeline" />
-            <item index="1" class="java.lang.String" itemvalue="animation-range-start" />
-            <item index="2" class="java.lang.String" itemvalue="animation-range-end" />
+            <item index="0" className="java.lang.String" itemvalue="animation-timeline" />
+            <item index="1" className="java.lang.String" itemvalue="animation-range-start" />
+            <item index="2" className="java.lang.String" itemvalue="animation-range-end" />
           </list>
         </value>
       </option>
     </inspection_tool>
-    <inspection_tool class="Eslint" enabled="true" level="WARNING" enabled_by_default="true" />
-    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+    <inspection_tool className="Eslint" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool className="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
       <option name="ignoredErrors">
         <list>
           <option value="N803" />

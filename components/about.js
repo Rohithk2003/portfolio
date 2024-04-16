@@ -1,16 +1,10 @@
-import { Inter } from "next/font/google";
 import { useInView } from "react-intersection-observer";
 import localFont from "next/font/local";
-import Link from "next/link";
 import Image from "next/image";
 
 const sf = localFont({ src: "./sf.otf" });
 const ca = localFont({ src: "./ca.otf" });
 
-const inter = Inter({
-	subsets: ["latin"],
-	weight: ["300"],
-});
 export default function About() {
 	const [ref, inView, entry] = useInView({
 		threshold: 0.3,
@@ -38,7 +32,7 @@ export default function About() {
 				className={`flex flex-row flex-wrap xl:gap-0 gap-10 justify-center  items-center  w-full h-full`}
 			>
 				<div
-					className={`${ca.className} lg:w-1/2 w-full h-full text-start font-mono text-[20px] text-[#767676] flex flex-col gap-2`}
+					className={`${ca.className} lg:w-1/2 w-full h-full text-start font-mono text-[17px] text-[#767676] flex flex-col gap-5`}
 				>
 					<div>
 						Hello I&apos;m Rohith, a passionate frontend developer based in
@@ -79,15 +73,15 @@ export default function About() {
 						experiences across all my projects.
 					</div>
 					<div>
-						Here are a few technologies I’ve been working with recently:
+						Here are a few technologies I&apos;ve been working with recently:
 					</div>
 					<ul className={"grid grid-cols-2 skills"}>
 						<li>JavaScript (ES6+)</li>
-						<li> TypeScript</li>
+						<li> Python</li>
 						<li> React</li>
-						<li> Eleventy</li>
-						<li> Node.js</li>
-						<li> WordPress</li>
+						<li> Django</li>
+						<li> Postgres</li>
+						<li> C++</li>
 					</ul>
 				</div>
 				<div className={`w-1/2 h-full flex justify-center items-center`}>
