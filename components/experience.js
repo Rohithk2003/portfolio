@@ -53,7 +53,7 @@ export default function Experience() {
 					</ul>
 				</div>
 				<div
-					className={`lg:w-2/3 w-full h-full flex justify-start flex-col gap-4 items-start ${ca.className}`}
+					className={`xl:w-2/3 w-full h-full flex justify-start flex-col gap-4 items-start ${ca.className}`}
 				>
 					<div className="text-2xl font-bold flex flex-row gap-2">
 						<span className="text-[#767676]">Research Intern</span>{" "}

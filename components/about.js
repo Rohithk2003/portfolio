@@ -32,7 +32,7 @@ export default function About() {
 				className={`flex flex-row flex-wrap xl:gap-0 gap-10 justify-center  items-center  w-full h-full`}
 			>
 				<div
-					className={`${ca.className} lg:w-1/2 w-full h-full text-start font-mono text-[17px] text-[#767676] flex flex-col gap-5`}
+					className={`${ca.className} xl:w-1/2 w-full h-full text-start font-mono text-[17px] text-[#767676] flex flex-col gap-5`}
 				>
 					<div>
 						Hello I&apos;m Rohith, a passionate frontend developer based in

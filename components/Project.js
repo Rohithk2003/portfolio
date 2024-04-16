@@ -89,10 +89,10 @@ export default function Project() {
 			id={"about"}
 			className={`${
 				inView ? "pop-up animate-1" : "opacity-0"
-			} h-max text-justify mt-28 lg:pt-36  flex flex-wrap justify-center lg:pl-[184px] md:pl-20     pl-5 md:p-20 sm:p-14 p-5 xs:pt-0 pt-20  pr-22 `}
+			} h-max text-justify mt-28 lg:pt-36  flex flex-wrap justify-center lg:pl-[184px] md:pl-20     pl-5 md:p-20 sm:p-14 p-5 xs:pt-0 pt-20  lg:pr-22 pr-0 `}
 		>
-			<div className="w-full h-20">
-				<div className="flex flex-row gap-5 justify-start items-center ">
+			<div className="w-full min-h-20">
+				<div className="flex flex-row gap-5  justify-start items-center ">
 					<div
 						className={`project-text  before:content-['03.'] text-[28px] after:md:w-[300px] after:w-[100px] after:md:left-[300px] after:left-[140px] font-bold `}
 					>
@@ -101,27 +101,27 @@ export default function Project() {
 				</div>
 			</div>
 			<div
-				className={`flex flex-col flex-wrap xl:gap-2 gap-3 md:justify-end justify-start  md:items-end items-start  md:w-2/3 w-full  h-full`}
+				className={`flex flex-col flex-wrap xl:gap-2 xl:pt-0 mt-10 gap-3 pr-5 lg:justify-end justify-start  lg:items-end items-start  xl:w-2/3 w-full  h-full`}
 			>
 				<div
-					className={`${sf.className} md:text-xs text-md md:text-end text-start w-full`}
+					className={`${sf.className} lg:text-xs text-md lg:text-end text-start w-full`}
 				>
 					Featured Project
 				</div>
 				<div
-					className={`${ca.className} text-2xl md:text-end text-star w-full mb-5 text-[#6f6f6f]`}
+					className={`${ca.className} text-2xl lg:text-end text-star w-full mb-5 text-[#6f6f6f]`}
 				>
 					One Pass - Password Manager
 				</div>
 				<div
-					className={`${ca.className} w-[500px] bg-gray-800 text-[#7b8fac] p-6 md:text-right text-start rounded-md `}
+					className={`${ca.className} max-w-[400px]  bg-gray-800 text-[#7b8fac] p-6 lg:text-right text-start rounded-md `}
 				>
 					A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and
 					more. Available on Visual Studio Marketplace, Package Control, Atom
 					Package Manager, and npm.
 				</div>
 				<ul
-					className={`flex flex-row gap-10 p-5 md:pr-0 pr-auto md:pl-auto pl-0  ${sf.className} text-[13px] text-[#6f6f6f]`}
+					className={`flex flex-wrap flex-row lg:gap-10 gap-7 p-5 lg:pr-0 pr-auto lg:pl-auto pl-0  ${sf.className} text-[13px] text-[#6f6f6f]`}
 				>
 					<li>Next.JS</li>
 					<li>Django</li>
