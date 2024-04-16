@@ -202,7 +202,7 @@ export default function Project() {
 							}}
 							className={` flex-col relative ${
 								project.id >= 7 ? (showmore ? "flex" : "hidden") : "flex"
-							} bg-gray-800  pt-10 gap-4 p-4 py-7 w-80 h-80 opacity-0 text-center  `}
+							} bg-gray-800  pt-10 gap-4 p-4 py-7 w-80 h-80 opacity-0 text-center md:mb-0 mt-7 `}
 							key={project.id}
 						>
 							<div className="flex flex-row justify-between w-full">
