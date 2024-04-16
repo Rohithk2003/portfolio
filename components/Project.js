@@ -179,7 +179,7 @@ export default function Project() {
 				</div>
 			</div>
 			<ul
-				className={`flex flex-col flex-wrap xl:gap-2 xl:pt-0 mt-10 gap-3 pr-5 w-full items-start h-full`}
+				className={`flex flex-col flex-wrap xl:gap-2 xl:pt-0 mt-10 gap-3 pr-0 w-full items-start h-full`}
 			>
 				{projects.map((project) => {
 					return (
