@@ -272,23 +272,21 @@ export default function Project() {
 			} h-max text-justify mt-28 lg:pt-36  flex flex-wrap  lg:pl-[184px] md:pl-20  pl-5 md:p-20 sm:p-14 p-5 xs:pt-0 pt-20   pr-0 `}
 		>
 			<div className="w-full min-h-20">
-				<div className="flex flex-row gap-5  justify-start items-center ">
-					<div
-						className={`project-text before:content-['03.'] after:md:block after:hidden  text-[28px] after:md:w-[300px] after:w-[100px] after:md:left-[300px] after:left-[140px] font-bold `}
-					>
-						Some Things I&apos;ve Built
+				<div className="flex flex-row gap-5  justify-center items-center ">
+					<div className={`font-mono   text-[25px]  font-bold `}>
+						Other Notable Projects
 					</div>
 				</div>
 			</div>
 			<ul
-				className={`flex flex-row flex-wrap md:justify-normal justify-center xl:gap-4 lg:gap-5 md:gap-6 pr-0 w-full items-start h-full`}
+				className={`flex flex-wrap flex-row mt-10 md:justify-normal justify-center xl:gap-16 lg:gap-5 md:gap-6 pr-0 w-full items-start h-full`}
 			>
 				{projectsReducedDescriptions.map((project) => {
 					return (
 						<li
 							id={project.id}
 							ref={projectRefs[project.id]}
-							className={`flex flex-col bg-gray-800 mt-10 pt-10 gap-4 p-4 py-7 w-80 h-80 opacity-0 text-center  `}
+							className={`flex flex-col bg-gray-800  pt-10 gap-4 p-4 py-7 w-80 h-80 opacity-0 text-center  `}
 							key={project.id}
 						>
 							<div className="flex flex-row justify-between w-full">
@@ -331,15 +329,15 @@ export default function Project() {
 								</div>
 							</div>
 							<div
-								className={`${ca.className} text-md text-start w-full h-12  text-[#6f6f6f] `}
+								className={`font-mono text-md text-start w-full h-12  text-[#6f6f6f] `}
 							>
 								{`${project.project_name}-${project.text}`}
 							</div>
-							<div className={`${ca.className} h-24 text-start rounded-md `}>
+							<div className={`font-mono h-24 text-start rounded-md `}>
 								{project.description}
 							</div>
 							<ul
-								className={`flex flex-wrap flex-row gap-3 ${sf.className} text-[13px] text-[#6f6f6f]`}
+								className={`flex flex-wrap flex-row gap-3 font-sans text-[13px] text-[#6f6f6f]`}
 							>
 								{project.tools.map((tool, index) => {
 									return <li key={index}>{tool}</li>;

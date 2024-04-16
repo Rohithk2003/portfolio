@@ -223,7 +223,7 @@ export default function Project() {
 							key={project.id}
 						>
 							<div
-								className={`${sf.className} mb-5 text-md  ${
+								className={`font-sans mb-5 text-md  ${
 									project.id % 2 !== 0
 										? "lg:text-end text-start"
 										: "lg:text-start text-start"
@@ -252,7 +252,7 @@ export default function Project() {
 								{project.description}
 							</div>
 							<ul
-								className={`flex flex-wrap flex-row lg:gap-10 gap-7 p-5 lg:pr-0 pr-auto lg:pl-auto pl-0  ${sf.className} text-[13px] text-[#6f6f6f]`}
+								className={`flex flex-wrap flex-row lg:gap-10 gap-7 p-5 lg:pr-0 pr-auto lg:pl-auto pl-0  font-sans text-[13px] text-[#6f6f6f]`}
 							>
 								{project.tools.map((tool, index) => {
 									return <li key={index}>{tool}</li>;
