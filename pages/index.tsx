@@ -38,6 +38,7 @@ export default function Home() {
 					<Main />
 					<About />
 					<Experience />
+					<Project />
 				</div>
 				<div className={"w-[5%] md:block hidden"}>
 					<RightSidebar />

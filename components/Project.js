@@ -8,7 +8,12 @@ import Typography from "@mui/material/Typography";
 import { useEffect } from "react";
 import Link from "next/link";
 import LazyLoad from "react-lazyload";
+import { useInView } from "react-intersection-observer";
+import localFont from "next/font/local";
+import Image from "next/image";
 
+const sf = localFont({ src: "./sf.otf" });
+const ca = localFont({ src: "./ca.otf" });
 const projects = [
 	{
 		id: 1,
@@ -67,113 +72,85 @@ const projects = [
 		url: "https://aestheticdesigns.vercel.app",
 	},
 ];
-function MediaCard({ text, heading, url, image_url }) {
-	return (
-		<Card
-			className="hover:scale-125 hover:rounded-lg transition-all duration-300 hover:z-[1000] z-[10000]"
-			sx={{
-				width: 345,
-				height: 300,
-				borderRadius: "10px 10px 10px 10px",
-				backgroundColor: "#222222",
-				color: "white",
-			}}
-		>
-			<CardMedia
-				sx={{ height: 140 }}
-				image={image_url}
-				preload={true}
-				title={heading}
-			/>
-			<CardContent>
-				<Typography
-					gutterBottom
-					variant="h5"
-					component="div"
-				>
-					{heading}
-				</Typography>
-				<Typography
-					variant="body2"
-					className="h-10"
-				>
-					{text}
-				</Typography>
-			</CardContent>
-			<CardActions className="flex ml-2 flex-row gap-4 w-32 h-8 rounded-lg  text-white">
-				<div className="flex justify-center items-center bg-gray-400 w-10 h-10 rounded-full shadow-xl">
-					<Link
-						size="small"
-						href={url}
-					>
-						{url.includes("vercel") ? (
-							<i
-								className="fa-solid fa-earth-americas"
-								style={{
-									color: "#1c4b97",
-								}}
-							></i>
-						) : (
-							<i
-								className="fa-brands fa-github"
-								style={{
-									color: "#1c4b97",
-								}}
-							></i>
-						)}
-					</Link>
-				</div>
-			</CardActions>
-		</Card>
-	);
-}
+// function MediaCard({ text, heading, url, image_url }) {
+// 	return (
+// 	);
+// }
 
 export default function Project() {
-	useEffect(() => {
-		const scrollers = document.querySelectorAll(".scroller");
-		console.log("D");
-		if (!window.matchMedia("(prefers-reduced-motion:reduce)").matches) {
-			addAnimation();
-		}
-		function addAnimation() {
-			scrollers.forEach((scroller) => {
-				scroller.setAttribute("data-animated", true);
-				const scrollerInner = scroller.querySelector(".scroller__inner");
-				const scrollerContent = Array.from(scrollerInner.children);
-				scrollerContent.forEach((item) => {
-					const clone = item.cloneNode(true);
-					clone.setAttribute("aria-hidden", true);
-					scrollerInner.appendChild(clone);
-				});
-			});
-		}
+	const [ref, inView, entry] = useInView({
+		threshold: 0.3,
+		triggerOnce: true,
 	});
 
 	return (
 		<div
-			id={"projects"}
-			className="flex scroll-reveal flex-col justify-center z-[10] items-center md:h-[100vh] h-svh gap-10 md:p-20 p-10 pb-0"
+			ref={ref}
+			id={"about"}
+			className={`${
+				inView ? "pop-up animate-1" : "opacity-0"
+			} h-max text-justify mt-28 lg:pt-36  flex flex-wrap justify-center lg:pl-[184px] md:pl-20     pl-5 md:p-20 sm:p-14 p-5 xs:pt-0 pt-20  pr-22 `}
 		>
-			<p className="text-2xl md:text-start text-center text-[#454545] md:w-3/4 w-full ">
-				Projects
-			</p>
-			<div className="flex flex-row md:p-5 p-0 gap-10 justify-center  items-center w-full">
-				<div className="scroller ">
-					<ul className="tag-list scroller__inner">
-						{projects.map((project) => {
-							return (
-								<li key={project.id}>
-									<MediaCard
-										text={project.text}
-										heading={project.heading}
-										url={project.url}
-										image_url={project.image_url}
-									/>
-								</li>
-							);
-						})}
-					</ul>
+			<div className="w-full h-20">
+				<div className="flex flex-row gap-5 justify-start items-center ">
+					<div
+						className={`project-text  before:content-['03.'] text-[28px] after:md:w-[300px] after:w-[100px] after:md:left-[300px] after:left-[140px] font-bold `}
+					>
+						Some Things I&apos;ve Built
+					</div>
 				</div>
+			</div>
+			<div
+				className={`flex flex-col flex-wrap xl:gap-2 gap-3 md:justify-end justify-start  md:items-end items-start  md:w-2/3 w-full  h-full`}
+			>
+				<div
+					className={`${sf.className} md:text-xs text-md md:text-end text-start w-full`}
+				>
+					Featured Project
+				</div>
+				<div
+					className={`${ca.className} text-2xl md:text-end text-star w-full mb-5 text-[#6f6f6f]`}
+				>
+					One Pass - Password Manager
+				</div>
+				<div
+					className={`${ca.className} w-[500px] bg-gray-800 text-[#7b8fac] p-6 md:text-right text-start rounded-md `}
+				>
+					A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and
+					more. Available on Visual Studio Marketplace, Package Control, Atom
+					Package Manager, and npm.
+				</div>
+				<ul
+					className={`flex flex-row gap-10 p-5 md:pr-0 pr-auto md:pl-auto pl-0  ${sf.className} text-[13px] text-[#6f6f6f]`}
+				>
+					<li>Next.JS</li>
+					<li>Django</li>
+					<li>SQLite</li>
+					<li>Tailwind CSS</li>
+				</ul>
+				<ul>
+					<li className="h-5 w-5 pop-up animate-8 text-[#6f6f6f]">
+						<Link
+							href="https://github.com/Rohithk2003"
+							className="w-5 h-5"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								role="img"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								strokeWidth="2"
+								strokeLinecap="round"
+								strokeLinejoin="round"
+								className="feather feather-github h-5 hover:text-white transition-all duration-300 hover:-translate-y-1"
+							>
+								<title>GitHub</title>
+								<path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+							</svg>
+						</Link>
+					</li>
+				</ul>
 			</div>
 		</div>
 	);
