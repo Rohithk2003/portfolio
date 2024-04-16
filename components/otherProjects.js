@@ -109,7 +109,7 @@ function useProjectRefs(projects) {
 }
 export default function Project() {
 	const [ref, inView, entry] = useInView({
-		threshold: 0.3,
+		threshold: 0.1,
 		triggerOnce: true,
 	});
 	const onAnimationEndHandler = (elementRef) => {
