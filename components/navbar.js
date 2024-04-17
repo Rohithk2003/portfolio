@@ -128,7 +128,7 @@ export default function Navbar() {
 						<div className="flex flex-row gap-1 slide-down animate-3-faster">
 							<span>03. </span>
 							<div className="nav-item ">
-								<Link className="#project">Work</Link>
+								<Link href="#project">Work</Link>
 							</div>
 						</div>
 						<div className="flex flex-row gap-1 slide-down animate-4-faster">

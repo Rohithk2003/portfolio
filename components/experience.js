@@ -1,7 +1,6 @@
 import { Inter } from "next/font/google";
 import { useInView } from "react-intersection-observer";
 import localFont from "next/font/local";
-import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 
