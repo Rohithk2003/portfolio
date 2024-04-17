@@ -115,19 +115,27 @@ export default function Navbar() {
 					<div className="flex flex-row gap-14 h-28 ffff justify-center items-center">
 						<div className="flex flex-row gap-1 slide-down animate-1-faster">
 							<span>01. </span>
-							<div className="nav-item ">About</div>
+							<div className="nav-item ">
+								<Link href={"#about"}>About</Link>
+							</div>
 						</div>
 						<div className="flex flex-row gap-1 slide-down animate-2-faster">
 							<span>02. </span>
-							<div className="nav-item ">Experience</div>
+							<div className="nav-item ">
+								<Link href={"#experience"}>Experience</Link>
+							</div>
 						</div>
 						<div className="flex flex-row gap-1 slide-down animate-3-faster">
 							<span>03. </span>
-							<div className="nav-item ">Work</div>
+							<div className="nav-item ">
+								<Link className="#project">Work</Link>
+							</div>
 						</div>
 						<div className="flex flex-row gap-1 slide-down animate-4-faster">
 							<span>04. </span>
-							<div className="nav-item ">Contact</div>
+							<div className="nav-item ">
+								<Link href={"#contact"}>Contact</Link>
+							</div>
 						</div>
 						<div className="bg-white text-center  align-middle flex  justify-center items-center text-black rounded-md w-24  h-10 btn-style5 slide-down animate-5-faster">
 							<Link href="https://flowcv.com/resume/34p8i21ase">Resume </Link>

@@ -22,7 +22,7 @@ export default function Experience() {
 	return (
 		<div
 			ref={ref}
-			id={"about"}
+			id={"experience"}
 			className={`${
 				inView ? "slide-up-down" : "opacity-0"
 			} h-max text-justify mt-28 lg:pt-36  flex flex-wrap  lg:pl-[184px] md:pl-20     pl-5 md:p-20 sm:p-14 p-5 xs:pt-0 pt-20  `}
