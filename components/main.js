@@ -43,7 +43,7 @@ export default function Main() {
 			<div
 				className={`bg-white flex justify-center items-center font-sans sm:mt-7 mt-4 text-black md:ml-0 ml-1 rounded-md sm:w-44 w-32 text-md h-12 btn-style5`}
 			>
-				<Link href={"mailto@rohithk652@gmail.com"}>Say Hello!</Link>
+				<Link href={"mailto:@rohithk652@gmail.com"}>Say Hello!</Link>
 			</div>
 		</div>
 	);
