@@ -200,16 +200,28 @@ export default function Navbar() {
 					className={`font-sans flex flex-col justify-between items-center h-2/3 mb-10 pb-10`}
 				>
 					<li className=" flex flex-col justify-center items-center text-center">
-						<span>01.</span> <span className="">About</span>
+						<span>01.</span>{" "}
+						<span className="">
+							<Link href={"#about"}>About</Link>
+						</span>
 					</li>
 					<li className=" flex flex-col justify-center items-center text-center">
-						<span>02</span> <span className="">Experience</span>
+						<span>02</span>{" "}
+						<span className="">
+							<Link href={"#experience"}>Experience</Link>
+						</span>
 					</li>
 					<li className=" flex flex-col justify-center items-center text-center">
-						<span>03.</span> <span className="">Work</span>
+						<span>03.</span>{" "}
+						<span className="">
+							<Link href="#project">Work</Link>
+						</span>
 					</li>
 					<li className=" flex flex-col justify-center items-center text-center">
-						<span>04.</span> <span className="">Contact</span>
+						<span>04.</span>{" "}
+						<span className="">
+							<Link href={"#contact"}>Contact</Link>
+						</span>
 					</li>
 					<li>
 						<div className="bg-white flex justify-center items-center text-black rounded-md w-24  h-10 btn-style5">
