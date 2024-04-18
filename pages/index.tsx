@@ -31,13 +31,12 @@ export default function Home() {
 					overlayVisible ? "opacity-1" : "opacity-0"
 				} flex justify-center items-center  z-[2000] fixed  transition duration-300 ease-in-out top-0 left-0 bg-black`}
 			>
-				<div className={"w-10 h-10  "}>
+				<div className={"w-24 h-24"}>
 					<svg
 						id="logo"
 						xmlns="http://www.w3.org/2000/svg"
 						role="img"
 						onAnimationEnd={() => {
-							console.log("d");
 							setOverlayVisible(false);
 						}}
 						viewBox="0 0 84 96"
