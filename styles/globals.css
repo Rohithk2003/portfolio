@@ -636,8 +636,14 @@ body {
 		stroke-dashoffset: 0;
 	}
 }
-/* @keyframes identifier { */
-/* } */
-/* #name-text {
-	animation: ;
-} */
+@keyframes draw-in {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+#name-text {
+	animation: draw-in 2s ease-in-out;
+}
