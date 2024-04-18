@@ -237,7 +237,9 @@ body {
 .animate-15 {
 	animation-delay: 3.5s;
 }
-
+.animate-20 {
+	animation-delay: 5s;
+}
 .animate-2-faster {
 	animation-delay: 0.1s; /* Adjusted animation delay */
 }
@@ -257,7 +259,24 @@ body {
 .animate-6-faster {
 	animation-delay: 0.7s; /* Adjusted animation delay */
 }
-
+.animate-7-faster {
+	animation-delay: 0.75s; /* Adjusted animation delay */
+}
+.animate-8-faster {
+	animation-delay: 0.8s; /* Adjusted animation delay */
+}
+.animate-9-faster {
+	animation-delay: 0.85s; /* Adjusted animation delay */
+}
+.animate-9-faster {
+	animation-delay: 0.9s; /* Adjusted animation delay */
+}
+.animate-10-faster {
+	animation-delay: 1s; /* Adjusted animation delay */
+}
+.animate-11-faster {
+	animation-delay: 1s; /* Adjusted animation delay */
+}
 .bg-left-to-right {
 	background: linear-gradient(to right, #f26c4f 50%, white 50%);
 	background-size: 200% 100%;
@@ -467,7 +486,10 @@ body {
 	transform: translateX(-5px) translateY(-5px);
 	box-shadow: 0.3em 0.3em 0 #979695;
 }
-
+#logo {
+	stroke-dasharray: 4500;
+	animation: draw 8s ease;
+}
 .ffff {
 	font-family: --apple-system, "SF Mono";
 	font-size: 0.89rem;
@@ -606,3 +628,16 @@ body {
 .card-animation:hover > .heading-text {
 	color: white;
 }
+@keyframes draw {
+	0% {
+		stroke-dashoffset: 4500;
+	}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+/* @keyframes identifier { */
+/* } */
+/* #name-text {
+	animation: ;
+} */

@@ -71,7 +71,7 @@ export default function Navbar() {
 			<nav
 				className={`flex w-full fixed navbar h-24 transition-all duration-300 ease-in-out z-[500] justify-between md:px-10 px-4 md:pb-0 pb-6 bg-black text-white  items-center`}
 			>
-				<div className="w-1/6 h-28 flex  justify-start items-center pop-up animate-1">
+				<div className="w-1/6 h-28 flex  justify-start items-center pop-up animate-6">
 					<div className={"w-10 h-10  "}>
 						<svg
 							id="logo"
@@ -97,6 +97,7 @@ export default function Navbar() {
 									<text
 										x="26"
 										y="57"
+										id={"name-text"}
 										fill="currentColor"
 										fontSize="40"
 										fontFamily="Roboto"
@@ -113,31 +114,31 @@ export default function Navbar() {
 					className={`font-sans w-max md:block  hidden h-28 nav-items text-md `}
 				>
 					<div className="flex flex-row gap-14 h-28 ffff justify-center items-center">
-						<div className="flex flex-row gap-1 slide-down animate-1-faster">
+						<div className="flex flex-row gap-1 slide-down animate-7-faster">
 							<span>01. </span>
 							<div className="nav-item ">
 								<Link href={"#about"}>About</Link>
 							</div>
 						</div>
-						<div className="flex flex-row gap-1 slide-down animate-2-faster">
+						<div className="flex flex-row gap-1 slide-down animate-8-faster">
 							<span>02. </span>
 							<div className="nav-item ">
 								<Link href={"#experience"}>Experience</Link>
 							</div>
 						</div>
-						<div className="flex flex-row gap-1 slide-down animate-3-faster">
+						<div className="flex flex-row gap-1 slide-down animate-9-faster">
 							<span>03. </span>
 							<div className="nav-item ">
 								<Link href="#project">Work</Link>
 							</div>
 						</div>
-						<div className="flex flex-row gap-1 slide-down animate-4-faster">
+						<div className="flex flex-row gap-1 slide-down animate-10-faster">
 							<span>04. </span>
 							<div className="nav-item ">
 								<Link href={"#contact"}>Contact</Link>
 							</div>
 						</div>
-						<div className="bg-white text-center  align-middle flex  justify-center items-center text-black rounded-md w-24  h-10 btn-style5 slide-down animate-5-faster">
+						<div className="bg-white text-center  align-middle flex  justify-center items-center text-black rounded-md w-24  h-10 btn-style5 slide-down animate-11-faster">
 							<Link href="https://flowcv.com/resume/34p8i21ase">Resume </Link>
 						</div>
 					</div>

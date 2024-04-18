@@ -9,7 +9,7 @@ export default function Footer() {
 				<div
 					className={"text-[#ffffff]	lg:pl-24 md:pl-14   text-center  w-full "}
 				>
-					Desined & Built By Rohith K{" "}
+					Designed & Built By Rohith K{" "}
 				</div>
 			</div>
 		</footer>
