@@ -302,7 +302,7 @@ export default function Project() {
 					onClick={() => {
 						setshowmore(!showmore);
 					}}
-					className={`bg-white flex justify-center items-center font-sans sm:mt-7 mt-20 text-black md:ml-0 ml-1 rounded-md sm:w-44 w-32 text-md h-12 btn-style5`}
+					className={`bg-white flex justify-center items-center font-sans sm:mt-7 mt-20 text-black  rounded-md mr-28 sm:w-44 w-32 text-md h-12 btn-style5`}
 				>
 					{showmore ? "Show Less" : "Show More"}
 				</div>

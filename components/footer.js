@@ -7,7 +7,7 @@ export default function Footer() {
 				}
 			>
 				<div
-					className={"text-[#ffffff]	lg:pl-24 md:pl-14   text-center  w-full "}
+					className={"text-[#ffffff]	   text-center  w-full "}
 				>
 					Designed & Built By Rohith K{" "}
 				</div>

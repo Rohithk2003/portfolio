@@ -3,7 +3,7 @@ export default function Whatsnext() {
 	return (
 		<div
 			id={"contact"}
-			className="w-full  h-max text-justify  flex flex-wrap md:mt-0 mt-14 lg:pl-[184px] md:pl-20   md:p-20 sm:p-0 p-5  sm:pt-0 pt-20   sm:pr-0 "
+			className="w-full  h-max text-justify  flex flex-wrap md:mt-0 mt-14  md:pl-20   md:p-20 sm:p-0 p-5  sm:pt-0 pt-20   sm:pr-0 "
 		>
 			<div className="w-full min-h-20 flex flex-col gap-5">
 				<div className="flex flex-row gap-5  justify-center items-center ">
