@@ -202,25 +202,53 @@ export default function Navbar() {
 					<li className=" flex flex-col justify-center items-center text-center">
 						<span>01.</span>{" "}
 						<span className="">
-							<Link href={"#about"}>About</Link>
+							<Link
+								href={"#about"}
+								onClick={() => {
+									setHamButtonStatus(false);
+								}}
+							>
+								About
+							</Link>
 						</span>
 					</li>
 					<li className=" flex flex-col justify-center items-center text-center">
 						<span>02</span>{" "}
 						<span className="">
-							<Link href={"#experience"}>Experience</Link>
+							<Link
+								href={"#experience"}
+								onClick={() => {
+									setHamButtonStatus(false);
+								}}
+							>
+								Experience
+							</Link>
 						</span>
 					</li>
 					<li className=" flex flex-col justify-center items-center text-center">
 						<span>03.</span>{" "}
 						<span className="">
-							<Link href="#project">Work</Link>
+							<Link
+								href="#project"
+								onClick={() => {
+									setHamButtonStatus(false);
+								}}
+							>
+								Work
+							</Link>
 						</span>
 					</li>
 					<li className=" flex flex-col justify-center items-center text-center">
 						<span>04.</span>{" "}
 						<span className="">
-							<Link href={"#contact"}>Contact</Link>
+							<Link
+								href={"#contact"}
+								onClick={() => {
+									setHamButtonStatus(false);
+								}}
+							>
+								Contact
+							</Link>
 						</span>
 					</li>
 					<li>

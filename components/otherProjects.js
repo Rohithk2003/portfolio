@@ -171,7 +171,7 @@ export default function Project() {
 				inView ? "pop-up animate-4" : "opacity-0"
 			} h-max text-justify mt-28 lg:pt-36  flex flex-wrap  lg:pl-[184px]   md:p-20  xs:pt-0 pt-20   pr-0 `}
 		>
-			<div className="w-full min-h-20 pr-32">
+			<div className="w-full min-h-20 lg:pr-32 pr-0">
 				<div className="flex flex-row gap-5  justify-center items-center ">
 					<div
 						className={`font-sf_display leading-loose text-[25px]  font-bold `}
@@ -302,7 +302,7 @@ export default function Project() {
 					onClick={() => {
 						setshowmore(!showmore);
 					}}
-					className={`bg-white flex justify-center items-center font-sans sm:mt-7 mt-20 text-black  rounded-md mr-28 sm:w-44 w-32 text-md h-12 btn-style5`}
+					className={`bg-white flex justify-center items-center font-sans sm:mt-7 mt-20 text-black  rounded-md lg:mr-28 mr-0 sm:w-44 w-32 text-md h-12 btn-style5`}
 				>
 					{showmore ? "Show Less" : "Show More"}
 				</div>
