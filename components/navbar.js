@@ -203,12 +203,10 @@ export default function Navbar() {
 						<span>01.</span>{" "}
 						<span className="">
 							<Link
+								legacyBehavior
 								href={"#about"}
-								onClick={() => {
-									setHamButtonStatus(false);
-								}}
 							>
-								About
+								<a onClick={handleHamButtonClick}>About</a>
 							</Link>
 						</span>
 					</li>
@@ -216,12 +214,10 @@ export default function Navbar() {
 						<span>02</span>{" "}
 						<span className="">
 							<Link
+								legacyBehavior
 								href={"#experience"}
-								onClick={() => {
-									setHamButtonStatus(false);
-								}}
 							>
-								Experience
+								<a onClick={handleHamButtonClick}>Experience</a>
 							</Link>
 						</span>
 					</li>
@@ -229,12 +225,10 @@ export default function Navbar() {
 						<span>03.</span>{" "}
 						<span className="">
 							<Link
+								legacyBehavior
 								href="#project"
-								onClick={() => {
-									setHamButtonStatus(false);
-								}}
 							>
-								Work
+								<a onClick={handleHamButtonClick}>Work</a>
 							</Link>
 						</span>
 					</li>
@@ -242,12 +236,10 @@ export default function Navbar() {
 						<span>04.</span>{" "}
 						<span className="">
 							<Link
+								legacyBehavior
 								href={"#contact"}
-								onClick={() => {
-									setHamButtonStatus(false);
-								}}
 							>
-								Contact
+								<a onClick={handleHamButtonClick}>Contact</a>
 							</Link>
 						</span>
 					</li>
