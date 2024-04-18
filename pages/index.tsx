@@ -14,11 +14,7 @@ import Experience from "@/components/experience";
 
 export default function Home() {
 	const [title, setTitle] = useState("Web Developer | Rohith Krishnan");
-	useEffect(() => {
-		setTimeout(() => {
-			setOverlayVisible(false);
-		}, 1000);
-	});
+
 	const [overlayVisible, setOverlayVisible] = useState(true);
 	return (
 		<>
@@ -28,7 +24,7 @@ export default function Home() {
 			<Navbar />
 			<div
 				className={`w-[100%] h-[100%] ${
-					overlayVisible ? "opacity-1" : "opacity-0"
+					overlayVisible ? "opacity-1" : "opacity-0 hidden"
 				} flex justify-center items-center  z-[2000] fixed  transition duration-300 ease-in-out top-0 left-0 bg-black`}
 			>
 				<div className={"w-24 h-24"}>
@@ -36,11 +32,11 @@ export default function Home() {
 						id="logo"
 						xmlns="http://www.w3.org/2000/svg"
 						role="img"
+						viewBox="0 0 84 96"
 						onAnimationEnd={() => {
 							setOverlayVisible(false);
 						}}
-						viewBox="0 0 84 96"
-						className={`  w-24 h-24 text-white font-bold`}
+						className={`  w-24 h-24 first-animation text-white font-bold`}
 					>
 						<title>Logo</title>
 						<g transform="translate(-8.000000, -2.000000)">

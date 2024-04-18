@@ -486,9 +486,9 @@ body {
 	transform: translateX(-5px) translateY(-5px);
 	box-shadow: 0.3em 0.3em 0 #979695;
 }
-#logo {
+.first-animation {
 	stroke-dasharray: 4500;
-	animation: draw 8s ease;
+	animation: draw 8s ease-in-out, scale-out 1s 1.5s ease-in-out;
 }
 .ffff {
 	font-family: --apple-system, "SF Mono";
@@ -636,6 +636,14 @@ body {
 		stroke-dashoffset: 0;
 	}
 }
+@keyframes scale-out {
+	0% {
+		scale: 1;
+	}
+	100% {
+		scale: 0;
+	}
+}
 @keyframes draw-in {
 	from {
 		opacity: 0;
@@ -646,4 +654,7 @@ body {
 }
 #name-text {
 	animation: draw-in 2s ease-in-out;
+}
+.play-second-animation {
+	animation: scale-out 2s ease-in-out;
 }

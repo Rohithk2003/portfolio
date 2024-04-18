@@ -6,9 +6,7 @@ export default function Footer() {
 					"flex flex-wrap flex-row font-sans justify-between w-full text-sm h-24 md:gap-0 gap-10 align-middle items-center "
 				}
 			>
-				<div
-					className={"text-[#ffffff]	   text-center  w-full "}
-				>
+				<div className={"text-[#ffffff]	   text-center  w-full "}>
 					Designed & Built By Rohith K{" "}
 				</div>
 			</div>

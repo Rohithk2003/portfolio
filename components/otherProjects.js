@@ -171,7 +171,7 @@ export default function Project() {
 				inView ? "pop-up animate-4" : "opacity-0"
 			} h-max text-justify mt-28 lg:pt-36  flex flex-wrap  lg:pl-[184px]   md:p-20  xs:pt-0 pt-20   pr-0 `}
 		>
-			<div className="w-full min-h-20">
+			<div className="w-full min-h-20 pr-32">
 				<div className="flex flex-row gap-5  justify-center items-center ">
 					<div
 						className={`font-sf_display leading-loose text-[25px]  font-bold `}
@@ -190,7 +190,7 @@ export default function Project() {
 				</div>
 			</div>
 			<ul
-				className={`flex flex-wrap flex-row mt-10 md:p-14 pr-0 p-0 md:justify-normal justify-center gap-2  w-full items-start h-full`}
+				className={`flex flex-wrap flex-row mt-10  pr-0 p-0 lg:justify-normal justify-center gap-2  w-full items-start h-full`}
 			>
 				{projectsReducedDescriptions.map((project) => {
 					return (
