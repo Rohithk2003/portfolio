@@ -190,7 +190,7 @@ export default function Project() {
 				</div>
 			</div>
 			<ul
-				className={`flex flex-wrap flex-row mt-10  pr-0 p-0 lg:justify-normal justify-center gap-2  w-full items-start h-full`}
+				className={`grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-2 place-items-center mt-10  lg:mr-28 mr-0 p-0    w-full items-start h-full`}
 			>
 				{projectsReducedDescriptions.map((project) => {
 					return (
