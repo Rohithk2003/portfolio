@@ -20,6 +20,73 @@ export default function Home() {
 		<>
 			<Head>
 				<title>{title}</title>
+				<meta charSet="UTF-8" />
+				<meta
+					name="viewport"
+					content="width=device-width, initial-scale=1.0"
+				/>
+				<meta
+					name="description"
+					content="Portfolio of Rohith Krishnan, showcasing engineering projects and achievements."
+				/>
+				<meta
+					name="keywords"
+					content="Rohith Krishnan, engineer, portfolio, projects, achievements"
+				/>
+				<meta
+					name="author"
+					content="Rohith Krishnan"
+				/>
+				<meta
+					name="robots"
+					content="index,follow"
+				/>
+				<link
+					rel="canonical"
+					href="https://rohithk.engineer"
+				/>
+
+				<meta
+					property="og:title"
+					content={title}
+				/>
+				<meta
+					property="og:description"
+					content="Portfolio of Rohith Krishnan, showcasing engineering projects and achievements."
+				/>
+				<meta
+					property="og:type"
+					content="website"
+				/>
+				<meta
+					property="og:url"
+					content="https://rohithk.engineer"
+				/>
+				<meta
+					property="og:image"
+					content="https://www.rohithk.engineer/images/profile.jpg"
+				/>
+
+				<meta
+					name="twitter:card"
+					content="summary_large_image"
+				/>
+				<meta
+					name="twitter:site"
+					content="@reidd_777"
+				/>
+				<meta
+					name="twitter:title"
+					content="Rohith Krishnan - Portfolio"
+				/>
+				<meta
+					name="twitter:description"
+					content="Portfolio of Rohith Krishnan, showcasing engineering projects and achievements."
+				/>
+				<meta
+					name="twitter:image"
+					content="https://rohithk.engineer/your-image.jpg"
+				/>
 			</Head>
 			<Navbar />
 			<div
