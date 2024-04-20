@@ -15,25 +15,25 @@ export default function Main() {
 	return (
 		<div
 			id={"home"}
-			className={`home pop-up md:mt-16 mt-24 animate-10 flex bg-black flex-wrap  flex-col w-full h-dvh xs:gap-5 gap-6 md:gap-9 lg:gap-4  lg:pl-44 md:pl-20     pl-5 md:p-20 sm:p-14 p-5 xs:pt-0 pt-20  pr-2 `}
+			className={`home pop-up md:mt-16 mt-24 animate-10 flex bg-black flex-wrap  flex-col w-full h-dvh xs:gap-5 gap-6 md:gap-9 lg:gap-4 2xl:gap-7 lg:pl-44 md:pl-20     pl-5 md:p-20 sm:p-14 p-5 xs:pt-0 pt-20  pr-2 `}
 		>
 			<div
-				className={`md:h-3 md:mb-6 mb-6 md:mt-7 mt-11 h-6 w-full md:pl-0 pl-1 text-gray-300 font-sans`}
+				className={`md:h-3 md:mb-6 mb-6 2xl:text-3xl md:mt-7 mt-11 h-6 w-full md:pl-0 pl-1 text-gray-300 font-sans`}
 			>
 				Hi, my name is
 			</div>
 			<div
-				className={`home-name text-white  md:text-7xl sm:text-7xl text-6xl font-extrabold font-mono `}
+				className={`home-name text-white 2xl:text-9xl md:text-7xl sm:text-7xl text-6xl font-extrabold font-mono `}
 			>
 				Rohith Krishnan
 			</div>
 			<div
-				className={`home-sub-text font-mono md:text-7xl sm:text-7xl xs:text-6xl text-5xl font-extrabold text-gray-300 `}
+				className={`home-sub-text font-mono 2xl:text-9xl md:text-7xl sm:text-7xl xs:text-6xl text-5xl font-extrabold text-gray-300 `}
 			>
 				I build things for the web
 			</div>
 			<div
-				className={`md:pl-0 pl-1 home-text md:w-1/2 sm:w-2/3 w-full text-gray-400 font-[400]  text-[20px] pr-5 font-mono`}
+				className={`md:pl-0 pl-1 home-text 2xl:w-3/4 md:w-1/2 sm:w-2/3 w-full text-gray-400 font-[400] 2xl:text-[25px] text-[20px] pr-5 font-mono`}
 			>
 				I&apos;m a software engineer specializing in building exceptional
 				digital experiences. Currently, I&apos;m a student at Amrita Vishwa
