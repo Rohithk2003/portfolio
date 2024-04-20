@@ -114,31 +114,31 @@ export default function Navbar() {
 					className={`font-sans w-max md:block  hidden h-28 nav-items text-md `}
 				>
 					<div className="flex flex-row gap-14 h-28 ffff justify-center items-center">
-						<div className="flex flex-row gap-1 slide-down animate-7-faster">
+						<div className="flex flex-row gap-1 slide-down animate-8">
 							<span>01. </span>
 							<div className="nav-item ">
 								<Link href={"#about"}>About</Link>
 							</div>
 						</div>
-						<div className="flex flex-row gap-1 slide-down animate-8-faster">
+						<div className="flex flex-row gap-1 slide-down animate-9">
 							<span>02. </span>
 							<div className="nav-item ">
 								<Link href={"#experience"}>Experience</Link>
 							</div>
 						</div>
-						<div className="flex flex-row gap-1 slide-down animate-9-faster">
+						<div className="flex flex-row gap-1 slide-down animate-10">
 							<span>03. </span>
 							<div className="nav-item ">
 								<Link href="#project">Work</Link>
 							</div>
 						</div>
-						<div className="flex flex-row gap-1 slide-down animate-10-faster">
+						<div className="flex flex-row gap-1 slide-down animate-11">
 							<span>04. </span>
 							<div className="nav-item ">
 								<Link href={"#contact"}>Contact</Link>
 							</div>
 						</div>
-						<div className="bg-white text-center  align-middle flex  justify-center items-center text-black rounded-md w-24  h-10 btn-style5 slide-down animate-11-faster">
+						<div className="bg-white text-center  align-middle flex  justify-center items-center text-black rounded-md w-24  h-10 btn-style5 slide-down animate-12">
 							<Link href="https://flowcv.com/resume/34p8i21ase">Resume </Link>
 						</div>
 					</div>

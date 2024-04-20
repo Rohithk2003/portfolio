@@ -237,8 +237,26 @@ body {
 .animate-15 {
 	animation-delay: 3.5s;
 }
+.animate-16 {
+	animation-delay: 3.75s;
+}
+.animate-17 {
+	animation-delay: 4s;
+}
+.animate-18 {
+	animation-delay: 4.25s;
+}
+.animate-19 {
+	animation-delay: 4.5s;
+}
 .animate-20 {
+	animation-delay: 4.75s;
+}
+.animate-21 {
 	animation-delay: 5s;
+}
+.animate-22 {
+	animation-delay: 5.25s;
 }
 .animate-2-faster {
 	animation-delay: 0.1s; /* Adjusted animation delay */
@@ -457,7 +475,7 @@ body {
 }
 
 .instagram-logo path {
-	fill: #454545;
+	fill: #9ca3af;
 }
 
 .instagram-logo:hover path {
@@ -469,7 +487,7 @@ body {
 	transform: rotate(360deg);
 	white-space: nowrap;
 	width: 30px;
-	color: #454545;
+	color: #9ca3af;
 	text-align: center;
 	transition: all 0.25s ease-in-out;
 	overflow: hidden;
@@ -486,10 +504,7 @@ body {
 	transform: translateX(-5px) translateY(-5px);
 	box-shadow: 0.3em 0.3em 0 #979695;
 }
-.first-animation {
-	stroke-dasharray: 4500;
-	animation: draw 8s ease-in-out, scale-out 1s 1.5s ease-in-out;
-}
+
 .ffff {
 	font-family: --apple-system, "SF Mono";
 	font-size: 0.89rem;
@@ -653,8 +668,13 @@ body {
 	}
 }
 #name-text {
-	animation: draw-in 2s ease-in-out;
+	opacity: 0;
+	animation: draw-in 1s 0.7s ease-in-out forwards;
 }
 .play-second-animation {
 	animation: scale-out 2s ease-in-out;
+}
+.first-animation {
+	stroke-dasharray: 4500;
+	animation: draw 4s ease-in-out, scale-out 1s 1s ease-in-out;
 }

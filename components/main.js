@@ -28,7 +28,7 @@ export default function Main() {
 	return (
 		<div
 			id={"home"}
-			className={`home pop-up md:mt-16 mt-24 animate-10 flex bg-black flex-wrap  flex-col w-full h-dvh xs:gap-5 gap-6 md:gap-9 lg:gap-4 2xl:gap-7 lg:pl-44 md:pl-20     pl-5 md:p-20 sm:p-14 p-5 xs:pt-0 pt-20  pr-2 `}
+			className={`home pop-up md:mt-16 mt-24 animate-16 flex bg-black flex-wrap  flex-col w-full h-dvh xs:gap-5 gap-6 md:gap-9 lg:gap-4 2xl:gap-7 lg:pl-44 md:pl-20     pl-5 md:p-20 sm:p-14 p-5 xs:pt-0 pt-20  pr-2 `}
 		>
 			<div
 				className={`md:h-3 md:mb-6 mb-6 2xl:text-3xl md:mt-7 mt-11 h-6 w-full md:pl-0 pl-1 text-gray-300 font-sans`}
