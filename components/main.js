@@ -1,9 +1,9 @@
 import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 import Link from "next/link";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import PocketBase from "pocketbase";
-
+import Typed from "typed.js";
 const sf = localFont({ src: "./sf.otf" });
 const ca = localFont({ src: "./ca.otf" });
 const inter = Inter({
@@ -12,6 +12,19 @@ const inter = Inter({
 });
 
 export default function Main() {
+	const el = useRef();
+	useEffect(() => {
+		const typed = new Typed(el.current, {
+			strings: ["Rohith Krishnan"],
+			typeSpeed: 50,
+			startDelay: 3200,
+			backSpeed: 50,
+		});
+
+		return () => {
+			typed.destroy();
+		};
+	}, []);
 	return (
 		<div
 			id={"home"}
@@ -25,7 +38,7 @@ export default function Main() {
 			<div
 				className={`home-name text-white 2xl:text-9xl md:text-7xl sm:text-7xl text-6xl font-extrabold font-mono `}
 			>
-				Rohith Krishnan
+				<span ref={el} />
 			</div>
 			<div
 				className={`home-sub-text font-mono 2xl:text-9xl md:text-7xl sm:text-7xl xs:text-6xl text-5xl font-extrabold text-gray-300 `}
