@@ -150,10 +150,6 @@ export default function Home() {
 					<RightSidebar />
 				</div>
 			</div>
-			<Script
-				src="https://kit.fontawesome.com/93a493583b.js"
-				crossOrigin="anonymous"
-			></Script>
 		</>
 	);
 }
