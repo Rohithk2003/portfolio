@@ -17,7 +17,7 @@ export default function Main() {
 		const typed = new Typed(el.current, {
 			strings: ["Rohith Krishnan"],
 			typeSpeed: 50,
-			startDelay: 3200,
+			startDelay: 4100,
 			backSpeed: 50,
 		});
 
