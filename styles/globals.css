@@ -240,6 +240,11 @@ body {
 .animate-16 {
 	animation-delay: 3.75s;
 }
+@media screen and (max-width: 800px) {
+	.animate-16 {
+		animation-delay: 2s;
+	}
+}
 .animate-17 {
 	animation-delay: 4s;
 }
