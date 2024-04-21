@@ -1,9 +1,6 @@
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import { Roboto } from "next/font/google";
-import Image from "next/image";
-import localFont from "next/font/local";
-const sf = localFont({ src: "./sf.otf" });
 
 const roboto = Roboto({
 	subsets: ["latin"],
@@ -13,7 +10,6 @@ const roboto = Roboto({
 export default function Navbar() {
 	const [HamStatus, setHamButtonStatus] = useState(false);
 	const [NavItemClicked, setNavItemStatus] = useState(false);
-	const [activeIdx, setActiveIdx] = useState(-1);
 	const [topBarVisible, setTopBarVisibility] = useState(false);
 
 	function handleHamButtonClick() {
@@ -200,7 +196,7 @@ export default function Navbar() {
 					className={`font-sans flex flex-col justify-between items-center h-2/3 mb-10 pb-10`}
 				>
 					<li className=" flex flex-col justify-center items-center text-center">
-						<span>01.</span>{" "}
+						<span>01.</span>
 						<span className="">
 							<Link
 								legacyBehavior

@@ -1,16 +1,6 @@
-import { Inter } from "next/font/google";
 import { useInView } from "react-intersection-observer";
-import localFont from "next/font/local";
-import Image from "next/image";
 import { useState } from "react";
 
-const sf = localFont({ src: "./sf.otf" });
-const ca = localFont({ src: "./ca.otf" });
-
-const inter = Inter({
-	subsets: ["latin"],
-	weight: ["300"],
-});
 export default function Experience() {
 	const [ref, inView, entry] = useInView({
 		threshold: 0.3,
@@ -39,7 +29,7 @@ export default function Experience() {
 				className={`flex flex-row flex-wrap xl:gap-0 gap-10 justify-center  items-center  w-full h-full`}
 			>
 				<div
-					className={`font-sans lg:w-1/4 w-full h-full text-start font-mono text-[20px] text-[#767676] flex flex-col gap-2`}
+					className={`font-sans lg:w-1/4 w-full h-full text-start  text-[20px] text-[#767676] flex flex-col gap-2`}
 				>
 					<ul className="flex lg:flex-col flex-row h-full justify-start md:w-[250px] w-full ">
 						<li
@@ -52,7 +42,7 @@ export default function Experience() {
 					</ul>
 				</div>
 				<div
-					className={`xl:w-3/4 w-full h-full flex justify-start flex-col gap-4 items-start font-mono`}
+					className={`xl:w-3/4 w-full h-full flex justify-start flex-col gap-4 items-start `}
 				>
 					<div className="md:text-2xl text-xl font-bold flex flex-row gap-2">
 						<span className="text-[#767676]">Research Intern</span>{" "}
@@ -60,7 +50,7 @@ export default function Experience() {
 						<span className="text-white">ACM Amritapuri</span>
 					</div>
 					<div className={`font-sans`}>Sept 2023 - Feb 2024</div>
-					<ul className={`font-mono skills text-lg flex w-full flex-col gap-3`}>
+					<ul className={` skills text-lg flex w-full flex-col gap-3`}>
 						<li>
 							I&apos;ve authored a research paper on &quot;SQL Query Processing
 							using Matrix Factorization and Query Recommendation&quot;,
