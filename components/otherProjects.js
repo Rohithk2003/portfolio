@@ -277,13 +277,11 @@ export default function Project() {
 								</div>
 							</div>
 							<div
-								className={`font-mono text-lg text-start w-full h-12 heading-text font-extrabold text-[#9f9f9f] `}
+								className={` text-lg text-start w-full h-12 heading-text font-extrabold text-[#9f9f9f] `}
 							>
 								{`${project.project_name}-${project.text}`}
 							</div>
-							<div
-								className={`font-mono h-24 text-start rounded-md text-[#6f6f6f] `}
-							>
+							<div className={` h-24 text-start rounded-md text-[#6f6f6f] `}>
 								{project.description}
 							</div>
 							<ul

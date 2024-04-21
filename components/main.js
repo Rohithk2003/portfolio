@@ -1,11 +1,11 @@
 import { Inter } from "next/font/google";
-import localFont from "next/font/local";
+font - mono;
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef } from "react";
 import PocketBase from "pocketbase";
-const sf = localFont({ src: "./sf.otf" });
-const ca = localFont({ src: "./ca.otf" });
+font - mono;
+font - mono;
 const inter = Inter({
 	subsets: ["latin"],
 	weights: [300],
@@ -24,17 +24,17 @@ export default function Main() {
 					Hi, my name is
 				</div>
 				<div
-					className={`home-name text-white  md:text-7xl sm:text-7xl text-6xl font-extrabold font-mono `}
+					className={`home-name text-white  md:text-7xl sm:text-7xl text-6xl font-extrabold  `}
 				>
 					Rohith Krishnan
 				</div>
 				<div
-					className={`home-sub-text font-mono  md:text-7xl sm:text-7xl xs:text-6xl text-5xl font-extrabold text-gray-300 `}
+					className={`home-sub-text   md:text-7xl sm:text-7xl xs:text-6xl text-5xl font-extrabold text-gray-300 `}
 				>
 					I build things for the web
 				</div>
 				<div
-					className={`md:pl-0 pl-1 home-text  w-full text-gray-400 font-[400] text-[20px] pr-5 font-mono`}
+					className={`md:pl-0 pl-1 home-text  w-full text-gray-400 font-[400] text-[20px] pr-5 `}
 				>
 					I&apos;m a software engineer specializing in building exceptional
 					digital experiences. Currently, I&apos;m a student at Amrita Vishwa

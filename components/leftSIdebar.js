@@ -27,7 +27,7 @@ export default function LeftSidebar() {
 					</li>
 					<li className="h-5 w-5 pop-up animate-18">
 						<Link
-							href="https://instagram.com/r0hxth._"
+							href="https://instagram.com/___rohithk__"
 							className="w-5 h-5"
 						>
 							<svg
@@ -65,7 +65,7 @@ export default function LeftSidebar() {
 					</li>
 					<li className="h-5 w-5 pop-up animate-18">
 						<Link
-							href="https://github.com/Rohithk2003"
+							href="https://www.linkedin.com/in/rohith-krishnan-645137262/"
 							className="h-5 w-5"
 						>
 							<svg
@@ -97,7 +97,7 @@ export default function LeftSidebar() {
 					</li>
 					<li className="h-5 w-5 pop-up animate-18">
 						<Link
-							href="https://github.com/Rohithk2003"
+							href="https://twitter.com/reidd_777"
 							className="w-5 h-5"
 						>
 							<svg

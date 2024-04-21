@@ -17,7 +17,7 @@ export default function Whatsnext() {
 					Get In Touch
 				</div>
 				<div className="flex justify-center items-center w-full">
-					<div className="md:w-[40%] w-[80%] text-center font-mono text-xl">
+					<div className="md:w-[40%] w-[80%] text-center  text-xl">
 						I&apos;m currently looking for any new opportunities,to either work
 						or collaborate. If you just want to say hi, I&apos;ll try my best to
 						get back to you!

@@ -2,8 +2,8 @@ import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import { Roboto } from "next/font/google";
 import Image from "next/image";
-import localFont from "next/font/local";
-const sf = localFont({ src: "./sf.otf" });
+font - mono;
+font - mono;
 
 const roboto = Roboto({
 	subsets: ["latin"],

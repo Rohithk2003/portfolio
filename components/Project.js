@@ -2,10 +2,10 @@ import * as React from "react";
 import { useEffect } from "react";
 import Link from "next/link";
 import { useInView } from "react-intersection-observer";
-import localFont from "next/font/local";
+font - mono;
 import { useRef } from "react";
-const sf = localFont({ src: "./sf.otf" });
-const ca = localFont({ src: "./ca.otf" });
+font - mono;
+font - mono;
 const main_projects = [
 	{
 		id: 1,
