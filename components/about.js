@@ -1,9 +1,5 @@
 import { useInView } from "react-intersection-observer";
-import localFont from "next/font/local";
 import Image from "next/image";
-
-const sf = localFont({ src: "./sf.otf" });
-const ca = localFont({ src: "./ca.otf" });
 
 export default function About() {
 	const [ref, inView, entry] = useInView({
@@ -32,7 +28,7 @@ export default function About() {
 				className={`flex flex-row flex-wrap xl:gap-0 gap-10 justify-center  items-center  w-full h-full`}
 			>
 				<div
-					className={`font-mono xl:w-1/2 w-full h-full text-start  text-[17px] text-[#767676] flex flex-col gap-5`}
+					className={` xl:w-1/2 w-full h-full text-start  text-[17px] text-[#767676] flex flex-col gap-5`}
 				>
 					<div>
 						Hello I&apos;m Rohith, a passionate frontend developer based in

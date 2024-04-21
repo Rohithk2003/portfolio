@@ -2,10 +2,7 @@ import * as React from "react";
 import { useEffect } from "react";
 import Link from "next/link";
 import { useInView } from "react-intersection-observer";
-import localFont from "next/font/local";
 import { useRef } from "react";
-const sf = localFont({ src: "./sf.otf" });
-const ca = localFont({ src: "./ca.otf" });
 const main_projects = [
 	{
 		id: 1,
@@ -137,9 +134,7 @@ export default function Project() {
 								{project.project_name}
 							</div>
 							<div
-								className={`${
-									ca.className
-								} text-xl  w-full mb-5 text-[#6f6f6f]  ${
+								className={`font-mono text-xl  w-full mb-5 text-[#6f6f6f]  ${
 									project.id % 2 !== 0
 										? "lg:text-end text-start"
 										: "lg:text-start text-start"
@@ -148,9 +143,7 @@ export default function Project() {
 								{project.text}
 							</div>
 							<div
-								className={`${
-									ca.className
-								} max-w-[400px]  bg-gray-800 text-[#7b8fac] p-6 ${
+								className={`font-mono max-w-[400px]  bg-gray-800 text-[#7b8fac] p-6 ${
 									project.id % 2 !== 0 ? "lg:text-right" : "lg:text-start"
 								} text-start rounded-md `}
 							>
