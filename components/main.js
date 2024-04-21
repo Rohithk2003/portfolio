@@ -1,15 +1,5 @@
-import { Inter } from "next/font/google";
-font - mono;
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useRef } from "react";
-import PocketBase from "pocketbase";
-font - mono;
-font - mono;
-const inter = Inter({
-	subsets: ["latin"],
-	weights: [300],
-});
 
 export default function Main() {
 	return (

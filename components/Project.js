@@ -2,10 +2,7 @@ import * as React from "react";
 import { useEffect } from "react";
 import Link from "next/link";
 import { useInView } from "react-intersection-observer";
-font - mono;
 import { useRef } from "react";
-font - mono;
-font - mono;
 const main_projects = [
 	{
 		id: 1,

@@ -1,9 +1,6 @@
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import { Roboto } from "next/font/google";
-import Image from "next/image";
-font - mono;
-font - mono;
 
 const roboto = Roboto({
 	subsets: ["latin"],
@@ -13,7 +10,6 @@ const roboto = Roboto({
 export default function Navbar() {
 	const [HamStatus, setHamButtonStatus] = useState(false);
 	const [NavItemClicked, setNavItemStatus] = useState(false);
-	const [activeIdx, setActiveIdx] = useState(-1);
 	const [topBarVisible, setTopBarVisibility] = useState(false);
 
 	function handleHamButtonClick() {

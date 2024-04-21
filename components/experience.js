@@ -1,4 +1,3 @@
-import { Inter } from "next/font/google";
 import { useInView } from "react-intersection-observer";
 import { useState } from "react";
 
