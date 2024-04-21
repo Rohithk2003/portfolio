@@ -14,17 +14,17 @@ export default function Main() {
 					Hi, my name is
 				</div>
 				<div
-					className={`home-name text-white  md:text-7xl sm:text-7xl text-6xl font-extrabold  `}
+					className={`home-name font-calibre text-white  md:text-7xl sm:text-7xl text-6xl font-extrabold  `}
 				>
 					Rohith Krishnan
 				</div>
 				<div
-					className={`home-sub-text   md:text-7xl sm:text-7xl xs:text-6xl text-5xl font-extrabold text-gray-300 `}
+					className={`home-sub-text font-calibre  md:text-7xl sm:text-7xl xs:text-6xl text-5xl font-extrabold text-gray-300 `}
 				>
 					I build things for the web
 				</div>
 				<div
-					className={`md:pl-0 pl-1 home-text  w-full text-gray-400 font-[400] text-[20px] pr-5 `}
+					className={`md:pl-0 pl-1 home-text  font-calibre w-full text-gray-400 font-[400] text-[20px] pr-5 `}
 				>
 					I&apos;m a software engineer specializing in building exceptional
 					digital experiences. Currently, I&apos;m a student at Amrita Vishwa

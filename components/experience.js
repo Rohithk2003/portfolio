@@ -45,12 +45,14 @@ export default function Experience() {
 					className={`xl:w-3/4 w-full h-full flex justify-start flex-col gap-4 items-start `}
 				>
 					<div className="md:text-2xl text-xl font-bold flex flex-row gap-2">
-						<span className="text-[#767676]">Research Intern</span>{" "}
-						<span>@</span>
-						<span className="text-white">ACM Amritapuri</span>
+						<span className="text-[#767676] font-calibre">Research Intern</span>{" "}
+						<span className="font-calibre">@</span>
+						<span className="text-white font-calibre">ACM Amritapuri</span>
 					</div>
 					<div className={`font-sans`}>Sept 2023 - Feb 2024</div>
-					<ul className={` skills text-lg flex w-full flex-col gap-3`}>
+					<ul
+						className={` skills text-lg flex w-full flex-col gap-3 font-calibre`}
+					>
 						<li>
 							I&apos;ve authored a research paper on &quot;SQL Query Processing
 							using Matrix Factorization and Query Recommendation&quot;,

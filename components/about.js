@@ -25,7 +25,7 @@ export default function About() {
 				</div>
 			</div>
 			<div
-				className={`flex flex-row flex-wrap xl:gap-0 gap-10 justify-center  items-center  w-full h-full`}
+				className={`flex flex-row font-calibre flex-wrap xl:gap-0 gap-10 justify-center  items-center  w-full h-full`}
 			>
 				<div
 					className={` xl:w-1/2 w-full h-full text-start  text-[17px] text-[#767676] flex flex-col gap-5`}
