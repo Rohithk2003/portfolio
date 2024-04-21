@@ -196,7 +196,7 @@ export default function Navbar() {
 					className={`font-sans flex flex-col justify-between items-center h-2/3 mb-10 pb-10`}
 				>
 					<li className=" flex flex-col justify-center items-center text-center">
-						<span>01.</span>{" "}
+						<span>01.</span>
 						<span className="">
 							<Link
 								legacyBehavior
