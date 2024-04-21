@@ -1,8 +1,4 @@
 import Link from "next/link";
-font - mono;
-
-font - mono;
-font - mono;
 export default function RightSidebar() {
 	return (
 		<div className="w-24  h-[100vh] top-0 right-0 fixed bg-black text-[#9ca09f] flex flex-col justify-end items-center">

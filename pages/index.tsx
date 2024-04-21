@@ -1,5 +1,4 @@
 import Navbar from "@/components/navbar";
-import Script from "next/script";
 import Main from "@/components/main";
 import About from "@/components/about";
 import Footer from "@/components/footer";
