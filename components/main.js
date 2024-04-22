@@ -6,7 +6,7 @@ export default function Main() {
 		<div className="flex flex-row flex-wrap md:mt-16 mt-16 h-dvg ">
 			<div
 				id={"home"}
-				className={`home pop-up  h-full animate-16 flex bg-black flex-wrap  flex-col lg:w-2/3 w-full xs:gap-5 gap-6 md:gap-9 lg:gap-4 2xl:gap-7 lg:pl-44 md:pl-20  pl-5 md:p-20 sm:p-14 p-5 xs:pt-0 md:pt-16 pt-14  pr-2 `}
+				className={`home pop-up  h-full animate-16 flex bg-black flex-wrap  flex-col lg:w-2/3 w-full xs:gap-5 gap-6 md:gap-9 lg:gap-4 2xl:gap-7 lg:pl-44 md:pl-20  pl-5 md:p-20 sm:p-14 p-5 xs:pt-0 md:pt-11 pt-14  pr-2 `}
 			>
 				<div
 					className={`md:h-3 md:mb-6 mb-6  md:mt-7 mt-11 h-6 w-full pl-2 text-gray-300 font-sans`}
