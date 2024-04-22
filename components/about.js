@@ -32,9 +32,9 @@ export default function About() {
 				>
 					<div>
 						Hello I&apos;m Rohith, a passionate frontend developer based in
-						Poland, with over 4 years of commercial experience. Specializing in
-						end-to-end development, I focus on crafting seamless user
-						experiences through innovative solutions.
+						India, with over 3 years of experience developing Web Apps.
+						Specializing in end-to-end development, I focus on crafting seamless
+						user experiences through innovative solutions.
 					</div>
 					<div className={"2"}>
 						My development roots are in
