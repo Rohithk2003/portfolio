@@ -89,7 +89,7 @@ export default function About() {
 								}
 							></div>
 							<Image
-								src={"/images/profile.jpg"}
+								src={"/images/ai.jpeg"}
 								alt={"profile"}
 								className={
 									"absolute z-30 w-56 hover:-translate-x-1 hover:-translate-y-1 object-cover"
