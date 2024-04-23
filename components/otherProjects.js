@@ -32,7 +32,7 @@ const projectsReducedDescriptions = [
 		description:
 			"Django Web App detecting tumors with Deep Learning, TensorFlow, and Keras.",
 		tools: ["Python", "Django", "Tensorflow", "Keras", "Next.JS"],
-		website_url: "https://webtumor.onrender.com/",
+		website_url: "https://web-tumor.vercel.app/home",
 		url: "https://github.com/Rohithk2003/webTumor",
 	},
 	{
