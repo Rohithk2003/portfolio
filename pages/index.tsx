@@ -10,6 +10,7 @@ import OtherProjects from "@/components/otherProjects";
 import { useEffect, useState } from "react";
 import Whatsnext from "@/components/Whatsnext";
 import Experience from "@/components/experience";
+import Grid from "@/components/grid";
 
 export default function Home() {
 	const [title, setTitle] = useState("Web Developer | Rohith Krishnan");
@@ -91,7 +92,7 @@ export default function Home() {
 			<div
 				className={`w-[100%] h-[100%] ${
 					overlayVisible ? "opacity-1" : "opacity-0 hidden"
-				} flex justify-center items-center  z-[2000] fixed  transition duration-300 ease-in-out top-0 left-0 bg-black`}
+				} flex justify-center items-center  z-[2000] fixed  transition duration-300 ease-in-out top-0 left-0 bg-transparent`}
 			>
 				<div className={"w-24 h-24"}>
 					<svg
@@ -132,11 +133,13 @@ export default function Home() {
 					</svg>
 				</div>
 			</div>
-			<div className={"flex "}>
+			<div className={"flex relative z-[900]"}>
 				<div className={"w-[5%] md:block hidden"}>
 					<LeftSidebar />
 				</div>
-				<div className={"md:w-[90%] h-[500vh] w-full text-white bg-black"}>
+				<div
+					className={"md:w-[90%] h-[500vh] w-full text-white bg-transparent"}
+				>
 					<Main />
 					<About />
 					<Experience />
@@ -149,6 +152,7 @@ export default function Home() {
 					<RightSidebar />
 				</div>
 			</div>
+			<Grid />
 		</>
 	);
 }
