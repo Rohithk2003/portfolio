@@ -63,7 +63,7 @@ export default function Navbar() {
 	});
 
 	return (
-		<div className="w-[100vw]! overflow-hidden">
+		<div className="w-[100vw]! overflow-hidden relative z-[500]">
 			<nav
 				className={`flex w-full fixed navbar h-24 transition-all duration-300 ease-in-out z-[500] justify-between md:px-10 px-4 md:pb-0 pb-6 bg-transparent text-white  items-center`}
 			>
