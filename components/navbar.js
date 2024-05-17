@@ -52,7 +52,7 @@ export default function Navbar() {
 		const navbar = document.getElementsByClassName("navbar")[0];
 		var prevScrollpos = window.pageYOffset;
 		window.onscroll = function () {
-			var currentScrollPos = window.pageYOffset;
+			var currentScrollPos = window.scrollY;
 			if (prevScrollpos > currentScrollPos) {
 				navbar.style.top = "0";
 			} else {
@@ -63,9 +63,9 @@ export default function Navbar() {
 	});
 
 	return (
-		<div className="w-[100vw]! overflow-hidden relative z-[500]">
+		<div className="w-[100vw]! overflow-hidden relative z-[902]">
 			<nav
-				className={`flex w-full fixed navbar h-24 transition-all duration-300 ease-in-out z-[500] justify-between md:px-10 px-4 md:pb-0 pb-6 bg-transparent text-white  items-center`}
+				className={`flex w-full fixed navbar backdrop-blur-lg h-24 transition-all duration-300 ease-in-out z-[500] justify-between md:px-10 px-4 md:pb-0 pb-6 bg-transparent text-white  items-center`}
 			>
 				<div className="w-1/6 h-28 flex  justify-start items-center pop-up animate-6">
 					<div className={"w-10 h-10  "}>
