@@ -151,8 +151,8 @@ export default function Home() {
 				<div className={"w-[5%] md:block hidden"}>
 					<RightSidebar />
 				</div>
+				<Grid />
 			</div>
-			<Grid />
 		</>
 	);
 }
