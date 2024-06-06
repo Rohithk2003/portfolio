@@ -92,7 +92,7 @@ export default function Home() {
 			<div
 				className={`w-[100%] h-[100%] ${
 					overlayVisible ? "opacity-1" : "opacity-0 hidden"
-				} flex justify-center items-center  z-[2000] fixed  transition duration-300 ease-in-out top-0 left-0 bg-transparent`}
+				} flex justify-center items-center  z-[3000] fixed  transition duration-300 ease-in-out top-0 left-0 bg-transparent`}
 			>
 				<div className={"w-24 h-24"}>
 					<svg
@@ -151,7 +151,7 @@ export default function Home() {
 				<div className={"w-[5%] md:block hidden"}>
 					<RightSidebar />
 				</div>
-				<Grid />
+				{/* <Grid /> */}
 			</div>
 		</>
 	);
