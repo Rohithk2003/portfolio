@@ -8,10 +8,8 @@ const main_projects = [
 		id: 1,
 		project_name: "Tool Connect",
 		text: "E-Commerce Web App using ReactJS and Django",
-		description: `This Python-based project is a Password Manager employing AES
-							256 encryption for local storage in a MySQL database. Tkinter
-							facilitates an intuitive interface for efficient password
-							management, ensuring security and usability.`,
+		description: `A web based app for community to share tools on a no of days basis and also buy tools from the store. The app is built using ReactJS and Django. The app uses Tailwind CSS for styling and SQLite for database.
+		`,
 		tools: ["ReactJS", "Django", "Tailwind CSS", "SQLite"],
 		url: "https://github.com/Rohithk2003/toolConnect",
 		website_url: "https://tool-connect.vercel.app",
