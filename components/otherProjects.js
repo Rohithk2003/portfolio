@@ -8,10 +8,10 @@ const projectsReducedDescriptions = [
 	{
 		id: 1,
 		project_name: "Tool Connect",
-		text: "E-Commerce Web App using ReactJS and Django",
+		text: "E-Commerce Web App using Nextjs and Django",
 		description:
-			"E-Commerce Web App with ReactJS and Django for secure password management.",
-		tools: ["ReactJS", "Django", "Tailwind CSS", "SQLite"],
+			"E-Commerce Web App with Nextjs and Django for allowing neighbouring communities to share tools on a rent basis.",
+		tools: ["Nextjs", "Django", "Tailwind CSS", "SQLite"],
 		website_url: "https://tool-connect.vercel.app",
 		url: "https://github.com/Rohithk2003/toolConnect",
 	},
@@ -93,6 +93,15 @@ const projectsReducedDescriptions = [
 		tools: ["HTML", "CSS", "Javascript", "Bootstrap"],
 		website_url: "",
 		url: "https://github.com/Rohithk2003/modiva",
+	},
+	{
+		id: 10,
+		project_name: "JobNest",
+		text: "Job Portal",
+		description: "Job Portal developed with NextJS and Django",
+		tools: ["NextJS", "Next Auth", "Django", "Tailwind CSS", "PostgresSQL"],
+		website_url: "",
+		url: "https://github.com/Rohithk2003/jobNest",
 	},
 ];
 
